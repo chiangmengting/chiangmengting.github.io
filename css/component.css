@@ -214,8 +214,8 @@
     color: black;
 }
 
-.mt-3 a:hover{
-	color: white;
+.noLine a:hover{
+	color: transparent;
 }
 
 .appIcon:hover{
