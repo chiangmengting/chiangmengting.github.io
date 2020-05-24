@@ -1,0 +1,362 @@
+html {
+    overflow-x: hidden !important;
+}
+.h1-front{
+    height: 40px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.member-description>span.txt{
+    margin-left: 30px;
+}
+.h1-font{
+    font-size: 2.2rem;
+}
+.transport{
+    width: 20%;
+}
+.privacy{
+    width: 10%;
+}
+.privacytopImg{
+    width: 100%
+}
+.hr-line{
+    border-top: 2px solid #D4D4D4;
+    width: 97vw;
+}
+
+
+@media screen and (max-width:768px)  {
+    .h1-font{
+        font-size: 1.4rem;
+    }
+    .member-description{
+       display: none;
+    }
+    .transport{
+        width: 35%;
+    }
+    .order-description>span.txt{
+        font-size: 1.4rem;
+    }
+    .order-description>a{
+        font-size: 1.2rem;
+    }
+    .privacy-description>a{
+        font-size: 2.2rem;
+    }
+    .privacy{
+        width: 20%;
+    }
+}
+
+
+
+
+div.order{
+    margin-top: 30px;
+}
+span.txt{
+    margin-left: 30px;
+}
+
+.member_icon{
+    width: 10%;
+}
+.member_hr-line{
+    border-top: 2px solid #D4D4D4;
+    width: 97vw;
+}
+.nonBorder{
+    border:0px;
+}
+.modalWidth{
+    min-width:70%;
+    max-width:70%;
+}
+.modalborder{
+    border: 0px;
+    width: 1140px;
+}
+
+/* start基本資料 */
+.tab{
+    width:100%
+}
+.tab a{
+    width:30%;
+    color:gray;
+    text-align: center;
+    border-bottom:1px;
+    border-bottom:1px solid gray;
+}
+.tab .active{
+    color:#47a3da;
+    border-bottom:5px solid #47a3da;
+}
+.member-label{
+    margin-bottom:15px;
+}
+.member_top{
+    margin-top: 5px;
+}
+.member-page1-left{
+    padding-right: 0;
+}
+.member-page1-right{
+    padding-left: 0;
+}
+.member-center {
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px 20px;
+
+}
+.member_form-control{
+    margin-top: 5px;
+    width: 110%;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align-last: center;
+    color: #1770b7;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #1770b7;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.from_membersize{
+    width: 27rem;
+}
+
+
+.member_form-control2 {
+    display: block;
+    width: 110%;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #1770b7;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #1770b7;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom:10px !important;
+}
+.member_form-control2::-webkit-input-placeholder {
+    font-size: 1.1rem !important;
+    
+    }
+
+.member-btn{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.4rem;
+    color: #1770b7;
+    border: 1px solid #1770b7;
+    background-color: transparent;
+    border-radius: 30px;
+}
+label {
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+}
+/* end基本資料 */
+
+@media screen and (max-width:768px) 
+{
+    .modalborder{
+        
+        width: 100%;
+    }
+    .member_icon{
+        width: 20%;
+    }
+    .tab{
+        width:95vw
+    }
+    .order {
+        text-align: center;
+        margin-bottom: 20px;
+       
+    }
+    .order .line {
+        display: inline-block;
+        width:10vw;
+        border-top: 1px solid #ccc ;
+    }
+    .order .txt {
+        vertical-align: -8px;
+        margin-left: 0px;
+       
+    }
+    .member_hr-line{
+        display: none;
+    }
+
+    .modalWidth{
+         max-width:100%;
+    }
+
+/* start基本資料 */
+
+    .from_membersize{
+        width: 100%;
+    }
+    label {
+        margin-bottom: 4px;
+        font-size: 1rem !important;
+    }
+    .member_form-control2 {
+        height: 70%;
+    }
+    .member_form-control{ 
+        font-size: 1rem;
+    }
+ /* end基本資料 */
+}
+
+
+/*start交易紀錄*/
+
+.accordion-heading .accordion-toggle {
+    padding: 8px 15px;
+    border-bottom: 1px #DCDCDC solid;  
+}
+.selectStyle {
+    width: 46%;
+    float: left;
+    margin-right: 8%;
+}
+.accordion-group {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+[data-toggle="collapse"]:after {
+    content: "-";
+    color: blue;
+    font-size: 1.2em;
+}
+
+[data-toggle="collapse"].collapsed:after {
+    content: "+";
+}
+
+.accordion-toggle>.col-9>p{
+    font-size: 1.4rem;
+}
+
+.offer-title{
+    margin-top: 45%;
+    text-align: right;
+}
+
+.offer-title>a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.accordion-inner {
+    font-size: 1.2rem;
+}
+.accordion-body {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.detailhr>.col-md-4{
+    text-align: right;
+   
+}
+.detailhr{
+    border-bottom: 1px #DCDCDC dotted;  
+}
+.p-top{
+    margin-top: 3%;
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .accordion-toggle>.col-9>p{
+        font-size: 1rem;
+        margin-bottom:4px;
+    }
+    .accordion-toggle>.col-9{
+        padding: 0 0 0 0;
+    }
+    .accordion-toggle>.col-3{
+        padding: 0 0 0 0;
+    }
+    .offer-title{
+        margin-top: 100%;
+        text-align: right;
+    } 
+    .offer-title>a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .accordion-inner {
+        font-size: 1rem;
+    }
+    .accordion-body {
+        margin-left: -30px;
+        margin-right: 0px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .detailhr>.col-5{
+        text-align: right;
+    }
+}
+/*end交易紀錄*/
+
+/*start我的最愛*/
+
+.mylovetop{
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+.mylovetop  a{
+   color: black;
+  
+}
+@media screen and (max-width:768px) {
+    .mylovetop>.row>.col-7>a{
+        font-size: 1rem;
+        margin-bottom:4px;
+        color: black;
+    }
+    .mylovetop>.row>.col-5 span{
+        font-size: 0.5em;
+        margin-bottom:4px;
+    }
+    .mylovetop>.row>.col-2{
+        font-size: 0.5em;
+        margin-bottom:4px;
+    }
+    .mylovetop>.row>.col-5{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .mylovetop>.row>.col-7{
+        padding-right: 0%;
+    }
+    .detailhr2{
+        padding-left: 0px !important;
+        padding-right: 0%;
+    }
+    .detailhr3{
+        padding-right: 40px;
+       
+    }
+}
+
+/*end交我的最愛*/

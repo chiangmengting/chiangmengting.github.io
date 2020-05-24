@@ -1,0 +1,109 @@
+body{
+    font-family:Microsoft JhengHei !important;
+}
+.centerwidth{
+    max-width: 35rem !important;
+    padding-bottom: 0px !important;
+}
+.form-groupunder{
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;  
+}
+.card {
+    border: 1px solid #28a745;
+}
+.card-login {
+    /* margin-top: 130px; */
+    padding: 18px;
+    max-width: 30rem;
+}
+
+.card-header {
+    color: #fff;
+    /*background: #ff0000;*/
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600 !important;
+    margin-top: 10px;
+    border-bottom: 0;
+}
+
+.input-group-prepend1 span{
+    width: 50px;
+    background-color: #1770b7;
+    color: #fff;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn{
+    width: 100%;
+    text-align: center;
+}
+
+.login_btn:hover{
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.btn-outline-danger {
+    color: #fff;
+    font-size: 18px;
+    background-color: #1770b7;
+    background-image: none;
+    border-color: #1770b7;
+}
+
+.form-control1 {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 20px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #1770b7;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #1770b7;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-group-text1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.under{
+    padding-top: 10px;
+}
+.under1{
+    margin-top: 10%;
+ }
+.under2{
+   margin-top: 0;
+}
+
+
+@media screen and (max-width: 375px) {
+    .fromsize {
+        width: 15rem;
+    }
+}

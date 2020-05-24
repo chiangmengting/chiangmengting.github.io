@@ -1,0 +1,181 @@
+
+
+span.txt{
+    margin-left: 30px;
+}
+.hr-line{
+    border-top: 2px solid #D4D4D4;
+    width: 97vw;
+}
+.order{
+    margin-top: 20px;
+}
+.storeSlider{
+    padding-left: 3rem;
+}
+
+.storeText{
+    padding-top: 1rem;
+}
+.card-bodyin{
+    padding-top: 20px;
+}
+
+.sideBar{
+    border:1px solid rgba(0,0,0,.125);  
+    margin-left: 10%;
+    margin-right: 20%;
+}
+select.form-control {
+    text-align-last: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+input.form-control {
+    text-align-last: center;
+  
+}
+
+.sideBar a{
+    color: black !important;
+    text-decoration:none;
+}
+
+.sideBar a:active{
+    color: #47a3da !important;
+}
+
+.sideBar li:hover{
+    background: rgb(238, 236, 236);
+}
+
+
+/* 拿掉透明月拋 */
+.sideBar>li:nth-child(-n+4){
+    display: none;
+}
+/* 拿掉透明月拋 */
+
+.nonBorder{
+    border:0px;
+}
+
+.backColor{
+    background-color: rgba(233, 233, 233, 0.486);
+}
+
+.radiusBorder{
+	border: 1px solid #47a3da;
+    border-radius: 20px;	/* 高度 */
+    margin:0px 5px 0px 5px;
+}
+
+
+.modalWidth{
+    min-width:70%;
+    max-width:89%;
+    padding-top:3rem;
+    padding-right:1px;
+}
+
+.containProduct{
+    cursor: pointer;
+}
+
+.containProduct a{
+    font-size: 1.4rem;
+}
+
+.tab{
+    width:100%
+}
+
+.tab a{
+    width:30%;
+    color:gray;
+    text-align: center;
+    border-bottom:1px;
+    border-bottom:1px solid gray;
+}
+
+
+
+
+.tab .active{
+    color:#47a3da;
+    border-bottom:5px solid #47a3da;
+}
+.storeDetail{
+    padding:0 3% 0 3%;
+    color: gray;
+}
+
+.storeDetailTitle{
+    border-left:5px solid #47a3da;
+    margin: 10px 0 1rem 1rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.storeDetailText{
+    position:relative;
+    left: 5rem;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+}
+
+.tab-content-img{
+    width: 100%;
+}
+
+
+@media screen and (max-width:768px) 
+{
+    
+   
+
+    .storeTitle{
+        text-align:center;
+        padding-bottom: 1rem;
+    }
+    
+    .storeSlider{
+        padding-left: 0rem;
+    }
+
+    .sideBar{
+        display: none;
+    }
+    select.form-control {
+        width: 100%;
+    }
+    input.form-control {
+        width: 100%;
+    }
+    .order {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .order .line {
+        display: inline-block;
+        width:20%;
+        border-top: 1px solid #ccc ;
+    }
+    .order .txt {
+        vertical-align: -8px;
+        margin-left: 0px;
+       
+    }
+    .hr-line{
+        display: none;
+    }
+    .storeDetailText{
+        position:relative;
+        left: 0rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+    }
+    .containProduct a{
+        font-size: 0.8rem;
+    }
+}

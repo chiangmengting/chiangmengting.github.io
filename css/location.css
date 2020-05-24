@@ -1,0 +1,307 @@
+span.txt{
+    margin-left: 30px;
+}
+.col-12{
+    padding-right: 100px;
+}
+.location-description>a {
+    margin-left: 30px;
+}
+.location-hr-line{
+    width: 100%;
+}
+
+.sideBar {
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.sideBar a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.sideBar a:focus {
+    color: #47a3da !important;
+}
+
+.storeSlider {
+    padding-left: 3rem;
+}
+.hr-line{
+    border-top: 2px solid #D4D4D4;
+    width: 97vw;
+}
+.nonBorder {
+    border: 0px;
+}
+
+.backColor {
+    background-color: rgba(233, 233, 233, 0.486);
+}
+
+.location-container {
+    /* margin:0 !important;  */
+    max-width: 100rem ; 
+}
+
+.on-the-top {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.starbanner{
+    background-image: url('../img/location/location_banner.jpg');
+    height: 550px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.Watsonsbanner{
+    background-image: url('../img/location/location_banner.jpg');
+    height: 550px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.Carrefourbanner{
+    background-image: url('../img/location/location_banner.jpg');
+    height: 550px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.Kangbanner{
+    background-image: url('../img/location/location_banner.jpg');
+    height: 550px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.FamilyMartbanner{
+    background-image: url('../img/location/location_banner.jpg');
+    height: 550px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.star{
+    background-image: url('../img/location/star1.jpg');
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.Watsons{
+    background-image: url('../img/location/Watsons1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.Carrefour{
+    background-image: url('../img/location/Carrefour1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.Kang{
+    background-image: url('../img/location/Kang1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover; 
+}
+
+.FamilyMart{
+    background-image: url('../img/location/FamilyMart1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover; 
+}
+
+.on-the-top div.col-lg-3 img {
+    width: 92%;
+    height: 92%;
+}
+.on-the-top div.col-lg-3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.on-the-top div.col-lg-3 span {
+    font-weight: 600;
+}
+
+select.travel-form {
+    width: 100px;
+    padding: 3px;
+    text-align-last: center;
+    margin-bottom: 5px;
+    color: #D4D4D4;
+}
+
+select.travel-form2 {
+    width: 100px;
+    padding: 3px;
+    text-align-last: center;
+    margin-bottom: 5px;
+    color: #D4D4D4;
+}
+
+select.travel-form3 {
+    width: 170px;
+    padding: 3px;
+    text-align-last: center;
+    margin-bottom: 5px;
+    color: #D4D4D4;
+}
+
+.map {
+    height: 210px;
+    border: 0;
+}
+.map-line{
+    border-top: 2px #D4D4D4 solid;
+    width: 100%;
+}
+
+.h3-glass-title {
+
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.h3-glass {
+    font-size: 0.8rem;
+}
+
+.btn-glass {
+    background-color: transparent;
+    width: 30%;
+    border-radius: 30px;
+    border: 1px solid #A590FF;
+}
+
+.sideline {
+    border-right: 2px #D4D4D4 solid;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .starbanner{
+        background-image: url('../img/location/phone/banner.jpg');
+        height: 130px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:95%;
+    }
+    .Watsonsbanner{
+        background-image: url('../img/location/phone/banner.jpg');
+        height: 130px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:95%;
+    }
+    .Carrefourbanner{
+        background-image: url('../img/location/phone/banner.jpg');
+        height: 130px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:95%;
+    }
+    .Kangbanner{
+        background-image: url('../img/location/phone/banner.jpg');
+        height: 130px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:95%;
+    }
+    .FamilyMartbanner{
+        background-image: url('../img/location/phone/banner.jpg');
+        height: 130px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:95%;
+    }
+    .col-12{
+        padding-right: 0px;
+    }
+    .on-the-top {
+        margin-bottom: 3rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .on-the-top div.col-7  {
+        height: 150px
+     }
+     .on-the-top div.col-4  {
+        padding-left: 5px;
+        padding-right: 0px;
+        margin-right: 0;
+     }
+
+
+    .on-the-top div.col-8 img{
+        width: 100%;
+        height: 90%;
+    }
+    .on-the-top div.col-4 img{
+        width: 100%;
+        height: 70%;
+    }
+    .on-the-top div.col-4 span {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    select.travel-form {
+        width: 100%;
+    }
+
+    select.travel-form2 {
+        width: 100%;
+    }
+
+    select.travel-form3 {
+        width: 100%;
+    }
+
+    .sideBar{
+        display: none;
+    }
+    .order {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .order .line {
+        display: inline-block;
+        width: 27%;
+        border-top: 1px solid #ccc ;
+    }
+    .order .txt {
+        vertical-align: -8px;
+        margin-left: 0px;
+    }
+    .hr-line{
+        display: none;
+    }
+    
+    .map {
+        width: 98%;
+        height: 150%;
+        border: 0;
+        padding-bottom: 180px;
+    }
+    .map-line{
+        display: none;
+    }
+    .under-display{
+        display: none;
+    }
+}
