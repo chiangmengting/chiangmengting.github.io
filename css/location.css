@@ -1,9 +1,7 @@
 span.txt{
     margin-left: 30px;
 }
-.col-12{
-    padding-right: 100px;
-}
+
 .location-description>a {
     margin-left: 30px;
 }
@@ -50,41 +48,6 @@ span.txt{
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-}
-.starbanner{
-    background-image: url('../img/location/location_banner.jpg');
-    height: 550px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-}
-.Watsonsbanner{
-    background-image: url('../img/location/location_banner.jpg');
-    height: 550px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-}
-.Carrefourbanner{
-    background-image: url('../img/location/location_banner.jpg');
-    height: 550px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-}
-.Kangbanner{
-    background-image: url('../img/location/location_banner.jpg');
-    height: 550px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-}
-.FamilyMartbanner{
-    background-image: url('../img/location/location_banner.jpg');
-    height: 550px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
 }
 .star{
     background-image: url('../img/location/star1.jpg');
@@ -193,41 +156,6 @@ select.travel-form3 {
 
 
 @media screen and (max-width:768px) {
-    .starbanner{
-        background-image: url('../img/location/phone/banner.jpg');
-        height: 130px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:95%;
-    }
-    .Watsonsbanner{
-        background-image: url('../img/location/phone/banner.jpg');
-        height: 130px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:95%;
-    }
-    .Carrefourbanner{
-        background-image: url('../img/location/phone/banner.jpg');
-        height: 130px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:95%;
-    }
-    .Kangbanner{
-        background-image: url('../img/location/phone/banner.jpg');
-        height: 130px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:95%;
-    }
-    .FamilyMartbanner{
-        background-image: url('../img/location/phone/banner.jpg');
-        height: 130px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:95%;
-    }
     .col-12{
         padding-right: 0px;
     }

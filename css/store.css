@@ -128,6 +128,18 @@ input.form-control {
     width: 100%;
 }
 
+.storeIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.storeIcon a{
+    padding: 0.5vw;
+}
+
+
 
 @media screen and (max-width:768px) 
 {
