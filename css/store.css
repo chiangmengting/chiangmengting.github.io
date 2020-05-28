@@ -41,14 +41,9 @@ input.form-control {
     text-decoration:none;
 }
 
-.sideBar a:active{
+.sideBar a:focus{
     color: #47a3da !important;
 }
-
-.sideBar li:hover{
-    background: rgb(238, 236, 236);
-}
-
 
 /* 拿掉透明月拋 */
 .sideBar>li:nth-child(-n+4){
@@ -140,7 +135,6 @@ input.form-control {
 }
 
 
-
 @media screen and (max-width:768px) 
 {
     
@@ -191,3 +185,6 @@ input.form-control {
         font-size: 0.8rem;
     }
 }
+
+
+
