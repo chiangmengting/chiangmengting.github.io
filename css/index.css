@@ -43,7 +43,7 @@
 
 .carousel-inner img {
   max-width: 100%;
-  max-heigth: 100%;
+  max-height: 100%;
 }
 
 .carousel-caption {
@@ -120,6 +120,16 @@
 .tab-content-img{
   width: 100%;
 }
+
+@media (min-width: 769px) and (max-width: 1199.98px) { 
+  .topCarousel {
+    padding-bottom: 18%;
+  }
+  .top-header2 {
+    padding-top: 49%;
+  }
+
+ }
 
 @media screen and (max-width:768px) {
   .topCarousel {
