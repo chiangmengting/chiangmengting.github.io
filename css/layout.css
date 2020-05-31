@@ -1,503 +1,805 @@
 html {
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 nav {
-    z-index: 100;
+  z-index: 100;
 }
 body {
-    position: relative;
-    font-family: Microsoft JhengHei !important;
-
+  position: relative;
+  font-family: Microsoft JhengHei !important;
 }
 
-.nav_location li{
-    padding: 0 0;
-    background-color: #FAFAFA;
-    border: 0px;
-    text-decoration:none;
+.nav_location li {
+  padding: 0 0;
+  background-color: #fafafa;
+  border: 0px;
+  text-decoration: none;
 }
-.nav_location li:hover{
-   
-    background-color: #FAFAFA;
-   
+.nav_location li:hover {
+  background-color: #fafafa;
 }
 /* 底線 */
 .hr-line {
-    border-top: 2px #D4D4D4 solid
+  border-top: 2px #d4d4d4 solid;
 }
-.bannerTop{
-    padding-top: 3%
-}
+
 .logo {
-    width: 200px
+  width: 200px;
 }
 
 .nav-shadow {
-    box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.2);
+  box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.2);
 }
 
 .h3 p {
-    border-width: 1px;
-    border-style: solid
+  border-width: 1px;
+  border-style: solid;
 }
 
 .h3 {
-    color: black;
+  color: black;
 }
 
 .h3:focus {
-    color: #0794CC;
-    font-weight: 800;
-    text-decoration: underline;
+  color: #0794cc;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 .black {
-    color: black !important;
+  color: black !important;
 }
 
 .size {
-    margin-top: 5%;
-    margin-bottom: 0px;
-    /* font-size:15px; */
+  margin-top: 5%;
+  margin-bottom: 0px;
+  /* font-size:15px; */
 }
 
 .footer {
-    margin: 0px 0px 0px 7%;
+  margin: 0px 0px 0px 7%;
 }
 
 .contain {
-    margin: 0px 5% 0px 5%;
+  margin: 0px 5% 0px 5%;
 }
 
 .text {
-    padding: 10% 0px 0px 0px
+  padding: 10% 0px 0px 0px;
 }
 
 .containImg {
-    padding: 0px 0px 0px 0px
+  padding: 0px 0px 0px 0px;
 }
 
 .containProduct {
-    padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .buttonRadius {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 .social {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .topCarousel {
-    padding-top: 0%;
+  padding-top: 0%;
 }
 
 .menufont {
-    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
 }
 
 .menufont a {
-    width: 250px;
-    padding-top: 10px;
-    font-size: 1.5rem;
+  width: 250px;
+  padding-top: 10px;
+  font-size: 1.5rem;
 }
 
 .menufont a:hover {
-    color: #0794CC;
-    font-weight: 800;
-    background-color: #FFF;
+  color: #0794cc;
+  font-weight: 800;
+  background-color: #fff;
 }
-
 
 .nav-mobile {
-    display: none;
+  display: none;
 }
 
-
-
-
 .cartimg {
-    margin-left: 15px;
-    width: 70px;
+  margin-left: 15px;
+  width: 70px;
 }
 
 .cart {
-
-    display: inline-block;
-    width: 140px;
+  display: inline-block;
+  width: 140px;
 }
 
 .num {
-    color: #949494;
-    font-size: 12px;
+  color: #949494;
+  font-size: 12px;
 }
 
 .degree {
-    margin-left: 38%;
-    color: #949494;
-    font-size: 12px;
+  margin-left: 38%;
+  color: #949494;
+  font-size: 12px;
 }
-
 
 .dropdown-menu-right {
-    margin-top: 10px;
-    width: 300px;
-    left: auto;
-    right: -130px;
-    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  margin-top: 10px;
+  width: 300px;
+  left: auto;
+  right: -130px;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
 }
 
-
 .menufont2 a:first-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  width: 270px;
+  background-color: #71caea;
+}
+
+.menufont2 a:last-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  width: 270px;
+  background-color: #019bd9;
+}
+
+.dropdown-menu-right2 a {
+  color: black;
+}
+
+.dropdown-menu-right2 {
+  margin-top: 10px;
+  width: 320px;
+  left: auto;
+  right: -80px;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+}
+
+.dropdown-menu-right2 a:last-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  width: 290px;
+  background-color: #019bd9;
+}
+
+.dropdown-menu-right2 > .dropdown-item:last-child {
+  width: 90%;
+}
+
+.searchimg {
+  margin-left: 20px;
+  width: 20px;
+  padding-top: 5px;
+}
+
+.searchinput {
+  border-width: 1px;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+}
+
+.searchbtn {
+  background-color: #069cd9;
+  color: #fff;
+  border-width: 0px;
+  margin-left: 40%;
+  font-weight: 800;
+  margin-top: 5%;
+}
+
+.dropdown-menu-right3 {
+  top: 52px;
+  width: 320px;
+  left: auto;
+  right: 20px;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+}
+.tab-content > .col-12 img {
+  width: 20%;
+}
+.imgsocial {
+  width: 240%;
+}
+.imgAPP {
+  width: 130%;
+}
+.imgdowning {
+  width: 110%;
+}
+
+/* 拿掉透明月拋 */
+.nav-fill > li:nth-child(2) > .menufont > a:nth-child(-n + 4) {
+  display: none;
+}
+
+nav:nth-child(3) > a:nth-child(-n + 5) {
+  display: none;
+}
+.NAV-ICON li {
+  background-color: #fff !important;
+}
+/* 拿掉透明月拋 */
+
+@media screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+  }
+
+  .hr-line {
+    display: none;
+  }
+  .top-header {
+    display: none;
+  }
+
+  .NAV-ICON {
+    flex-direction: row !important;
+    position: fixed;
+    left: 60vw;
+    outline: none;
+  }
+
+  .logo {
+    position: absolute;
+    margin-left: 14%;
+    margin-top: -3%;
+    width: 7rem;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .footerDesktop {
+    display: none;
+  }
+
+  .IGtop {
+    margin-top: 10%;
+  }
+  .tab-content > .col-12 img {
+    width: 25%;
+  }
+  .imgsocial {
+    max-width: 80%;
+  }
+  .imgAPP {
+    width: 150%;
+  }
+  .imgdowning {
+    width: 120%;
+  }
+  .topCarousel {
+    padding-top: 15%;
+  }
+
+  .containTitle {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .dropdown-menu-right {
+    position: absolute !important;
+    margin-top: 10px;
+    width: 17rem;
+    left: -160px;
+    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  }
+
+  .menufont2 a:first-child {
     text-align: center;
     margin: auto;
     margin-top: 5px;
     font-size: 1.3rem;
     font-weight: 800;
-    color: #FFF;
-    width: 270px;
-    background-color: #71CAEA;
-}
+    color: #fff;
+    width: 15rem;
+    background-color: #71caea;
+  }
 
-.menufont2 a:last-child {
+  .menufont2 a:last-child {
     text-align: center;
     margin: auto;
     margin-top: 10px;
     font-size: 1.3rem;
     font-weight: 800;
-    color: #FFF;
-    width: 270px;
-    background-color: #019BD9;
-}
+    color: #fff;
+    width: 15rem;
+    background-color: #019bd9;
+  }
 
-.dropdown-menu-right2 a {
-    color: black;
-}
-
-.dropdown-menu-right2 {
+  .dropdown-menu-right2 {
+    position: absolute !important;
     margin-top: 10px;
-    width: 320px;
-    left: auto;
-    right: -80px;
+    width: 91vw;
+    left: -70vw;
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-}
+  }
 
-.dropdown-menu-right2 a:last-child {
-    text-align: center;
-    margin: auto;
-    margin-top: 25px;
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #FFF;
-    width: 290px;
-    background-color: #019BD9;
-}
+  .dropdown-menu-right3 {
+    position: absolute !important;
+    top: 38px;
+    width: 17rem;
+    left: -150px;
+    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  }
 
-.dropdown-menu-right2>.dropdown-item:last-child{
-    width: 90%;
-}
-
-.searchimg {
-    margin-left: 20px;
-    width: 20px;
-    padding-top: 5px;
-}
-
-.searchinput {
+  .searchinput {
+    width: 100%;
     border-width: 1px;
     border-radius: 30px;
     outline: none;
     text-align: center;
-}
+  }
 
-.searchbtn {
-    background-color: #069CD9;
-    color: #FFF;
+  .searchbtn {
+    background-color: #069cd9;
+    width: 80%;
+    color: #fff;
     border-width: 0px;
-    margin-left: 40%;
-    font-weight: 800;
     margin-top: 5%;
-}
+    margin-left: -15%;
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
 
-.dropdown-menu-right3 {
-    top: 52px;
-    width: 320px;
-    left: auto;
-    right: 20px;
-    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-}
-.tab-content>.col-12 img {
-    width:20%;
-}
-.imgsocial {
-    width: 240%;
-}
-.imgAPP{
-    width: 130%;
-}
-.imgdowning{
-    width: 110%;
-}
-
-/* 拿掉透明月拋 */
-.nav-fill>li:nth-child(2)>.menufont>a:nth-child(-n+4){
-    display: none;
-}
-
-nav:nth-child(3)>a:nth-child(-n+5){
-    display: none;
-}
-.NAV-ICON  li{
-   background-color:#FFF !important;
-   
-}
-/* 拿掉透明月拋 */
-
-@media screen and (max-width:768px) {
-    a {
-        text-decoration: none;
-    }
-    .bannerTop{
-        padding-top: 3.4rem
-    }
-    
-    .hr-line{
-        display: none;
-    }
-    .top-header {
-        display: none;
-    }
-
-    .NAV-ICON {
-        flex-direction: row !important;
-        position: fixed;
-        left: 60vw;
-        outline: none;
-    }
-
-    .logo {
-        position: absolute;
-        margin-left: 14%;
-        margin-top: -3%;
-        width: 7rem
-    }
-
-    .nav-mobile {
-        display: block;
-    }
-
-    .footerDesktop {
-        display: none
-    }
-
-    .IGtop{
-        margin-top: 10%;
-    }
-    .tab-content>.col-12 img {
-        width:25%;
-    }
-    .imgsocial {
-        max-width: 80%;
-    }
-    .imgAPP{
-        width: 150%;
-    }
-    .imgdowning{
-        width: 120%;
-    }
-    .topCarousel {
-        padding-top: 15%;
-    }
-
-    .containTitle {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .dropdown-menu-right {
-        position: absolute !important;
-        margin-top: 10px;
-        width: 17rem;
-        left: -160px;
-        box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-    }
-
-    .menufont2 a:first-child {
-        text-align: center;
-        margin: auto;
-        margin-top: 5px;
-        font-size: 1.3rem;
-        font-weight: 800;
-        color: #FFF;
-        width: 15rem;
-        background-color: #71CAEA;
-    }
-    
-    .menufont2 a:last-child {
-        text-align: center;
-        margin: auto;
-        margin-top: 10px;
-        font-size: 1.3rem;
-        font-weight: 800;
-        color: #FFF;
-        width: 15rem;
-        background-color: #019BD9;
-    }
-    
-
-    .dropdown-menu-right2 {
-        position: absolute !important;
-        margin-top: 10px;
-        width: 91vw;
-        left: -70vw;
-        height: 40vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-    }
-
-    .dropdown-menu-right3 {
-        position: absolute !important;
-        top: 38px;
-        width: 17rem;
-        left: -150px;
-        box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-    }
-
-    .searchinput {
-        width: 100%;
-        border-width: 1px;
-        border-radius: 30px;
-        outline: none;
-        text-align: center;
-    }
-    
-    .searchbtn {
-        background-color: #069CD9;
-        width: 80%;
-        color: #FFF;
-        border-width: 0px;
-        margin-top: 5%;
-        margin-left: -15%;
-        font-weight: 800;
-        font-size: 0.8rem;
-    }
-
-    .size {
-        margin-left: 5%;
-     
-    }
+  .size {
+    margin-left: 5%;
+  }
 }
 
 @media screen and (min-width: 769px) {
-    .footerMobile {
-        display: none;
-    }
+  .footerMobile {
+    display: none;
+  }
 }
-
-
 
 .overlay,
 .sideMenu {
-    position: fixed;
-    bottom: 0
+  position: fixed;
+  bottom: 0;
 }
 
 .overlay {
-    top: 0;
-    left: -100%;
-    right: 100%;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 998;
-    transition: all ease 0.2s
+  top: 0;
+  left: -100%;
+  right: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  transition: all ease 0.2s;
 }
 
 .overlay.open {
-    left: 0;
-    right: 0
+  left: 0;
+  right: 0;
 }
 
 .sidebarNavigation {
-    margin-bottom: 0;
-    z-index: 999;
-    justify-content: flex-start
+  margin-bottom: 0;
+  z-index: 999;
+  justify-content: flex-start;
 }
 
 .sidebarNavigation .leftNavbarToggler {
-    margin-right: 10px;
-    order: -1
+  margin-right: 10px;
+  order: -1;
 }
 
 .sideMenu {
-    left: -100%;
-    top: 52px;
-    transition: all ease 0.5s;
-    overflow: hidden;
-    width: 100%;
-    z-index: 999;
-    max-width: 80%;
-    margin-bottom: 0;
-    padding: 1rem
+  left: -100%;
+  top: 52px;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+  max-width: 80%;
+  margin-bottom: 0;
+  padding: 1rem;
 }
 
 .sideMenu.open {
-    left: 0;
-    display: block;
-    overflow-y: auto
+  left: 0;
+  display: block;
+  overflow-y: auto;
 }
 
 .sideMenu ul {
-    margin: 0;
-    padding: 0 15px
+  margin: 0;
+  padding: 0 15px;
 }
 
 .sideMenu2 {
-    left: -100%;
-    top: 52px;
-    transition: all ease 0.5s;
-    overflow: hidden;
-    width: 100%;
-    z-index: 9999;
-    max-width: 80%;
-    margin-bottom: 0;
-    padding: 1rem
+  left: -100%;
+  top: 52px;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width: 100%;
+  z-index: 9999;
+  max-width: 80%;
+  margin-bottom: 0;
+  padding: 1rem;
 }
 
 .sideMenu2.open {
-    left: 0;
-    display: block;
-    overflow-y: auto
+  left: 0;
+  display: block;
+  overflow-y: auto;
 }
 
 .sideMenu2 ul {
-    margin: 0;
-    padding: 0 15px
+  margin: 0;
+  padding: 0 15px;
 }
-
 
 /* ----------- iPhone 6 ----------- */
 
-
-
-
 @media screen and (max-width: 375px) {
-    body {
-        overflow: hidden;
-    }
+  body {
+    overflow: hidden;
+  }
 }
-
-
-
 
 /* ----------- iPad mini ----------- */
 
-
-
-
 @media screen and (max-width: 768px) {
-    body {
-        overflow: hidden;
-    }
+  body {
+    overflow: hidden;
+  }
+}
+
+/* -----------下記開始為修改後樣式---------- */
+/* PCnavbar主選單 */
+.myPCnavbar {
+  box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.2);
+  background-color: #fff;
+}
+
+.myPCnavbar .dropdown-menu {
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+}
+
+.myPCnavbar > .dropdown-item:focus,
+.dropdown-item:hover {
+  color: #0794cc;
+  background: transparent;
+  font-weight: 600;
+}
+.myPCnavbar > .dropdown-item.active,
+.dropdown-item:active {
+  background: #069cd9;
+  color: #fff;
+}
+
+/* myIconNavbar */
+.myIconNavbar {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+.myIconNavbar a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* PC板Navbar icon群 */
+/* Navbar member icon */
+.dropdown-menu-right {
+  width: 230px;
+  left: -200px;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+}
+.menufont2 a:first-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  color: #fff;
+  width: 200px;
+  background-color: #71caea;
+}
+.menufont2 a:last-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  color: #fff;
+  width: 200px;
+  background-color: #019bd9;
+}
+
+/* Navbar cart icon */
+.dropdown-menu-right2 {
+  width: 320px;
+  left: -300px;
+  height: 50vh;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.dropdown-menu-right2 a:last-child {
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  color: #fff;
+  width: 290px;
+  background-color: #019bd9;
+}
+/* navbar購物車商品計數 */
+.countCart {
+  top: 5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  background: #019bd9;
+  border-radius: 50%;
+  color: white;
+  font-size: 1px;
+  text-align: center;
+  opacity: 0.7;
+}
+.cartimg {
+  margin-left: 15px;
+  width: 70px;
+}
+.cart {
+  display: inline-block;
+  width: 140px;
+}
+
+.num {
+  color: #949494;
+  font-size: 12px;
+}
+.degree {
+  margin-left: 38%;
+  color: #949494;
+  font-size: 12px;
+}
+
+/* Navbar search icon */
+.dropdown-menu-right3 {
+  width: 320px;
+  left: -280px;
+  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+}
+.dropdown-menu-right3 > .form-inline > .form-control {
+  margin: auto;
+}
+.dropdown-menu-right3 > .form-inline > .btn-outline-primary {
+  border-color: #069cd9;
+  color: #069cd9;
+  margin: auto;
+}
+.dropdown-menu-right3 > .form-inline > .btn-outline-primary:hover {
+  background-color: #069cd9;
+  color: #ffffff;
+}
+
+/* 手機板主選單Navbar icon群 */
+@media screen and (max-width: 768px) {
+  /* Navbar member icon */
+  .dropdown-menu-right {
+    width: 230px;
+    left: -150px;
+    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  }
+  .menufont2 a:first-child {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    color: #fff;
+    width: 200px;
+    background-color: #71caea;
+  }
+  .menufont2 a:last-child {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    color: #fff;
+    width: 200px;
+    background-color: #019bd9;
+  }
+
+  /* Navbar cart icon */
+  .dropdown-menu-right2 {
+    width: 320px;
+    height: 50vh;
+    left: -250px;
+    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .dropdown-menu-right2 a:last-child {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    color: #fff;
+    width: 290px;
+    background-color: #019bd9;
+  }
+
+  /* Navbar search icon */
+  .dropdown-menu-right3 {
+    width: 300px;
+    left: -250px;
+    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
+  }
+  .dropdown-menu-right3 > .form-inline > .form-control {
+    margin: auto;
+    width: 65%;
+  }
+  .dropdown-menu-right3 > .form-inline > .btn-outline-primary {
+    border-color: #069cd9;
+    color: #069cd9;
+    margin: auto;
+  }
+  .dropdown-menu-right3 > .form-inline > .btn-outline-primary:hover {
+    background-color: #069cd9;
+    color: #ffffff;
+  }
+}
+
+/* 手機漢堡菜單按鈕 */
+.hamburgerContainer {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .hamburgerContainer {
+    display: block;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+
+  .hamburgerContainer > .data-menu-toggle {
+    outline: none;
+  }
+
+  .data-menu-toggle {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  /* 初始化样式 */
+  .data-menu-toggle .menu-bar,
+  .data-menu-toggle .menu-bar:before,
+  .data-menu-toggle .menu-bar:after {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: #4c4c4c;
+    transition: all ease-in-out 0.3s;
+  }
+  .data-menu-toggle .menu-bar.bar {
+    top: 12px;
+  }
+  .data-menu-toggle .menu-bar.bar:before {
+    content: "";
+    top: -12px;
+  }
+  .data-menu-toggle .menu-bar.bar:after {
+    content: "";
+    top: 12px;
+  }
+  /* 激活样式 */
+  .data-menu-toggle.active .bar {
+    background-color: transparent;
+  }
+  .data-menu-toggle.active .bar:before {
+    top: 0px;
+    transform: rotate(45deg);
+  }
+  .data-menu-toggle.active .bar:after {
+    top: 0px;
+    transform: rotate(-45deg);
+  }
+}
+
+.myPhoneMenu {
+  display: none;
+}
+
+/* 手機主選單側邊攔 */
+@media screen and (max-width: 991px) {
+  .myPhoneMenu {
+    display: block;
+    position: fixed;
+    top: 56px;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 99;
+  }
+  .myPhoneMenuShow {
+    transition: 0.5s;
+    opacity: 1;
+    left: 0px;
+  }
+  .myPhoneMenu > .card {
+    border: none;
+    border-radius: 0px;
+  }
+  .myPhoneMenu > .card > .card-header {
+    border: none;
+    margin-top: 0px;
+    padding: 1rem 1.25rem;
+  }
+  .myPhoneMenu > .card > .card-header > .btn-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+  }
+  .myPhoneMenu > .card > .card-header > .btn-link:hover {
+    color: #0794cc;
+    font-weight: 600;
+  }
+  .myPhoneMenu > .card > .card-header > .btn-link:focus {
+    color: #0794cc;
+    font-weight: 600;
+  }
+
+  .myPhoneMenu > .card > .card-header > .btn-link > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .myPhoneMenu > .card > .card-header > .btn-link:hover a {
+    color: #0794cc;
+    font-weight: 600;
+  }
+  .myPhoneMenu > .card > .card-header > .btn-link:focus a {
+    color: #0794cc;
+    font-weight: 600;
+  }
+
+  .styleListNone {
+    padding: 0rem;
+  }
+  .styleListNone li {
+    list-style: none;
+    padding: 0.8rem 1.25rem;
+  }
+  .styleListNone li > a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .styleListNone > li:hover a {
+    color: #0794cc;
+  }
+  .styleListNone > li:active a {
+    color: #0794cc;
+  }
 }
