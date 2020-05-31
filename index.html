@@ -18,7 +18,6 @@
     <!-- font awesome -->
     <link href="./css/all.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -36,8 +35,7 @@
                 </div>
                 <!-- 星歐LOGO -->
                 <a class="navbar-brand " href="index.html">
-                    <img src="img/logo.png" width="120" class="d-inline-block align-top" alt="logo"
-                        loading="lazy">
+                    <img src="img/logo.png" width="120" class="d-inline-block align-top" alt="logo" loading="lazy">
                 </a>
             </div>
             <!-- 主選單 -->
@@ -239,7 +237,8 @@
                         <span><i class="fas fa-chevron-circle-down"></i></span>
                     </button>
                 </div>
-                <div id="collapsePhoneNavThree" class="collapse" aria-labelledby="headingThree" data-parent="#myPhoneMenu">
+                <div id="collapsePhoneNavThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#myPhoneMenu">
                     <div class="card-body styleListNone">
                         <li><a href="member.html">會員頁面</a></li>
                         <li><a href="member_info.html">服務條款</a></li>
@@ -255,7 +254,8 @@
                         <span><i class="fas fa-chevron-circle-down"></i></span>
                     </button>
                 </div>
-                <div id="collapsePhoneNavFour" class="collapse" aria-labelledby="headingFour" data-parent="#myPhoneMenu">
+                <div id="collapsePhoneNavFour" class="collapse" aria-labelledby="headingFour"
+                    data-parent="#myPhoneMenu">
                     <div class="card-body styleListNone">
                         <li><a href="location.html">眼鏡行合作門市</a></li>
                         <li><a href="location1.html">屈臣氏合作門市</a></li>
@@ -274,7 +274,8 @@
                         <span><i class="fas fa-chevron-circle-down"></i></span>
                     </button>
                 </div>
-                <div id="collapsePhoneNavFive" class="collapse" aria-labelledby="headingFive" data-parent="#myPhoneMenu">
+                <div id="collapsePhoneNavFive" class="collapse" aria-labelledby="headingFive"
+                    data-parent="#myPhoneMenu">
                     <div class="card-body styleListNone">
                         <li><a href="order_info.html">配送說明</a></li>
                         <li><a href="#" data-toggle="modal" data-target="#detailModal">配送清單</a></li>
@@ -1194,6 +1195,17 @@
     </script>
     <script src="js/classie.js"></script>
     <script src="js/sider.js"></script>
+    <script src="js/swipe.js"></script>
+    <script>
+        $(function () {
+            var $myCarousel = $(".carousel-inner").swiperight(function () {
+                $myCarousel.carousel('prev');
+            }).swipeleft(function () {
+                $myCarousel.carousel('next');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
