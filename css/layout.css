@@ -9,6 +9,10 @@ body {
   font-family: Microsoft JhengHei !important;
 }
 
+a {
+  color: black;
+}
+
 .nav_location li {
   padding: 0 0;
   background-color: #fafafa;
