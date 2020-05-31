@@ -631,9 +631,9 @@ nav:nth-child(3) > a:nth-child(-n + 5) {
 
   /* Navbar cart icon */
   .dropdown-menu-right2 {
-    width: 320px;
+    width: 280px;
     height: 50vh;
-    left: -250px;
+    left: -230px;
     box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
     overflow-y: auto;
     overflow-x: hidden;
@@ -643,7 +643,6 @@ nav:nth-child(3) > a:nth-child(-n + 5) {
     margin: auto;
     margin-top: 25px;
     color: #fff;
-    width: 290px;
     background-color: #019bd9;
   }
 
