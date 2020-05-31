@@ -22,7 +22,7 @@
     <header>
         <!-- PC主選單 -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top myPCnavbar">
-            <div class="d-flex" style="width:170px">
+            <div class="d-flex align-items-center" style="width:170px">
                 <!-- 手機漢堡按鈕 -->
                 <div class="hamburgerContainer">
                     <button data-toggle="collapse-side" data-target-sidebar=".side-collapse-left"
@@ -33,7 +33,7 @@
                 </div>
                 <!-- 星歐LOGO -->
                 <a class="navbar-brand " href="index.html">
-                    <img src="img/logo.png" width="120" height="30" class="d-inline-block align-top" alt="logo"
+                    <img src="img/logo.png" width="120" class="d-inline-block align-top" alt="logo"
                         loading="lazy">
                 </a>
             </div>
@@ -106,7 +106,7 @@
                 <ul class="d-flex flex-row myIconNavbar">
                     <li class="dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink_login" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none">
                             <i class="fas fa-user"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right menufont2"
@@ -118,7 +118,7 @@
                     <li class="dropdown">
                         <a class="nav-link position-relative" href="#" id="navbarDropdownMenuLink_cart" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            style="padding:0.5rem 0px">
+                            style="padding:0.5rem 0px;outline: none">
                             <i class="fas fa-shopping-cart"></i>
                             <div class="countCart position-absolute">4</div>
                         </a>
@@ -167,7 +167,7 @@
                     </li>
                     <li class="dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink_search" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none">
                             <i class="fas fa-search"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right3" aria-labelledby="navbarDropdownMenuLink_search">
@@ -654,10 +654,9 @@
             </div>
         </div>
     </div>
+ 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row footer">
-            <!-- <div class="col-1">
-            </div> -->
             <div class="col-md-3 footerDesktop">
                 <h5 class="black">公司資訊</h5>
                 <ul class="list-unstyled text-small">
@@ -690,85 +689,77 @@
             </div>
             <div class="col-md-2 col-4">
                 <h5 class="black">官方社群</h5>
-                <div class="row">
-                    <div class="col-12 col-md-3 appIcon">
+                <div class="row flex-column">
+                    <div class="appIcon" style="margin:0px 15px">
                         <a href="https://www.facebook.com/Larganmedical" target="_blank">
-                            <img src="img/首頁_頁腳ICON_FB.png" class="imgsocial" alt="logo">
+                            <img src="img/首頁_頁腳ICON_FB.png" width="50" alt="logo">
                         </a>
                     </div>
-                    <div class="col-12 col-md-2"></div>
-                    <div class="col-12 col-md-3 IGtop appIcon">
+                    <div class="appIcon" style="margin:15px">
                         <a href="https://www.instagram.com/largan.medical/?hl=zh-tw" target="_blank">
-                            <img src="img/首頁_頁腳ICON_IG.png" width="100" class="imgsocial" alt="logo">
+                            <img src="img/首頁_頁腳ICON_IG.png" width="50" alt="logo">
                         </a>
                     </div>
-                    <div class="col-12 col-md-4"></div>
                 </div>
-
             </div>
             <div class="col-md-3 col-xs-12" id="APPDOWNING">
                 <h5 class="black">APP下載</h5>
                 <div class="row">
-                    <div class="col-3">
-                        <img src="img/首頁_頁腳ICON_APP.png" class="imgAPP" alt="logo">
+                    <div class="d-flex flex-wrap">
+                        <div style="padding:0px 15px;">
+                            <img src="img/首頁_頁腳ICON_APP.png" width="50" alt="logo">
+                        </div>
+                        <div style="padding-left: 15px;">
+                            <span>星歐光學-專業隱形眼鏡</span>
+                            <br>
+                            <span>Largan Contact lens</span>
+                        </div>
                     </div>
-                    <div class="col">
-                        <p class="black size">星歐光學-專業隱形眼鏡</p>
-                        <a class="black size">Largan Contact lens</a>
+                    <div class="d-flex flex-wrap">
+                        <div class="appIcon" style="padding: 15px 15px 0px 15px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
+                            </a>
+                        </div>
+                        <div class="appIcon" style="padding: 15px 0px 0px 15px;">
+                            <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-5 appIcon">
-                        <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical" target="_blank">
-                            <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" class="imgdowning" alt="logo">
-                        </a>
+                    <div class="d-flex flex-wrap">
+                        <div style="padding:0px 15px;">
+                            <img src="img/首頁_頁腳ICON_APP2.jpg" width="50" alt="logo">
+                        </div>
+                        <div style="padding-left: 15px;">
+                            <span>星歐x藥妝通路</span>
+                            <br>
+                            <span>星歐光學</span>
+                        </div>
                     </div>
-                    <div class="col-5 appIcon">
-                        <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950" target="_blank">
-                            <img src="img/首頁_頁腳下載按鈕_IOS.png" class="imgdowning" alt="logo">
-                        </a>
+                    <div class="d-flex flex-wrap">
+                        <div class="appIcon" style="padding: 15px 15px 0px 15px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.largan.larganxwatsons"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
+                            </a>
+                        </div>
+                        <div class="appIcon" style="padding: 15px 0px 0px 15px;">
+                            <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90x%E8%97%A5%E5%A6%9D%E9%80%9A%E8%B7%AF/id1367087901"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-2"></div>
                 </div>
-                <br />
-                <div class="row">
-                    <div class="col-3">
-                        <img src="img/首頁_頁腳ICON_APP2.jpg" class="imgAPP" alt="logo">
-                    </div>
-                    <div class="col">
-                        <p class="black size">星歐x藥妝通路</p>
-                        <a class="black size">星歐光學</a>
-                    </div>
-
-                </div>
-                <br />
-                <div class="row">
-                    <div class="col-5 appIcon">
-                        <a href="https://play.google.com/store/apps/details?id=com.largan.larganxwatsons" target="_blank">
-                            <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" class="imgdowning" alt="logo">
-                        </a>
-                    </div>
-                    <div class="col-5 appIcon">
-                        <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90x%E8%97%A5%E5%A6%9D%E9%80%9A%E8%B7%AF/id1367087901" target="_blank">
-                            <img src="img/首頁_頁腳下載按鈕_IOS.png" class="imgdowning" alt="logo">
-                        </a>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-                <br />
-
-                <!-- <div class="row">
-                    <div class="col">
-                        <img src="img/首頁_頁腳QR_GOOGLE.png" class="img-fluid" alt="logo">
-                    </div>
-                    <div class="col">
-                        <img src="img/首頁_頁腳QR_IOS.png" class="img-fluid" alt="logo">
-                    </div>
-                </div> -->
             </div>
-
-            <div class="col-12 footerMobile">
+            <br />
+            <div class="col-12 footerMobile mt-4">
                 <h5 class="black">公司資訊</h5>
                 <ul class="list-unstyled text-small">
                     <li>星歐光學股份有限公司</li>
@@ -778,18 +769,17 @@
                     <li>服務時間：週一至週五 | AM 8:30~PM 5:00</li>
                 </ul>
             </div>
-            <!-- <div class="col-1">
-            </div> -->
+
         </div>
         <hr style="border-top: 2px solid">
         <div class="row footer">
             <!-- <div class="col-1"></div> -->
             <div class="col-md-5 col-xs-12">
                 <ul class="list-unstyled text-small">
-                        <li>●衛部醫器製字第005309號、衛部醫器製字第005317號</li>
-                        <li>●衛部醫器製字第006096號、中市衛器廣字第10902020號</li>
-                        <li>●中市衛器廣字第10812295號、中市衛器廣字第10903031號</li>
-                        <li>●中市衛器廣字第10905040號</li>
+                    <li>●衛部醫器製字第005309號、衛部醫器製字第005317號</li>
+                    <li>●衛部醫器製字第006096號、中市衛器廣字第10902020號</li>
+                    <li>●中市衛器廣字第10812295號、中市衛器廣字第10903031號</li>
+                    <li>●中市衛器廣字第10905040號</li>
                 </ul>
             </div>
             <div class="col-md-6 col-xs-12">
@@ -811,6 +801,7 @@
             <div class="col-1"></div>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
