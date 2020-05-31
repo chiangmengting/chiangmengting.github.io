@@ -750,6 +750,8 @@ nav:nth-child(3) > a:nth-child(-n + 5) {
     transition: 0.5s;
     opacity: 1;
     left: 0px;
+    height: 100%;
+    overflow: scroll;
   }
   .myPhoneMenu > .card {
     border: none;
