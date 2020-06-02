@@ -1,109 +1,201 @@
-body{
-    font-family:Microsoft JhengHei !important;
-}
-.centerwidth{
-    max-width: 35rem !important;
-    padding-bottom: 0px !important;
-}
-.form-groupunder{
-    padding-bottom: 0px !important;
-    margin-bottom: 0px !important;  
-}
-.card {
-    border: 1px solid #28a745;
-}
-.card-login {
-    /* margin-top: 130px; */
-    padding: 18px;
-    max-width: 30rem;
+.myLoginAndSign .modal-content{
+   border-radius: 20px;
+   background: #e9ecef;
 }
 
-.card-header {
-    color: #fff;
-    /*background: #ff0000;*/
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 600 !important;
-    margin-top: 10px;
-    border-bottom: 0;
+
+.my-form-modal {
+  position: relative;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-.input-group-prepend1 span{
-    width: 50px;
-    background-color: #1770b7;
-    color: #fff;
-    border:0 !important;
+.my-form-modal button {
+  cursor: pointer;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1em;
+  z-index: 2;
+  outline: none;
+  background: #fff;
+  transition: 0.2s;
 }
 
-input:focus{
-    outline: 0 0 0 0  !important;
-    box-shadow: 0 0 0 0 !important;
+.my-form-modal .btn {
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.8em 1em 0.8em 1em !important;
+  transition: 0.5s;
+  border: 1px solid #ebebeb;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
-.login_btn{
-    width: 100%;
-    text-align: center;
+.my-form-modal .btn i {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
 }
 
-.login_btn:hover{
-    color: #fff;
-    background-color: #ff0000;
+.my-form-modal .login,
+.my-form-modal .signup {
+  background: #80cdec;
+  color: #fff;
 }
 
-.btn-outline-danger {
-    color: #fff;
-    font-size: 18px;
-    background-color: #1770b7;
-    background-image: none;
-    border-color: #1770b7;
+.my-form-modal .login:hover,
+.my-form-modal .signup:hover {
+  background: #019bd9;
 }
 
-.form-control1 {
-    display: block;
-    width: 100%;
-    height: calc(2.25rem + 20px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #1770b7;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 1px solid #1770b7;
-    border-radius: 0;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.my-form-toggle {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.input-group-text1 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0.375rem 0.75rem;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.6;
-    color: #495057;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
-    border-radius: 0;
+.my-form-toggle button {
+  width: 50%;
+  float: left;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border: none;
+  transition: 0.2s;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-.under{
-    padding-top: 10px;
+.my-form-toggle button:nth-child(1) {
+  border-bottom-right-radius: 20px;
 }
-.under1{
-    margin-top: 10%;
+
+.my-form-toggle button:nth-child(2) {
+  border-bottom-left-radius: 20px;
+}
+
+#login-toggle {
+  background: #019bd9;
+  color: #ffff;
+}
+
+.my-form-modal form {
+  position: relative;
+  width: 90%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#login-form,
+#signup-form {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1em;
+}
+
+#signup-form {
+  display: none;
+}
+
+#login-form button,
+#signup-form button {
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 0.6em;
+}
+
+.my-form-modal #login-form input {
+  position: relative;
+  width: 100%;
+  font-size: 1em;
+  padding: 1.2em 1.7em 1.2em 1.7em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border-radius: 20px;
+  border: none;
+  background: #ebebeb;
+  outline: none;
+  font-weight: bold;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.my-form-modal #signup-form input {
+   position: relative;
+   width: 95%;
+   font-size: 1em;
+   padding-left: 1rem;
+   border-radius: 20px;
+   border: none;
+   background: #ebebeb;
+   outline: none;
+   font-weight: bold;
+   transition: 0.4s;
+   box-sizing: border-box;
+   margin-left: 15px;
  }
-.under2{
-   margin-top: 0;
+
+.my-form-modal input:focus,
+.my-form-modal input:active {
+  transform: scaleX(1.02);
+}
+
+.my-form-modal input::-webkit-input-placeholder {
+  color: #222;
+}
+
+.my-form-modal p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.my-form-modal p a {
+  color: #019bd9;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.my-form-modal p a:hover {
+  color: #222;
+}
+
+.my-form-modal i {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateX(-10%) translateY(-50%);
 }
 
 
-@media screen and (max-width: 375px) {
-    .fromsize {
-        width: 15rem;
-    }
+#signup-form .noticeText {
+  font-size: 12px;
+  color: rgb(240, 157, 33);
+   line-height: 17.6px;
+}
+
+@media only screen and (max-width: 500px) {
+  .my-form-modal {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  i {
+    display: none !important;
+  }
 }

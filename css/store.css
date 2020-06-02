@@ -16,23 +16,47 @@ span.txt {
   padding-top: 20px;
 }
 
-.sideBar {
+
+.sideBar.card {
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin-left: 10%;
+  border-radius: 0%;
 }
 
-.sideBar .card {
-  border: none;
+.sideBar.card .card-header{
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-.sideBar .card .card-header{
+.sideBar.card li{
+  cursor: pointer;
+}
+
+.sideBar.card li:hover{
+  color: #0794cc;
+  font-weight: 600;
+}
+
+.sideBar.card li:focus{
+  color: #0794cc;
+  font-weight: 600;
+  outline: none;
+}
+
+.sideBar.card li:active{
+  color: #0794cc;
+  font-weight: 600;
+}
+
+
+/* .sideBar .card .card-header{
   margin-top:0px;
   padding: 1rem
-}
+} */
 
-.sideBar .card .card-header .btn{
+/* .sideBar .card .card-header .btn{
   padding: 0px;
-}
+} */
 
 
 
