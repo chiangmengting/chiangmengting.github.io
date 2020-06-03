@@ -1,0 +1,38 @@
+.myForget {
+  margin: 50px auto;
+}
+
+.myForget .card {
+  background-color: rgb(240, 240, 240);
+}
+
+.myForget .card .card-body {
+  padding: 5vw;
+}
+
+.myForget .card .title {
+  font-size: 1.75rem;
+}
+
+.myForget .card .card-body input {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.myForget .card .card-body button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: #80cdec;
+  color: #fff;
+}
+.myForget .card .card-body button:hover {
+  background: #019bd9;
+}
+
+.myForget .card .card-body input:focus,
+.myForget .card .card-body input:active {
+  transform: scaleX(1.02);
+}

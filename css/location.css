@@ -12,7 +12,6 @@ span.txt{
 .sideBar {
     border: 1px solid rgba(0, 0, 0, .125);
     margin-left: 10%;
-    margin-right: 20%;
 }
 
 .sideBar a {
@@ -25,7 +24,7 @@ span.txt{
 }
 
 .storeSlider {
-    padding-left: 3rem;
+    padding-left: 30px;
 }
 .hr-line{
     border-top: 2px solid #D4D4D4;
@@ -37,6 +36,10 @@ span.txt{
 
 .backColor {
     background-color: rgba(233, 233, 233, 0.486);
+}
+
+.backColor:hover{
+    background-color:rgba(233, 233, 233, 0.904);
 }
 
 .location-container {
@@ -155,7 +158,7 @@ select.travel-form3 {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:990px) {
     .col-12{
         padding-right: 0px;
     }

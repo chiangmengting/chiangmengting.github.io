@@ -227,8 +227,6 @@ a {
 }
 /* navbar購物車商品計數 */
 .countCart {
-  top: 5px;
-  right: -5px;
   width: 15px;
   height: 15px;
   background: #019bd9;
