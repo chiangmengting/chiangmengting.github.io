@@ -103,17 +103,17 @@
             <div class="d-flex">
                 <ul class="d-flex flex-row myIconNavbar">
                     <li class="dropdown">
-                        <a class="nav-link navbarLoginIcon" type="button" class="btn btn-primary" data-toggle="modal"
+                        <a class="nav-link navbarLoginIcon" class="btn btn-primary" data-toggle="modal"
                             data-target="#Login">
                             <i class="fas fa-user"></i>
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a class="nav-link position-relative" href="#" id="navbarDropdownMenuLink_cart" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            style="padding:0.5rem 0px;outline: none">
+                        <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownMenuLink_cart"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="padding:0px 0px 0px 3px;outline: none;height: 100%;">
                             <i class="fas fa-shopping-cart"></i>
-                            <div class="countCart position-absolute">4</div>
+                            <div class="countCart">4</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right2" aria-labelledby="navbarDropdownMenuLink_cart">
                             <span title="Select this card">
@@ -286,6 +286,9 @@
 
                 <div class="modal-body">
                     <div class="my-form-modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         <div class="my-form-toggle">
                             <button id="login-toggle" onclick="toggleLogin()">會員登入</button>
                             <button id="signup-toggle" onclick="toggleSignup()">加入會員</button>
@@ -293,10 +296,10 @@
 
                         <div id="login-form">
                             <form>
-                                <input type="email" placeholder="Email" />
-                                <input type="password" placeholder="Password" />
+                                <input type="text" placeholder="帳號" />
+                                <input type="password" placeholder="密碼" />
                                 <button type="button" class="btn login">登入帳號</button>
-                                <p><a href="javascript:void(0)">忘記密碼了嗎?</a></p>
+                                <p><a href="forget.html">忘記密碼了嗎?</a></p>
                                 <hr />
                                 <button type="button" class="btn d-flex justify-content-center align-items-center">
                                     <img src="img/login/ICON-GOOGLE.png" width="40" alt="logo" loading="lazy">
@@ -306,6 +309,10 @@
                                     <img src="img/login/ICON-FB.png" width="40" alt="logo" loading="lazy">
                                     <span> 使用Facebook帳號登入</span>
                                 </button>
+                                <button type="button" class="btn d-flex justify-content-center align-items-center">
+                                    <img src="img/login/ICON-LINE.png" width="40" alt="logo" loading="lazy">
+                                    <span> 使用Line帳號登入</span>
+                                </button>
                             </form>
                         </div>
 
@@ -313,14 +320,14 @@
                             <form>
 
                                 <div class="mb-2">
-                                    <label for="email">登入帳號</label>
+                                    <label for="account">登入帳號</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="email" placeholder="請輸入Email" id="email" required />
+                                    <input type="text" placeholder="請輸入帳號" id="account" required />
                                 </div>
                                 <div class="mb-2">
                                     <label for="password1">登入密碼</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="password" placeholder="密碼長度最少需六個字" id="password1" pattern="[0-9]{6}"
+                                    <input type="password" placeholder="密碼長度最少6個字元" id="password1" pattern="[0-9]{6}"
                                         required />
                                 </div>
                                 <div class="mb-2">
@@ -332,6 +339,11 @@
                                     <label for="memberName">會員姓名</label>
                                     <span class="noticeText">《必填》</span>
                                     <input type="text" placeholder="請填寫中文姓名" id="memberName" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="memberEmail">E-Mail</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="email" placeholder="請填寫E-Mail" id="memberEmail" required />
                                 </div>
                                 <div class="mb-2">
                                     <label for="memberPhone">行動電話</label>
@@ -350,6 +362,9 @@
                                 <div class="mb-2">
                                     <label for="rightEye">右眼度數</label>
                                     <input type="number" id="rightEye" />
+                                </div>
+                                <div class="m-2">
+                                    <span >※註冊表示同意<a class="agreeText" href="member_info.html">《服務條款》</a></span>
                                 </div>
 
                                 <hr>

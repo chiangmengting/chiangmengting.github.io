@@ -8,13 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>星歐獨家系列</title>
+    <title>重新設定帳戶密碼</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/layout.css">
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link rel="stylesheet" type="text/css" href="./css/component.css" />
-    <link rel="stylesheet" type="text/css" href="./css/store.css" />
+    <link rel="stylesheet" type="text/css" href="./css/member.css" />
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/forget.css" />
 </head>
 
 <body>
@@ -378,393 +379,29 @@
         </div>
     </div>
 
-    <!-- 商品明細彈出視窗 -->
-    <div class="modal fade" id="detailModal3" tabindex="-1" role="dialog" aria-labelledby="detailModalTitle"
-        aria-hidden="true">
-        <div class="row justify-content-center align-items-center ">
-            <div class="modal-dialog modal-dialog-scrollable modalWidth" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                        </li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                        data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                        data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 tab-content" id="nav-tabContent">
-                                <div class="col-12">
-                                    <a class="font-weight-bold black" style="font-size: 1.4rem">AQUA SUPER
-                                        彩色日拋軟性隱形眼鏡10片裝自然棕#509</a><br />
-                                    <a class="text-secondary" style="font-size: 1.2rem">#新品上市優惠</a>
-
-                                    <br />
-                                    <br />
-
-                                    <img src="img/讚.png" class="img-fluid" alt="logo">
-                                    <img src="img/分享.png" class="img-fluid" alt="logo">
-
-                                    <div class="mt-3">
-                                        <a class="font-weight-bold black" style="font-size: 1.4rem">
-                                            <img src="img/首頁_頁腳ICON_APP.png" style="width: 15%" alt="logo">
-                                            以APP預約取件
-                                        </a>
-                                    </div>
-
-                                    <div class="mt-3">
-                                        <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical"
-                                            target="_blank">
-                                            <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" class="appIcon" style="width: 30%"
-                                                alt="logo">
-                                        </a>
-                                        <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950"
-                                            target="_blank">
-                                            <img src="img/首頁_頁腳下載按鈕_IOS.png" class="appIcon" style="width: 30%"
-                                                alt="logo">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br />
-
-                        <nav class="tab">
-                            <div class="nav nav-tabs nonBorder" id="nav-tab" role="tablist">
-                                <a class="active" id="nav-introduce-tab" style="margin-left:5%; display: none"
-                                    data-toggle="tab" href="#nav-introduce" role="tab" aria-controls="nav-introduce"
-                                    aria-selected="true">商品介紹</a>
-                                <a class="" id="nav-format-tab" data-toggle="tab" href="#nav-format"
-                                    style="display: none" role="tab" aria-controls="nav-format"
-                                    aria-selected="false">產品規格</a>
-                                <a class="" id="nav-question-tab" data-toggle="tab" href="#nav-question"
-                                    style="display: none" role="tab" aria-controls="nav-question"
-                                    aria-selected="false">購物說明</a>
-                            </div>
-                        </nav>
-
-                        <hr>
-
-                        <!-- 切換頁 -->
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active storeDetail" id="nav-introduce" role="tabpanel"
-                                aria-labelledby="nav-introduce-tab">
-                                <div class="row">
-                                    <div class="col-12 storeDetailTitle">
-                                        <a class="font-weight-bold ">商品介紹</a><br />
-                                    </div>
-                                    <div class="col-12">
-                                        <img src="img/store/自然褐棕.png" class="img-fluid tab-content-img" alt="...">
-                                    </div>
-                                    <div class="col-12 storeDetailTitle">
-                                        <a class="font-weight-bold">注意事項</a><br />
-                                    </div>
-                                    <div class="col-12 storeDetailText">
-                                        <a class="text-secondary">警語：</a><br />
-                                        <a class="text-secondary">(一)配戴一般隱形眼鏡須經眼科醫師或合格驗光人員驗光配鏡，並定期接受眼科醫師追蹤檢查。</a><br />
-                                        <a
-                                            class="text-secondary">(二)本器材不得逾中文仿單建議之最長時數、不得重複配戴，於就寢前務必取下，以免感染及潰傷。</a><br />
-                                        <a class="text-secondary">(三)如有不適，應立即就醫</a><br />
-                                        <a class="text-secondary">許可證字號：衛部醫器製字第005309號 / 中市衛器廣字第100902020號</a><br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 切換頁 -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 表頭 -->
-    <div class="row bannerTop">
-        <div class="col-12" style="text-align: center;">
-            <img class="img-fluid" src="img/store/star/item_top.jpg" style="width:100%" />
-        </div>
-    </div>
-
     <div class="order">
         <span class="line"></span>
-        <span class="h3 txt">星歐</span>
+        <span class="h3 txt">重新設定帳戶密碼</span>
         <span class="line"></span>
-        <hr class="hr-line">
+        <hr class="member_hr-line">
     </div>
 
-    <!-- 商品列表 -->
-    <div class="col-12">
-        <div class="row">
-            <!-- 側邊攔 -->
-            <div class="col-md-3 top-header">
-                <div class="card sideBar">
-                    <div class="card-header">
-                        星歐獨家系列產品
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">透明日拋</li>
-                        <li class="list-group-item">透明月拋</li>
-                        <li class="list-group-item">彩色月拋</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 myStoreProducts">
-                <div class="row contain">
-                    <!-- 修改後產品樣式 -->
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/星歐_產品主圖_星歐_日拋白片10片.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center">
-                                <div class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="d-flex justify-content-center align-items-center flex-wrap">
-                                        <img src="img/首頁_頁腳ICON_APP.png" width="20%" alt="logo">
-                                        <span class="m-2 font-weight-bold">以APP預約取件</span>
-                                    </a>
-                                    <div class="storeIcon">
-                                        <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical"
-                                            target="_blank" class="appIcon">
-                                            <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="95%" alt="logo">
-                                        </a>
-                                        <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950"
-                                            target="_blank" class="appIcon">
-                                            <img src="img/首頁_頁腳下載按鈕_IOS.png" width="95%" alt="logo">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none;">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/星歐_產品主圖_星歐_日拋彩片10片_彩蝶綠＃358.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center;">
-                                <p class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="text-danger" style="font-size: 1.2rem">NT$220元</a><br />
-                                    <a class="text-secondary"><del>NT$250元</del></a>
-                                </p>
-                                <select class="form-control">
-                                    <option>100度</option>
-                                </select>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">-</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="text" class="form-control" value="1" />
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">+</span>
-                                    </div>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-outline-info buttonRadius">加入清單</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none;">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/星歐_產品主圖_星歐_日拋彩片10片_氣泡咖啡126B-H.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center;">
-                                <p class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="text-danger" style="font-size: 1.2rem">NT$220元</a><br />
-                                    <a class="text-secondary"><del>NT$250元</del></a>
-                                </p>
-                                <select class="form-control">
-                                    <option>100度</option>
-                                </select>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">-</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="text" class="form-control" value="1" />
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">+</span>
-                                    </div>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-outline-info buttonRadius">加入清單</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none;">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/星歐_產品主圖_星歐_日拋彩片10片_棉花蜜糖133B-F.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center;">
-                                <p class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="text-danger" style="font-size: 1.2rem">NT$220元</a><br />
-                                    <a class="text-secondary"><del>NT$250元</del></a>
-                                </p>
-                                <select class="form-control">
-                                    <option>100度</option>
-                                </select>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">-</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="text" class="form-control" value="1" />
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">+</span>
-                                    </div>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-outline-info buttonRadius">加入清單</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none;">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/經典棕.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center;">
-                                <p class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="text-danger" style="font-size: 1.2rem">NT$220元</a><br />
-                                    <a class="text-secondary"><del>NT$250元</del></a>
-                                </p>
-                                <select class="form-control">
-                                    <option>100度</option>
-                                </select>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">-</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="text" class="form-control" value="1" />
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">+</span>
-                                    </div>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-outline-info buttonRadius">加入清單</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-4 containProduct">
-                        <div class="card" style="border: none;">
-                            <a class="font-weight-bold" data-toggle="modal" data-target="#detailModal3"><img
-                                    src="img/store/star/星歐_產品主圖_星歐_日拋彩片10片_氣泡咖啡126B-H.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-bodyin" style="text-align: center;">
-                                <p class="card-text">
-                                    <a class="font-weight-bold" data-toggle="modal"
-                                        data-target="#detailModal3">星歐日拋軟性隱形眼鏡10片裝</a><br />
-                                    <a class="font-weight-bold">(全家取貨)</a><br />
-                                    <a class="text-secondary" style="font-size: small">新品上市優惠</a><br />
-                                    <a class="text-danger" style="font-size: 1.2rem">NT$220元</a><br />
-                                    <a class="text-secondary"><del>NT$250元</del></a>
-                                </p>
-                                <select class="form-control">
-                                    <option>100度</option>
-                                </select>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">-</span>
-                                    </div>
-                                    <div class="custom-file">
-                                        <input type="text" class="form-control" value="1" />
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">+</span>
-                                    </div>
-                                </div>
-                                <br />
-                                <button type="button" class="btn btn-outline-info buttonRadius">加入清單</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="container myForget">
+        <div class="card">
+            <div class="card-body">
+                <form class="d-flex flex-column justify-content-center">
+                    <span class="text-center font-weight-bold title">請輸入您的電子郵件</span>
+                    <span class="text-center font-weight-bold title">我們將會寄送「重新設定密碼」連結給您進行密碼設定</span>
+                    <label class="mt-3 font-weight-bold" for="email">註冊信箱</label>
+                    <input class="form-control mt-2" type="email" placeholder="請輸入您註冊的Email" id="email" required />
+                    <button type="submit" class="btn p-2" style="width: 30vw;margin: 30px auto;">確定送出</button>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- pagination -->
-    <div class="col-12">
-        <div class="row justify-content-center align-items-center">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <footer class="pt-4 mt-3 border-top">
         <div class="row footer">
             <div class="col-md-3 footerDesktop">
                 <h5 class="black">公司資訊</h5>
