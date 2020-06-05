@@ -13,8 +13,8 @@
     <link rel="stylesheet" type="text/css" href="./css/layout.css">
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link rel="stylesheet" type="text/css" href="./css/component.css" />
-    <link rel="stylesheet" type="text/css" href="./css/member.css" />
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/member.css" />
 </head>
 
 <body>
@@ -296,8 +296,8 @@
 
                         <div id="login-form">
                             <form>
-                                <input type="text" placeholder="帳號" />
-                                <input type="password" placeholder="密碼" />
+                                <input type="text" id="loginAccount" placeholder="帳號" />
+                                <input type="password" id="loginPassword" placeholder="密碼" />
                                 <button type="button" class="btn login">登入帳號</button>
                                 <p><a href="forget.html">忘記密碼了嗎?</a></p>
                                 <hr />
@@ -320,51 +320,52 @@
                             <form>
 
                                 <div class="mb-2">
-                                    <label for="account">登入帳號</label>
+                                    <label for="signupAccount">登入帳號</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="text" placeholder="請輸入帳號" id="account" required />
+                                    <input type="text" placeholder="請輸入帳號" id="signupAccount" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="password1">登入密碼</label>
+                                    <label for="signupPassword1">登入密碼</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="password" placeholder="密碼長度最少6個字元" id="password1" pattern="[0-9]{6}"
-                                        required />
+                                    <input type="password" placeholder="密碼長度最少6個字元" id="signupPassword1"
+                                        pattern="[0-9]{6}" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="password2">驗證密碼</label>
+                                    <label for="signupPassword2">驗證密碼</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="password" placeholder="再次輸入密碼" id="password2" required />
+                                    <input type="password" placeholder="再次輸入密碼" id="signupPassword2" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="memberName">會員姓名</label>
+                                    <label for="signupName">會員姓名</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="text" placeholder="請填寫中文姓名" id="memberName" required />
+                                    <input type="text" placeholder="請填寫中文姓名" id="signupName" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="memberEmail">E-Mail</label>
+                                    <label for="signupEmail">電子信箱</label>
                                     <span class="noticeText">《必填》</span>
-                                    <input type="email" placeholder="請填寫E-Mail" id="memberEmail" required />
+                                    <input type="email" placeholder="請填寫電子信箱" id="signupEmail" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="memberPhone">行動電話</label>
+                                    <label for="signupPhone">行動電話</label>
                                     <span class="noticeText">《必填：格式為0987-654-321》</span>
-                                    <input type="tel" placeholder="請輸入行動電話" id="memberPhone"
+                                    <input type="tel" placeholder="請輸入行動電話" id="signupPhone"
                                         pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="memberBirthday">會員生日</label>
-                                    <input type="date" id="memberBirthday" />
+                                    <label for="signupBirthday">會員生日</label>
+                                    <input type="date" id="signupBirthday" placeholder="1980-01-01" value="none"
+                                        readonly="false" />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="leftEye">左眼度數</label>
-                                    <input type="number" id="leftEye" />
+                                    <label for="signupLeftEye">左眼度數</label>
+                                    <input type="number" id="signupLeftEye" min="0" max="3000" step="25" />
                                 </div>
                                 <div class="mb-2">
-                                    <label for="rightEye">右眼度數</label>
-                                    <input type="number" id="rightEye" />
+                                    <label for="signupRightEye">右眼度數</label>
+                                    <input type="number" id="signupRightEye" min="0" max="3000" step="25" />
                                 </div>
                                 <div class="m-2">
-                                    <span >※註冊表示同意<a class="agreeText" href="member_info.html">《服務條款》</a></span>
+                                    <span>※註冊表示同意<a class="agreeText" href="member_info.html">《服務條款》</a></span>
                                 </div>
 
                                 <hr>
@@ -392,642 +393,435 @@
         <hr class="member_hr-line">
     </div>
 
-    <!-- 彈出視窗 -->
-    <div class="row justify-content-center align-items-center ">
-        <div class="modal-dialog modal-dialog-scrollable modalWidth" role="document">
-            <div class="modal-content modalborder">
+    <!-- 基本資料 配送紀錄 我的最愛 -->
+    <section class="memberContainer">
+        <ul class="nav nav-tabs nav-pills nav-justified" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="true">基本資料</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="orderHistory-tab" data-toggle="tab" href="#orderHistory" role="tab"
+                    aria-controls="orderHistory" aria-selected="false">配送紀錄</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="like-tab" data-toggle="tab" href="#like" role="tab" aria-controls="like"
+                    aria-selected="false">我的最愛</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!-- 基本資料 -->
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form class="d-flex flex-column ">
+                    <div class="mt-3">
+                        <span>會員帳號：</span>
+                        <span>TIMMY_CHEN@hotmail.com.tw</span>
+                    </div>
+                    <div class="mt-3">
+                        <span>會員姓名：</span>
+                        <span>陳柏希</span>
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPageMemberBirthday">會員生日：</label>
+                        <input type="date" id="myPageMemberBirthday" placeholder="1980-01-01" value="1990-10-10"
+                            readonly="true" />
+                    </div>
+                    <div class="mt-3" style="color: red;">《以上資訊一經註冊即不能修改》</div>
+                    <div class="mt-3">
+                        <label for="myPagePassword1">重設密碼：</label>
+                        <input type="password" placeholder="請輸入新密碼" id="myPagePassword1" pattern="[0-9]{6}" required />
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPagePassword2">驗證密碼：</label>
+                        <input type="password" placeholder="再次輸入新密碼" id="myPagePassword2" required />
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPageEmail">電子信箱：</label>
+                        <input type="email" placeholder="請填寫電子信箱" id="myPageEmail" value="TIMMY_CHEN@hotmail.com.tw"
+                            required />
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPagePhone">行動電話：</label>
+                        <input type="tel" placeholder="請輸入行動電話" id="myPagePhone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                            value="0912-345-678" required />
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPageLeftEye">左眼度數：</label>
+                        <input type="number" id="myPageLeftEye" min="0" max="3000" step="25" />
+                    </div>
+                    <div class="mt-3">
+                        <label for="myPageRightEye">右眼度數：</label>
+                        <input type="number" id="myPageRightEye" min="0" max="3000" step="25" />
+                    </div>
+                </form>
 
-                <div class="modal-body">
-
-                    <nav class="tab">
-                        <div class="nav nav-tabs nonBorder" id="nav-tab" role="tablist">
-                            <a class="active" id="nav-introduce-tab" style="margin-left:5%;" data-toggle="tab"
-                                href="#nav-introduce" role="tab" aria-controls="nav-introduce"
-                                aria-selected="true">基本資料</a>
-                            <a class="" id="nav-format-tab" data-toggle="tab" href="#nav-format" role="tab"
-                                aria-controls="nav-format" aria-selected="false">配送紀錄</a>
-                            <a class="" id="nav-question-tab" data-toggle="tab" href="#nav-question" role="tab"
-                                aria-controls="nav-question" aria-selected="false">我的最愛</a>
+            </div>
+            <!-- 配送紀錄 -->
+            <div class="tab-pane fade" id="orderHistory" role="tabpanel" aria-labelledby="orderHistory-tab">
+                <div class="panel-group" id="accordionOrderHistoryOrderHistory" role="tablist"
+                    aria-multiselectable="true">
+                    <!-- 配送細項 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOrderOne">
+                            <span class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordionOrderHistory"
+                                    href="#collapseOrderOne" aria-expanded="false" aria-controls="collapseOrderOne"
+                                    class="collapsed position-relative">
+                                    <span></span>
+                                    <p style="margin-top: 1rem;">配送編號：#2020041012100329</p>
+                                    <p style="margin-top: 1rem;">配送狀況：配送單完成</p>
+                                    <p style="margin-top: 1rem;">配送日期：2020/04/10</p>
+                                </a>
+                            </span>
                         </div>
-                    </nav>
-
-                    <!-- 切換頁 -->
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active storeDetail" id="nav-introduce" role="tabpanel"
-                            aria-labelledby="nav-introduce-tab">
-                            <div class="row">
-                                <div class="member-center">
-                                    <form class="form-horizontal from_membersize" method="post" action="#">
-                                        <div class="row member_top">
-                                            <div class="col-3 col-md-3 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">帳號：</label>
+                        <div id="collapseOrderOne" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingOrderOne" aria-expanded="false" style="padding: 10px 15px;">
+                            <div class="panel-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="orderSituation-2020041012100329"
+                                            data-toggle="tab" href="#nav-orderSituation-2020041012100329" role="tab"
+                                            aria-controls="nav-orderSituation-2020041012100329"
+                                            aria-selected="true">物流動態</a>
+                                        <a class="nav-item nav-link" id="orderDetailed-2020041012100329"
+                                            data-toggle="tab" href="#nav-orderDetailed-2020041012100329" role="tab"
+                                            aria-controls="nav-orderDetailed-2020041012100329"
+                                            aria-selected="false">預訂明細</a>
+                                        <a class="nav-item nav-link" id="delivery-2020041012100329" data-toggle="tab"
+                                            href="#nav-delivery-2020041012100329" role="tab"
+                                            aria-controls="nav-delivery-2020041012100329" aria-selected="false">配貨資訊</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-orderSituation-2020041012100329"
+                                        role="tabpanel" aria-labelledby="orderSituation-2020041012100329">
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/23 00:00 　# 配送單已接收</p>
+                                        <p style="margin-top: 1rem;">02/24 06:06　東湖營業所 # 配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:29　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:30　東湖營業所 # 另約時間</p>
+                                        <p style="margin-top: 1rem;">02/24 11:36　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/24 15:14　東湖營業所 # 配完</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-orderDetailed-2020041012100329" role="tabpanel"
+                                        aria-labelledby="orderDetailed-2020041012100329">
+                                        <div class="card-deck mt-3">
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏1">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝藍#526/10片裝</p>
+                                                    <p>數量：7</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,540</small>
+                                                </div>
                                             </div>
-                                            <div class="col-9 col-md-9 member-page1-right">
-                                                <label for="mobile"
-                                                    class="cols-sm-2 control-label">TIMMY@gmail.com</label>
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏2.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏2">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝綠#525/10片裝</p>
+                                                    <p>數量：3</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：540</small>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-3 col-md-3 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">姓名：</label>
-                                            </div>
-                                            <div class="col-9 col-md-9 member-page1-right">
-                                                <label for="mobile" class="cols-sm-2 control-label">陳柏希</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-3 col-md-3 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">生日：</label>
-                                            </div>
-                                            <div class="col-9 col-md-9 member-page1-right">
-                                                <label for="mobile" class="cols-sm-2 control-label">1990/10/10</label>
-                                            </div>
-                                        </div>
-
-                                        <label for="Account" class="cols-sm-2 member-label">*以上資訊一經註冊即不能修改</label>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">會員密碼：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <input type="text" name="mobile"
-                                                    class="form-control member_form-control2" placeholder="欲重設請輸入新密碼">
-                                            </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">密碼重設：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <input type="text" name="mobile"
-                                                    class="form-control member_form-control2" placeholder="再次輸入新密碼">
-                                            </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">電子郵件：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <input type="text" name="mobile"
-                                                    class="form-control member_form-control2" value="TIMMY@gmail.com">
-                                            </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">手機號碼：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <input type="number" name="mobile"
-                                                    class="form-control member_form-control2" value="0912345678">
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏3.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏3">
+                                                <div class="card-body">
+                                                    <p>AQUA彩蝶藍#354/10片裝</p>
+                                                    <p>數量：5</p>
+                                                    <p>度數：200</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,340</small>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">左眼度數：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <select class="member_form-control">
-                                                    <option>100度</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="row member_top">
-                                            <div class="col-4 col-md-4 member-page1-left">
-                                                <label for="Account" class="cols-sm-2 control-label">右眼度數：</label>
-                                            </div>
-                                            <div class="col-8 col-md-8 member-page1-right">
-                                                <select class="member_form-control">
-                                                    <option>100度</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group" style="padding-top:5%">
-                                            <button type="button" class="btn btn-block member-btn">確認修改</button>
-                                        </div>
-                                    </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-delivery-2020041012100329" role="tabpanel"
+                                        aria-labelledby="delivery-2020041012100329">
+                                        <p style="margin-top: 1rem;">服務地點：松柏眼鏡行</p>
+                                        <p style="margin-top: 1rem;">付款方式：門市交易</p>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
-                        <div class="tab-pane fade MemberOrderList" id="nav-format" role="tabpanel"
-                            aria-labelledby="nav-format-tab">
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020041012100329</p>
-                                            <p>配送狀況：配送單完成</p>
-                                            <p>配送日期：2020/04/10</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderOne">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderOne" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020040410151515</p>
-                                            <p>配送狀況：配送單完成</p>
-                                            <p>配送日期：2020/04/04</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderTwo">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderTwo" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020040121103259</p>
-                                            <p>配送狀況：配送單完成</p>
-                                            <p>配送日期：2020/04/01</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderThree">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderThree" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020033120311632</p>
-                                            <p>配送狀況：配送單完成</p>
-                                            <p>配送日期：2020/03/31</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderFour">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderFour" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020032917355901</p>
-                                            <p>配送狀況：配送單完成</p>
-                                            <p>配送日期：2020/03/29</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderFive">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderFive" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <div class="row accordion-toggle">
-                                        <div class="col-9">
-                                            <p>配送編號：#2020032917330503</p>
-                                            <p>配送狀況：配送單取消</p>
-                                            <p>配送日期：2020/03/29</p>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="offer-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="toggle"
-                                                    href="#collapseOrderSix">
-                                                    詳細情況
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseOrderSix" class="collapse in">
-                                    <div class="accordion-inner ">
-                                        <div class="accordion-body">
-                                            <p>【物流動態】</p>
-                                            <p>02/22 16:00　中區特販區 # 轉運中</p>
-                                            <p>02/23 00:00 　# 配送單已接收</p>
-                                            <p>02/24 06:06　東湖營業所 # 配送中</p>
-                                            <p>02/24 08:29　東湖營業所 # 轉交配送中</p>
-                                            <p>02/24 08:30　東湖營業所 # 另約時間</p>
-                                            <p>02/24 11:36　東湖營業所 # 轉交配送中</p>
-                                            <P>02/24 15:14　東湖營業所 # 配完</P>
-                                            <p class="p-top">【預訂明細】</p>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝藍#526/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA美妝綠#525/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1540　元</p>
-                                                </div>
-                                            </div>
-                                            <div class="row detailhr">
-                                                <div class="col-7 col-md-9">
-                                                    <p>AQUA彩蝶藍#354/10片裝</p>
-                                                    <p>數量:7 | 度數:0度</p>
-                                                </div>
-                                                <div class="col-5 col-md-3">
-                                                    <p>金額</p>
-                                                    <p>NT$：1120　元</p>
-                                                </div>
-                                            </div>
-                                            <p class="p-top">【配貨資訊】</p>
-                                            <p>服務地點：松柏眼鏡行</p>
-                                            <p>付款方式：門市交易</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- start換頁按鈕 -->
-                            <div class="col-12">
-                                <div class="row justify-content-center align-items-center">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            <li class="page-item">
-                                                <a class="page-link nonBorder" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">«</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link squareBorder" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link squareBorder" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link nonBorder" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">»</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <!-- end換頁按鈕 -->
-
+                    </div>
+                    <!-- 配送細項 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOrderTwo">
+                            <span class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordionOrderHistory"
+                                    href="#collapseOrderTwo" aria-expanded="false" aria-controls="collapseOrderTwo"
+                                    class="collapsed position-relative">
+                                    <span></span>
+                                    <p style="margin-top: 1rem;">配送編號：#2020040410151515</p>
+                                    <p style="margin-top: 1rem;">配送狀況：配送單完成</p>
+                                    <p style="margin-top: 1rem;">配送日期：2020/04/04</p>
+                                </a>
+                            </span>
                         </div>
-                        <div class="tab-pane fade" id="nav-question" role="tabpanel" aria-labelledby="nav-question-tab">
-                            <div class="mylovetop">
-                                <div class="row detailhr ">
-                                    <div class="col-7 col-md-8">
-                                        <a href="store5.html">
-                                            <p>AQUA美妝藍#526/10片裝</p>
-                                        </a>
+                        <div id="collapseOrderTwo" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingOrderTwo" aria-expanded="false" style="padding: 10px 15px;">
+                            <div class="panel-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="orderSituation-2020040410151515"
+                                            data-toggle="tab" href="#nav-orderSituation-2020040410151515" role="tab"
+                                            aria-controls="nav-orderSituation-2020040410151515"
+                                            aria-selected="true">物流動態</a>
+                                        <a class="nav-item nav-link" id="orderDetailed-2020040410151515"
+                                            data-toggle="tab" href="#nav-orderDetailed-2020040410151515" role="tab"
+                                            aria-controls="nav-orderDetailed-2020040410151515"
+                                            aria-selected="false">預訂明細</a>
+                                        <a class="nav-item nav-link" id="delivery-2020040410151515" data-toggle="tab"
+                                            href="#nav-delivery-2020040410151515" role="tab"
+                                            aria-controls="nav-delivery-2020040410151515" aria-selected="false">配貨資訊</a>
                                     </div>
-                                    <div class="col-5 col-md-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-8 detailhr2">
-                                                <span> 金額</span><br />
-                                                <span> NT$：1540元</span>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-orderSituation-2020040410151515"
+                                        role="tabpanel" aria-labelledby="orderSituation-2020040410151515">
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/23 00:00 　# 配送單已接收</p>
+                                        <p style="margin-top: 1rem;">02/24 06:06　東湖營業所 # 配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:29　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:30　東湖營業所 # 另約時間</p>
+                                        <p style="margin-top: 1rem;">02/24 11:36　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/24 15:14　東湖營業所 # 配完</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-orderDetailed-2020040410151515" role="tabpanel"
+                                        aria-labelledby="orderDetailed-2020040410151515">
+                                        <div class="card-deck mt-3">
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏1">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝藍#526/10片裝</p>
+                                                    <p>數量：7</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,540</small>
+                                                </div>
                                             </div>
-                                            <div class="col-4 detailhr3">
-                                                <span> X</span>
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏2.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏2">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝綠#525/10片裝</p>
+                                                    <p>數量：3</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：540</small>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏3.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏3">
+                                                <div class="card-body">
+                                                    <p>AQUA彩蝶藍#354/10片裝</p>
+                                                    <p>數量：5</p>
+                                                    <p>度數：200</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,340</small>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-delivery-2020040410151515" role="tabpanel"
+                                        aria-labelledby="delivery-2020040410151515">
+                                        <p style="margin-top: 1rem;">服務地點：松柏眼鏡行</p>
+                                        <p style="margin-top: 1rem;">付款方式：門市交易</p>
                                     </div>
                                 </div>
 
-                                <div class="row detailhr ">
-                                    <div class="col-7 col-md-8">
-                                        <a href="store5.html">
-                                            <p>AQUA美妝綠#525/10片裝</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-5 col-md-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-8 detailhr2">
-                                                <span> 金額</span><br />
-                                                <span> NT$：1540元</span>
-                                            </div>
-                                            <div class="col-4 detailhr3">
-                                                <span> X</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row detailhr ">
-                                    <div class="col-7 col-md-8">
-                                        <a href="store5.html">
-                                            <p>彩蝶藍#3546/10片裝</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-5 col-md-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-8 detailhr2">
-                                                <span> 金額</span><br />
-                                                <span> NT$：1120元</span>
-                                            </div>
-                                            <div class="col-4 detailhr3">
-                                                <span> X</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- 配送細項 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOrderThree">
+                            <span class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordionOrderHistory"
+                                    href="#collapseOrderThree" aria-expanded="false" aria-controls="collapseOrderThree"
+                                    class="collapsed position-relative">
+                                    <span></span>
+                                    <p style="margin-top: 1rem;">配送編號：#2020033120311632</p>
+                                    <p style="margin-top: 1rem;">配送狀況：配送單完成</p>
+                                    <p style="margin-top: 1rem;">配送日期：2020/04/04</p>
+                                </a>
+                            </span>
+                        </div>
+                        <div id="collapseOrderThree" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingOrderThree" aria-expanded="false" style="padding: 10px 15px;">
+                            <div class="panel-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="orderSituation-2020033120311632"
+                                            data-toggle="tab" href="#nav-orderSituation-2020033120311632" role="tab"
+                                            aria-controls="nav-orderSituation-2020033120311632"
+                                            aria-selected="true">物流動態</a>
+                                        <a class="nav-item nav-link" id="orderDetailed-2020033120311632"
+                                            data-toggle="tab" href="#nav-orderDetailed-2020033120311632" role="tab"
+                                            aria-controls="nav-orderDetailed-2020033120311632"
+                                            aria-selected="false">預訂明細</a>
+                                        <a class="nav-item nav-link" id="delivery-2020033120311632" data-toggle="tab"
+                                            href="#nav-delivery-2020033120311632" role="tab"
+                                            aria-controls="nav-delivery-2020033120311632" aria-selected="false">配貨資訊</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-orderSituation-2020033120311632"
+                                        role="tabpanel" aria-labelledby="orderSituation-2020033120311632">
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/23 00:00 　# 配送單已接收</p>
+                                        <p style="margin-top: 1rem;">02/24 06:06　東湖營業所 # 配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:29　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/24 08:30　東湖營業所 # 另約時間</p>
+                                        <p style="margin-top: 1rem;">02/24 11:36　東湖營業所 # 轉交配送中</p>
+                                        <p style="margin-top: 1rem;">02/22 16:00　中區特販區 # 轉運中</p>
+                                        <p style="margin-top: 1rem;">02/24 15:14　東湖營業所 # 配完</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-orderDetailed-2020033120311632" role="tabpanel"
+                                        aria-labelledby="orderDetailed-2020033120311632">
+                                        <div class="card-deck mt-3">
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏1">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝藍#526/10片裝</p>
+                                                    <p>數量：7</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,540</small>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏2.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏2">
+                                                <div class="card-body">
+                                                    <p>AQUA美妝綠#525/10片裝</p>
+                                                    <p>數量：3</p>
+                                                    <p>度數：100</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：540</small>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="./img/商品主圖_日彩拋_屈臣氏3.jpg" class="card-img-top"
+                                                    alt="商品主圖_日彩拋_屈臣氏3">
+                                                <div class="card-body">
+                                                    <p>AQUA彩蝶藍#354/10片裝</p>
+                                                    <p>數量：5</p>
+                                                    <p>度數：200</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">NT：1,340</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-delivery-2020033120311632" role="tabpanel"
+                                        aria-labelledby="delivery-2020033120311632">
+                                        <p style="margin-top: 1rem;">服務地點：松柏眼鏡行</p>
+                                        <p style="margin-top: 1rem;">付款方式：門市交易</p>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- 切換頁 -->
+                <!-- pagination -->
+                ​<div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link nonBorder" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link squareBorder" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link squareBorder" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link nonBorder" href="#" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的最愛 -->
+            <div class="tab-pane fade" id="like" role="tabpanel" aria-labelledby="like-tab">
+
+                <div class="card-deck mt-3">
+                    <div class="card position-relative">
+                        <div class="likeDelete position-absolute">x</div>
+                        <img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="card-img-top"
+                            alt="商品主圖_日彩拋_屈臣氏1">
+                        <div class="card-body">
+                            <p>AQUA美妝藍#526/10片裝</p>
+                            <p>數量：7</p>
+                            <p>度數：100</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">NT：1,540</small>
+                        </div>
+                    </div>
+                    <div class="card position-relative">
+                        <div class="likeDelete position-absolute">x</div>
+                        <img src="./img/商品主圖_日彩拋_屈臣氏2.jpg" class="card-img-top"
+                            alt="商品主圖_日彩拋_屈臣氏2">
+                        <div class="card-body">
+                            <p>AQUA美妝綠#525/10片裝</p>
+                            <p>數量：3</p>
+                            <p>度數：100</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">NT：540</small>
+                        </div>
+                    </div>
+                    <div class="card position-relative">
+                        <div class="likeDelete position-absolute">x</div>
+                        <img src="./img/商品主圖_日彩拋_屈臣氏3.jpg" class="card-img-top"
+                            alt="商品主圖_日彩拋_屈臣氏3">
+                        <div class="card-body">
+                            <p>AQUA彩蝶藍#354/10片裝</p>
+                            <p>數量：5</p>
+                            <p>度數：200</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">NT：1,340</small>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
-
         </div>
-    </div>
-    <!-- 彈出視窗 -->
+    </section>
 
-    <br />
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <footer class="pt-4 mt-3 border-top">
         <div class="row footer">
             <div class="col-md-3 footerDesktop">
                 <h5 class="black">公司資訊</h5>
