@@ -1,347 +1,164 @@
-html {
-  overflow-x: hidden !important;
-}
-.h1-front {
-  height: 40px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-}
-
-.member-description > span.txt {
-  margin-left: 30px;
-}
-.h1-font {
-  font-size: 2.2rem;
-}
-.transport {
-  width: 20%;
-}
-.privacy {
-  width: 10%;
-}
-.privacytopImg {
-  width: 100%;
-}
-.hr-line {
-  border-top: 2px solid #d4d4d4;
-}
-
-@media screen and (max-width: 768px) {
-  .h1-font {
-    font-size: 1.4rem;
-  }
-  .member-description {
-    display: none;
-  }
-  .transport {
-    width: 35%;
-  }
-  .order-description > span.txt {
-    font-size: 1.4rem;
-  }
-  .order-description > a {
-    font-size: 1.2rem;
-  }
-  .privacy-description > a {
-    font-size: 2.2rem;
-  }
-  .privacy {
-    width: 20%;
-  }
-}
-
 div.order {
   margin-top: 30px;
 }
-span.txt {
+
+.order .h3.txt {
   margin-left: 30px;
 }
 
-.member_icon {
-  width: 10%;
-}
 .member_hr-line {
   border-top: 2px solid #d4d4d4;
   width: 97vw;
 }
-.nonBorder {
-  border: 0px;
-}
-.modalWidth {
-  min-width: 70%;
-  max-width: 70%;
-}
-.modalborder {
-  border: 0px;
-  width: 1140px;
+
+.memberContainer {
+  margin: 30px auto;
+  width: 80%;
 }
 
-/* start基本資料 */
-.tab {
-  width: 100%;
-}
-.tab a {
-  width: 30%;
-  color: gray;
-  text-align: center;
-  border-bottom: 1px;
+.memberContainer #myTab {
   border-bottom: 1px solid gray;
-}
-.tab .active {
-  color: #47a3da;
-  border-bottom: 5px solid #47a3da;
-}
-.member-label {
-  margin-bottom: 15px;
-}
-.member_top {
-  margin-top: 5px;
-}
-.member-page1-left {
-  padding-right: 0;
-}
-.member-page1-right {
-  padding-left: 0;
-}
-.member-center {
-  margin-top: 30px;
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 20px 20px;
-}
-.member_form-control {
-  margin-top: 5px;
-  width: 110%;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  text-align-last: center;
-  color: #1770b7;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: 1px solid #1770b7;
-  border-radius: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.from_membersize {
-  width: 27rem;
-}
-
-.member_form-control2 {
-  display: block;
-  width: 110%;
-  font-size: 1em;
-  line-height: 1.6;
-  color: #1770b7;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: 1px solid #1770b7;
-  border-radius: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-bottom: 10px !important;
-}
-.member_form-control2::-webkit-input-placeholder {
-  font-size: 1.1rem !important;
-}
-
-.member-btn {
-  padding-top: 2px;
-  padding-bottom: 2px;
   font-size: 1.4rem;
-  color: #1770b7;
-  border: 1px solid #1770b7;
-  background-color: transparent;
-  border-radius: 30px;
 }
-label {
-  margin-bottom: 4px;
-  font-size: 1.5rem;
+
+.memberContainer #myTab .nav-link {
+  border: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+  color: gray;
 }
-/* end基本資料 */
+
+.memberContainer #myTab .nav-item.show .nav-link,
+#myTab .nav-link.active {
+  color: #47a3da;
+  background: transparent;
+  border-color: none;
+  border-bottom: 5px solid #47a3da;
+  font-weight: 600;
+}
+
+#myTabContent {
+  font-size: 1.4rem;
+}
+
+#myTabContent form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#myTabContent form input {
+  padding-left: 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #ebebeb;
+  outline: none;
+  transition: 0.4s;
+  width: 75%;
+}
+
+#myTabContent form input:focus,
+#myTabContent form input:active {
+  transform: scaleX(1.02);
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+  padding: 0;
+  margin-top: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.panel-default > .panel-heading a:hover {
+  background: #80cdec;
+  color: #fff;
+  text-decoration: none;
+}
+
+.panel-default > .panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: transform 0.25s linear;
+  -webkit-transition: -webkit-transform 0.25s linear;
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"] {
+  background-color: #80cdec;
+  color: #fff;
+}
+
+.panel-default > .panel-heading a span {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"] span:after {
+  content: "\2212";
+}
+
+.panel-default > .panel-heading a[aria-expanded="false"] span:after {
+  content: "\002b";
+}
+
+.likeDelete{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+}
+.likeDelete:hover{
+  opacity: 0.7;
+}
 
 @media screen and (max-width: 768px) {
-  .modalborder {
-    width: 100%;
-  }
-  .member_icon {
-    width: 20%;
-  }
-  .tab {
-    width: 95vw;
-  }
   .order {
     text-align: center;
     margin-bottom: 20px;
   }
-  .order .line {
-    display: inline-block;
-    width: 10vw;
-    border-top: 1px solid #ccc;
-  }
-  .order .txt {
-    vertical-align: -8px;
-    margin-left: 0px;
-  }
+
   .member_hr-line {
     display: none;
   }
 
-  .modalWidth {
-    max-width: 100%;
+  .memberContainer {
+    width: 95%;
   }
 
-  /* start基本資料 */
+  .memberContainer #myTab {
+    border-bottom: 1px solid gray;
+    font-size: 1.2rem;
+  }
 
-  .from_membersize {
-    width: 100%;
-  }
-  label {
-    margin-bottom: 4px;
-    font-size: 1rem !important;
-  }
-  .member_form-control2 {
-    height: 70%;
-  }
-  .member_form-control {
+  #myTabContent {
     font-size: 1rem;
   }
-  /* end基本資料 */
-}
 
-/*start交易紀錄*/
-
-.accordion-heading .accordion-toggle {
-  padding: 8px 15px;
-  border-bottom: 1px #dcdcdc solid;
-}
-.selectStyle {
-  width: 46%;
-  float: left;
-  margin-right: 8%;
-}
-.accordion-group {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-
-
-.MemberOrderList [data-toggle="collapse"]:after {
-    content: "-";
-    color: #007bff;
-    font-size: 1.2em;
-}
-
-.MemberOrderList [data-toggle="collapse"].collapsed:after {
-    content: "+";
-}
-
-.accordion-toggle > .col-9 > p {
-  font-size: 1.4rem;
-}
-
-.offer-title {
-  margin-top: 45%;
-  text-align: right;
-}
-
-.offer-title > a {
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #007bff;
-}
-
-.accordion-inner {
-  font-size: 1.2rem;
-}
-.accordion-body {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-top: 20px;
-  padding-left: 30px;
-}
-.detailhr > .col-md-4 {
-  text-align: right;
-}
-.detailhr {
-  border-bottom: 1px #dcdcdc dotted;
-}
-.p-top {
-  margin-top: 3%;
-}
-
-@media screen and (max-width: 768px) {
-  .accordion-toggle > .col-9 > p {
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
-  .accordion-toggle > .col-9 {
-    padding: 0 0 0 0;
-  }
-  .accordion-toggle > .col-3 {
-    padding: 0 0 0 0;
-  }
-  .offer-title {
-    margin-top: 100%;
-    text-align: right;
-  }
-  .offer-title > a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .accordion-inner {
-    font-size: 1rem;
-  }
-  .accordion-body {
-    margin-left: -30px;
-    margin-right: 0px;
-    padding-top: 20px;
-    padding-left: 30px;
-  }
-  .detailhr > .col-5 {
-    text-align: right;
+  #myTabContent form {
+    width: 95%;
+    margin: 0 auto;
   }
 }
-/*end交易紀錄*/
-
-/*start我的最愛*/
-
-.mylovetop {
-  margin-top: 5%;
-  font-size: 1.4rem;
-}
-.mylovetop a {
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  .mylovetop > .row > .col-7 > a {
-    font-size: 1rem;
-    margin-bottom: 4px;
-    color: black;
-  }
-  .mylovetop > .row > .col-5 span {
-    font-size: 0.5em;
-    margin-bottom: 4px;
-  }
-  .mylovetop > .row > .col-2 {
-    font-size: 0.5em;
-    margin-bottom: 4px;
-  }
-  .mylovetop > .row > .col-5 {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .mylovetop > .row > .col-7 {
-    padding-right: 0%;
-  }
-  .detailhr2 {
-    padding-left: 0px !important;
-    padding-right: 0%;
-  }
-  .detailhr3 {
-    padding-right: 40px;
-  }
-}
-
-/*end交我的最愛*/
