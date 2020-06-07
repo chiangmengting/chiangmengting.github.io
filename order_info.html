@@ -94,7 +94,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_order_info">
                             <a class="dropdown-item" href="order_info.html">配送說明</a>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#detailModal">配送清單</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#Login">配送清單</a>
                         </div>
                     </li>
                 </ul>
@@ -103,7 +103,7 @@
             <div class="d-flex">
                 <ul class="d-flex flex-row myIconNavbar">
                     <li class="dropdown">
-                        <a class="nav-link navbarLoginIcon" class="btn btn-primary" data-toggle="modal"
+                        <a class="nav-link navbarLoginIcon" data-toggle="modal"
                             data-target="#Login">
                             <i class="fas fa-user"></i>
                         </a>
@@ -271,7 +271,7 @@
                     data-parent="#myPhoneMenu">
                     <div class="card-body styleListNone">
                         <li><a href="order_info.html">配送說明</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#detailModal">配送清單</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#Login">配送清單</a></li>
                     </div>
                 </div>
             </div>
@@ -379,35 +379,40 @@
         </div>
     </div>
 
+    <!-- banner -->
     <div class="row bannerTop">
         <div class="col-12" style="text-align: center;">
             <img src="img/order/星歐網站頁面規劃_PC版_文字說明頁(訂購說明)_BANNER.jpg" class="d-block w-100">
         </div>
     </div>
-    <div class="col order member-description">
+
+    <!-- 表頭 -->
+    <div class="order hideIn991px">
+        <span class="line"></span>
         <span class="h3 txt">配送說明</span>
+        <span class="line"></span>
         <hr class="hr-line">
     </div>
-
     <br />
+
+    <!-- 內文 -->
     <div class="container">
         <div class="col">
             <div class="row">
                 <div class="col" style="text-align: center">
-                    <img class="img-fluid transport" src="img/order/transport.png" />
+                    <img class="myIcon" src="img/order/transport.png" />
                 </div>
             </div>
             <br />
             <div class="order-description" style="text-align: center">
-                <h2 class="text-primary ">- 配送說明 -</h2>
+                <h2 class="text-primary">- 配送說明 -</h2>
             </div>
             <br />
             <p class="h5">親愛的會員您好，您可以利用本網站進行商品預訂的動作，並待商品送達指定門市之後再前往取貨並付款。</p>
             <br />
             <div class="row">
                 <div class="col">
-                    <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                    <a class="h1 h1-font">使用流程</a>
+                    <h2 style="border-left:8px solid #019bd9;padding-left:5px;">使用流程</h2>
                 </div>
             </div>
             <p class="h5">您需要先成為本站會員方可進行商品配送服務。</p>
@@ -421,21 +426,19 @@
                 <p class="h5">請您先確認喜歡的品項，於單一通路已經達交易金額。</p>
                 <p class="h5">例如：超商通路與醫美通路的商品，無法於同一門市合併配送、也無法共同計算配送產品之金額。</p>
             </div>
-            <br /><br />
+            <br />
             <div class="row">
                 <div class="col">
-                    <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                    <a class="h1 h1-font">配送查詢取消流程</a>
+                    <h2 style="border-left:8px solid #019bd9;padding-left:5px;">配送查詢取消流程</h2>
                 </div>
             </div>
             <p class="h5">如有配送查詢需要取消，請在查詢單送出的1天內來電客服專線進行取消。</p>
             <p class="h5">客服專線【0809-007-199】｜服務時間【週一 至 週五 每天上午 08：30 至 17：00】</p>
             <p class="h5">若查詢單未及時取消導致商品配送至門市，將有可能導致影響您之後使用配送服務的權益，敬請注意。</p>
-            <br /><br />
+            <br />
             <div class="row">
                 <div class="col">
-                    <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                    <a class="h1 h1-font">交易流程</a>
+                    <h2 style="border-left:8px solid #019bd9;padding-left:5px;">交易流程</h2>
                 </div>
             </div>
             <p class="h5">待商品送達指定門市後將會由系統發出mail、簡訊通知。</p>
@@ -446,11 +449,11 @@
                 <p class="h5">※ 注意</p>
                 <p class="h5">若未於7天內取貨，將有可能導致影響您之後使用配送產品服務的權益，敬請注意。</p>
             </div>
-            <br /><br />
+            <br />
         </div>
     </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <footer class="pt-4 mt-3 border-top">
         <div class="row footer">
             <div class="col-md-3 footerDesktop">
                 <h5 class="black">公司資訊</h5>

@@ -1,711 +1,756 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-        <meta name="generator" content="Jekyll v3.8.5">
-        <title>服務條款</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./css/layout.css">
-        <link rel="stylesheet" type="text/css" href="./css/default.css" />
-        <link rel="stylesheet" type="text/css" href="./css/component.css" />
-        <link rel="stylesheet" type="text/css" href="./css/member.css" />
-        <link rel="stylesheet" type="text/css" href="./css/login.css" />
-    </head>
-    <body>
-        <header>
-            <!-- PC主選單 -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top myPCnavbar">
-                <div class="d-flex align-items-center" style="width:170px">
-                    <!-- 手機漢堡按鈕 -->
-                    <div class="hamburgerContainer">
-                        <button data-toggle="collapse-side" data-target-sidebar=".side-collapse-left"
-                            data-target-content=".side-collapse-container-left" type="button" id="data-menu-toggle"
-                            class="data-menu-toggle">
-                            <span class="menu-bar bar"></span>
-                        </button>
-                    </div>
-                    <!-- 星歐LOGO -->
-                    <a class="navbar-brand " href="index.html">
-                        <img src="img/logo.png" width="120" class="d-inline-block align-top" alt="logo" loading="lazy">
-                    </a>
-                </div>
-                <!-- 主選單 -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link font-weight-bold" href="introduction.html">關於星歐</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_store"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                系列產品
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_store">
-                                <a class="dropdown-item" href="store5.html">星歐眼鏡行系列產品</a>
-                                <a class="dropdown-item" href="store6.html">屈臣氏系列產品</a>
-                                <a class="dropdown-item" href="store7.html">家樂福系列產品</a>
-                                <a class="dropdown-item" href="store8.html">康是美系列產品</a>
-                                <a class="dropdown-item" href="store9.html">全家系列產品</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_new"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                最新消息
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_new">
-                                <a class="dropdown-item" href="new.html">最新優惠</a>
-                                <a class="dropdown-item" href="paper.html">護眼小教室</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_member"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                會員專區
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_member">
-                                <a class="dropdown-item" href="member.html">會員頁面</a>
-                                <a class="dropdown-item" href="member_info.html">服務條款</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown font-weight-bold">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_location" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                銷售據點
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_location">
-                                <a class="dropdown-item" href="location.html">眼鏡行合作門市</a>
-                                <a class="dropdown-item" href="location1.html">屈臣氏合作門市</a>
-                                <a class="dropdown-item" href="location2.html">家樂福合作門市</a>
-                                <a class="dropdown-item" href="location3.html">康是美合作門市</a>
-                                <a class="dropdown-item" href="location4.html">全家合作門市</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown font-weight-bold">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_order_info"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                配送說明
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_order_info">
-                                <a class="dropdown-item" href="order_info.html">配送說明</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#detailModal">配送清單</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 會員.購物車.搜尋 icon-->
-                <div class="d-flex">
-                    <ul class="d-flex flex-row myIconNavbar">
-                        <li class="dropdown">
-                            <a class="nav-link navbarLoginIcon" class="btn btn-primary" data-toggle="modal"
-                                data-target="#Login">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownMenuLink_cart"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="padding:0px 0px 0px 3px;outline: none;height: 100%;">
-                                <i class="fas fa-shopping-cart"></i>
-                                <div class="countCart">4</div>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right2" aria-labelledby="navbarDropdownMenuLink_cart">
-                                <span title="Select this card">
-                                    <div class="row">
-                                        <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
-                                        <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
-                                        <div class="col-3"><span class="num">數量：2</span></div>
-                                    </div>
-                                    <span class="degree">100度</span>
-                                </span>
-                                <hr />
-    
-                                <span title="Select this card">
-                                    <div class="row">
-                                        <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
-                                        <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
-                                        <div class="col-3"><span class="num">數量：2</span></div>
-                                    </div>
-                                    <span class="degree">100度</span>
-                                </span>
-                                <hr />
-    
-                                <span title="Select this card">
-                                    <div class="row">
-                                        <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
-                                        <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
-                                        <div class="col-3"><span class="num">數量：2</span></div>
-                                    </div>
-                                    <span class="degree">100度</span>
-                                </span>
-                                <hr />
-    
-                                <span title="Select this card">
-                                    <div class="row">
-                                        <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
-                                        <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
-                                        <div class="col-3"><span class="num">數量：2</span></div>
-                                    </div>
-                                    <span class="degree">100度</span>
-                                </span>
-    
-                                <a class="dropdown-item" href="cart.html">結帳</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink_search" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none">
-                                <i class="fas fa-search"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right3" aria-labelledby="navbarDropdownMenuLink_search">
-                                <form class="form-inline">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="搜尋商品"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">搜尋</button>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div style="height: 56px;"></div>
-    
-    
-            <!-- 手機主選單 -->
-            <div class="accordion myPhoneMenu" id="myPhoneMenu">
-                <div class="card">
-                    <div class="card-header">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center">
-                            <a class="font-weight-bold" href="introduction.html">關於星歐</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
-                            type="button" data-toggle="collapse" data-target="#collapsePhoneNavOne" aria-expanded="false"
-                            aria-controls="collapsePhoneNavOne">
-                            <span class="font-weight-bold">系列產品</span>
-                            <span><i class="fas fa-chevron-circle-down"></i></span>
-                        </button>
-                    </div>
-                    <div id="collapsePhoneNavOne" class="collapse" aria-labelledby="headingOne" data-parent="#myPhoneMenu">
-                        <div class="card-body styleListNone">
-                            <li><a href="store5.html">星歐眼鏡行系列產品</a></li>
-                            <li><a href="store6.html">屈臣氏系列產品</a></li>
-                            <li><a href="store7.html">家樂福系列產品</a></li>
-                            <li><a href="store8.html">康是美系列產品</a></li>
-                            <li><a href="store9.html">全家系列產品</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
-                            type="button" data-toggle="collapse" data-target="#collapsePhoneNavTwo" aria-expanded="false"
-                            aria-controls="collapsePhoneNavTwo">
-                            <span class="font-weight-bold">最新消息</span>
-                            <span><i class="fas fa-chevron-circle-down"></i></span>
-                        </button>
-                    </div>
-                    <div id="collapsePhoneNavTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myPhoneMenu">
-                        <div class="card-body styleListNone">
-                            <li><a href="new.html">最新優惠</a></li>
-                            <li><a href="paper.html">護眼小教室</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
-                            type="button" data-toggle="collapse" data-target="#collapsePhoneNavThree" aria-expanded="false"
-                            aria-controls="collapsePhoneNavThree">
-                            <span class="font-weight-bold">會員專區</span>
-                            <span><i class="fas fa-chevron-circle-down"></i></span>
-                        </button>
-                    </div>
-                    <div id="collapsePhoneNavThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#myPhoneMenu">
-                        <div class="card-body styleListNone">
-                            <li><a href="member.html">會員頁面</a></li>
-                            <li><a href="member_info.html">服務條款</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
-                            type="button" data-toggle="collapse" data-target="#collapsePhoneNavFour" aria-expanded="false"
-                            aria-controls="collapsePhoneNavFour">
-                            <span class="font-weight-bold">銷售據點</span>
-                            <span><i class="fas fa-chevron-circle-down"></i></span>
-                        </button>
-                    </div>
-                    <div id="collapsePhoneNavFour" class="collapse" aria-labelledby="headingFour"
-                        data-parent="#myPhoneMenu">
-                        <div class="card-body styleListNone">
-                            <li><a href="location.html">眼鏡行合作門市</a></li>
-                            <li><a href="location1.html">屈臣氏合作門市</a></li>
-                            <li><a href="location2.html">家樂福合作門市</a></li>
-                            <li><a href="location3.html">康是美合作門市</a></li>
-                            <li><a href="location4.html">全家合作門市</a></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
-                            type="button" data-toggle="collapse" data-target="#collapsePhoneNavFive" aria-expanded="false"
-                            aria-controls="collapsePhoneNavFive">
-                            <span class="font-weight-bold">配送說明</span>
-                            <span><i class="fas fa-chevron-circle-down"></i></span>
-                        </button>
-                    </div>
-                    <div id="collapsePhoneNavFive" class="collapse" aria-labelledby="headingFive"
-                        data-parent="#myPhoneMenu">
-                        <div class="card-body styleListNone">
-                            <li><a href="order_info.html">配送說明</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#detailModal">配送清單</a></li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-    
-        <!-- 登入/註冊彈窗 -->
-        <div class="modal fade myLoginAndSign" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-    
-                    <div class="modal-body">
-                        <div class="my-form-modal">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <div class="my-form-toggle">
-                                <button id="login-toggle" onclick="toggleLogin()">會員登入</button>
-                                <button id="signup-toggle" onclick="toggleSignup()">加入會員</button>
-                            </div>
-    
-                            <div id="login-form">
-                                <form>
-                                    <input type="text" id="loginAccount" placeholder="帳號" />
-                                    <input type="password" id="loginPassword" placeholder="密碼" />
-                                    <button type="button" class="btn login">登入帳號</button>
-                                    <p><a href="forget.html">忘記密碼了嗎?</a></p>
-                                    <hr />
-                                    <button type="button" class="btn d-flex justify-content-center align-items-center">
-                                        <img src="img/login/ICON-GOOGLE.png" width="40" alt="logo" loading="lazy">
-                                        <span> 使用Google帳號登入</span>
-                                    </button>
-                                    <button type="button" class="btn d-flex justify-content-center align-items-center">
-                                        <img src="img/login/ICON-FB.png" width="40" alt="logo" loading="lazy">
-                                        <span> 使用Facebook帳號登入</span>
-                                    </button>
-                                    <button type="button" class="btn d-flex justify-content-center align-items-center">
-                                        <img src="img/login/ICON-LINE.png" width="40" alt="logo" loading="lazy">
-                                        <span> 使用Line帳號登入</span>
-                                    </button>
-                                </form>
-                            </div>
-    
-                            <div id="signup-form">
-                                <form>
-    
-                                    <div class="mb-2">
-                                        <label for="signupAccount">登入帳號</label>
-                                        <span class="noticeText">《必填》</span>
-                                        <input type="text" placeholder="請輸入帳號" id="signupAccount" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupPassword1">登入密碼</label>
-                                        <span class="noticeText">《必填》</span>
-                                        <input type="password" placeholder="密碼長度最少6個字元" id="signupPassword1"
-                                            pattern="[0-9]{6}" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupPassword2">驗證密碼</label>
-                                        <span class="noticeText">《必填》</span>
-                                        <input type="password" placeholder="再次輸入密碼" id="signupPassword2" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupName">會員姓名</label>
-                                        <span class="noticeText">《必填》</span>
-                                        <input type="text" placeholder="請填寫中文姓名" id="signupName" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupEmail">電子信箱</label>
-                                        <span class="noticeText">《必填》</span>
-                                        <input type="email" placeholder="請填寫電子信箱" id="signupEmail" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupPhone">行動電話</label>
-                                        <span class="noticeText">《必填：格式為0987-654-321》</span>
-                                        <input type="tel" placeholder="請輸入行動電話" id="signupPhone"
-                                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupBirthday">會員生日</label>
-                                        <input type="date" id="signupBirthday" placeholder="1980-01-01" value="none"
-                                            readonly="false" />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupLeftEye">左眼度數</label>
-                                        <input type="number" id="signupLeftEye" min="0" max="3000" step="25" />
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="signupRightEye">右眼度數</label>
-                                        <input type="number" id="signupRightEye" min="0" max="3000" step="25" />
-                                    </div>
-                                    <div class="m-2">
-                                        <span>※註冊表示同意<a class="agreeText" href="member_info.html">《服務條款》</a></span>
-                                    </div>
-    
-                                    <hr>
-                                    <button type="submit" class="btn login">註冊會員</button>
-                                </form>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row bannerTop">
-            <div class="col-12" >
-                <img src="img/member/member_BANNER.jpg" class="d-block w-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>服務條款</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component.css" />
+    <link rel="stylesheet" type="text/css" href="./css/member.css" />
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+</head>
+
+<body>
+    <header>
+        <!-- PC主選單 -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top myPCnavbar">
+            <div class="d-flex align-items-center" style="width:170px">
+                <!-- 手機漢堡按鈕 -->
+                <div class="hamburgerContainer">
+                    <button data-toggle="collapse-side" data-target-sidebar=".side-collapse-left"
+                        data-target-content=".side-collapse-container-left" type="button" id="data-menu-toggle"
+                        class="data-menu-toggle">
+                        <span class="menu-bar bar"></span>
+                    </button>
+                </div>
+                <!-- 星歐LOGO -->
+                <a class="navbar-brand " href="index.html">
+                    <img src="img/logo.png" width="120" class="d-inline-block align-top" alt="logo" loading="lazy">
+                </a>
+            </div>
+            <!-- 主選單 -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="introduction.html">關於星歐</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_store"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            系列產品
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_store">
+                            <a class="dropdown-item" href="store5.html">星歐眼鏡行系列產品</a>
+                            <a class="dropdown-item" href="store6.html">屈臣氏系列產品</a>
+                            <a class="dropdown-item" href="store7.html">家樂福系列產品</a>
+                            <a class="dropdown-item" href="store8.html">康是美系列產品</a>
+                            <a class="dropdown-item" href="store9.html">全家系列產品</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_new"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            最新消息
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_new">
+                            <a class="dropdown-item" href="new.html">最新優惠</a>
+                            <a class="dropdown-item" href="paper.html">護眼小教室</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink_member"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            會員專區
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_member">
+                            <a class="dropdown-item" href="member.html">會員頁面</a>
+                            <a class="dropdown-item" href="member_info.html">服務條款</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown font-weight-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_location" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            銷售據點
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_location">
+                            <a class="dropdown-item" href="location.html">眼鏡行合作門市</a>
+                            <a class="dropdown-item" href="location1.html">屈臣氏合作門市</a>
+                            <a class="dropdown-item" href="location2.html">家樂福合作門市</a>
+                            <a class="dropdown-item" href="location3.html">康是美合作門市</a>
+                            <a class="dropdown-item" href="location4.html">全家合作門市</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown font-weight-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_order_info"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            配送說明
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_order_info">
+                            <a class="dropdown-item" href="order_info.html">配送說明</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#Login">配送清單</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 會員.購物車.搜尋 icon-->
+            <div class="d-flex">
+                <ul class="d-flex flex-row myIconNavbar">
+                    <li class="dropdown">
+                        <a class="nav-link navbarLoginIcon" data-toggle="modal"
+                            data-target="#Login">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownMenuLink_cart"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="padding:0px 0px 0px 3px;outline: none;height: 100%;">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="countCart">4</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right2" aria-labelledby="navbarDropdownMenuLink_cart">
+                            <span title="Select this card">
+                                <div class="row">
+                                    <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
+                                    <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
+                                    <div class="col-3"><span class="num">數量：2</span></div>
+                                </div>
+                                <span class="degree">100度</span>
+                            </span>
+                            <hr />
+
+                            <span title="Select this card">
+                                <div class="row">
+                                    <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
+                                    <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
+                                    <div class="col-3"><span class="num">數量：2</span></div>
+                                </div>
+                                <span class="degree">100度</span>
+                            </span>
+                            <hr />
+
+                            <span title="Select this card">
+                                <div class="row">
+                                    <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
+                                    <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
+                                    <div class="col-3"><span class="num">數量：2</span></div>
+                                </div>
+                                <span class="degree">100度</span>
+                            </span>
+                            <hr />
+
+                            <span title="Select this card">
+                                <div class="row">
+                                    <div class="col-4"><img src="./img/商品主圖_日彩拋_屈臣氏1.jpg" class="cartimg"></div>
+                                    <div class="col-5"><span class="cart">星歐AQUA彩色日拋隱形眼鏡美妝藍#526/10片裝</span></div>
+                                    <div class="col-3"><span class="num">數量：2</span></div>
+                                </div>
+                                <span class="degree">100度</span>
+                            </span>
+
+                            <a class="dropdown-item" href="cart.html">結帳</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink_search" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="outline: none">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right3" aria-labelledby="navbarDropdownMenuLink_search">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="搜尋商品"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">搜尋</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div style="height: 56px;"></div>
+
+
+        <!-- 手機主選單 -->
+        <div class="accordion myPhoneMenu" id="myPhoneMenu">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center">
+                        <a class="font-weight-bold" href="introduction.html">關於星歐</a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
+                        type="button" data-toggle="collapse" data-target="#collapsePhoneNavOne" aria-expanded="false"
+                        aria-controls="collapsePhoneNavOne">
+                        <span class="font-weight-bold">系列產品</span>
+                        <span><i class="fas fa-chevron-circle-down"></i></span>
+                    </button>
+                </div>
+                <div id="collapsePhoneNavOne" class="collapse" aria-labelledby="headingOne" data-parent="#myPhoneMenu">
+                    <div class="card-body styleListNone">
+                        <li><a href="store5.html">星歐眼鏡行系列產品</a></li>
+                        <li><a href="store6.html">屈臣氏系列產品</a></li>
+                        <li><a href="store7.html">家樂福系列產品</a></li>
+                        <li><a href="store8.html">康是美系列產品</a></li>
+                        <li><a href="store9.html">全家系列產品</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
+                        type="button" data-toggle="collapse" data-target="#collapsePhoneNavTwo" aria-expanded="false"
+                        aria-controls="collapsePhoneNavTwo">
+                        <span class="font-weight-bold">最新消息</span>
+                        <span><i class="fas fa-chevron-circle-down"></i></span>
+                    </button>
+                </div>
+                <div id="collapsePhoneNavTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myPhoneMenu">
+                    <div class="card-body styleListNone">
+                        <li><a href="new.html">最新優惠</a></li>
+                        <li><a href="paper.html">護眼小教室</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
+                        type="button" data-toggle="collapse" data-target="#collapsePhoneNavThree" aria-expanded="false"
+                        aria-controls="collapsePhoneNavThree">
+                        <span class="font-weight-bold">會員專區</span>
+                        <span><i class="fas fa-chevron-circle-down"></i></span>
+                    </button>
+                </div>
+                <div id="collapsePhoneNavThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#myPhoneMenu">
+                    <div class="card-body styleListNone">
+                        <li><a href="member.html">會員頁面</a></li>
+                        <li><a href="member_info.html">服務條款</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
+                        type="button" data-toggle="collapse" data-target="#collapsePhoneNavFour" aria-expanded="false"
+                        aria-controls="collapsePhoneNavFour">
+                        <span class="font-weight-bold">銷售據點</span>
+                        <span><i class="fas fa-chevron-circle-down"></i></span>
+                    </button>
+                </div>
+                <div id="collapsePhoneNavFour" class="collapse" aria-labelledby="headingFour"
+                    data-parent="#myPhoneMenu">
+                    <div class="card-body styleListNone">
+                        <li><a href="location.html">眼鏡行合作門市</a></li>
+                        <li><a href="location1.html">屈臣氏合作門市</a></li>
+                        <li><a href="location2.html">家樂福合作門市</a></li>
+                        <li><a href="location3.html">康是美合作門市</a></li>
+                        <li><a href="location4.html">全家合作門市</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center"
+                        type="button" data-toggle="collapse" data-target="#collapsePhoneNavFive" aria-expanded="false"
+                        aria-controls="collapsePhoneNavFive">
+                        <span class="font-weight-bold">配送說明</span>
+                        <span><i class="fas fa-chevron-circle-down"></i></span>
+                    </button>
+                </div>
+                <div id="collapsePhoneNavFive" class="collapse" aria-labelledby="headingFive"
+                    data-parent="#myPhoneMenu">
+                    <div class="card-body styleListNone">
+                        <li><a href="order_info.html">配送說明</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#Login">配送清單</a></li>
+                    </div>
+                </div>
             </div>
         </div>
-        <br/>
-     
-        <div class="col order member-description">
-            <span class="h3 txt">服務條款</span>    
-            <hr class="hr-line">
+    </header>
+
+    <!-- 登入/註冊彈窗 -->
+    <div class="modal fade myLoginAndSign" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="my-form-modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="my-form-toggle">
+                            <button id="login-toggle" onclick="toggleLogin()">會員登入</button>
+                            <button id="signup-toggle" onclick="toggleSignup()">加入會員</button>
+                        </div>
+
+                        <div id="login-form">
+                            <form>
+                                <input type="text" id="loginAccount" placeholder="帳號" />
+                                <input type="password" id="loginPassword" placeholder="密碼" />
+                                <button type="button" class="btn login">登入帳號</button>
+                                <p><a href="forget.html">忘記密碼了嗎?</a></p>
+                                <hr />
+                                <button type="button" class="btn d-flex justify-content-center align-items-center">
+                                    <img src="img/login/ICON-GOOGLE.png" width="40" alt="logo" loading="lazy">
+                                    <span> 使用Google帳號登入</span>
+                                </button>
+                                <button type="button" class="btn d-flex justify-content-center align-items-center">
+                                    <img src="img/login/ICON-FB.png" width="40" alt="logo" loading="lazy">
+                                    <span> 使用Facebook帳號登入</span>
+                                </button>
+                                <button type="button" class="btn d-flex justify-content-center align-items-center">
+                                    <img src="img/login/ICON-LINE.png" width="40" alt="logo" loading="lazy">
+                                    <span> 使用Line帳號登入</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div id="signup-form">
+                            <form>
+
+                                <div class="mb-2">
+                                    <label for="signupAccount">登入帳號</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="text" placeholder="請輸入帳號" id="signupAccount" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupPassword1">登入密碼</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="password" placeholder="密碼長度最少6個字元" id="signupPassword1"
+                                        pattern="[0-9]{6}" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupPassword2">驗證密碼</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="password" placeholder="再次輸入密碼" id="signupPassword2" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupName">會員姓名</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="text" placeholder="請填寫中文姓名" id="signupName" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupEmail">電子信箱</label>
+                                    <span class="noticeText">《必填》</span>
+                                    <input type="email" placeholder="請填寫電子信箱" id="signupEmail" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupPhone">行動電話</label>
+                                    <span class="noticeText">《必填：格式為0987-654-321》</span>
+                                    <input type="tel" placeholder="請輸入行動電話" id="signupPhone"
+                                        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupBirthday">會員生日</label>
+                                    <input type="date" id="signupBirthday" placeholder="1980-01-01" value="none"
+                                        readonly="false" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupLeftEye">左眼度數</label>
+                                    <input type="number" id="signupLeftEye" min="0" max="3000" step="25" />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="signupRightEye">右眼度數</label>
+                                    <input type="number" id="signupRightEye" min="0" max="3000" step="25" />
+                                </div>
+                                <div class="m-2">
+                                    <span>※註冊表示同意<a class="agreeText" href="member_info.html">《服務條款》</a></span>
+                                </div>
+
+                                <hr>
+                                <button type="submit" class="btn login">註冊會員</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
-        
-        <br/>
+    </div>
+
+    <!-- banner -->
+    <div class="row bannerTop">
+        <div class="col-12">
+            <img src="img/member/member_BANNER.jpg" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- 表頭 -->
+    <div class="order hideIn991px">
+        <span class="line"></span>
+        <span class="h3 txt">服務條款</span>
+        <span class="line"></span>
+        <hr class="hr-line">
+    </div>
+    <br />
+
+    <!-- 內文 -->
+    <div class="container">
         <div class="row">
             <div class="col">
                 <div class="row">
                     <div class="col" style="text-align: center">
-                        <img class="img-fluid member_icon" src="img/member/member_icon.png" />
+                        <img class="myIcon" src="img/member/member_icon.png" />
                     </div>
                 </div>
-                <br/>
+                <br />
                 <div class="row">
                     <div class="col" style="text-align: center">
                         <span class="h2 text-primary">-服務條款-</span>
                     </div>
                 </div>
-                <br/>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">星歐光學會員服務條款</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">星歐光學會員服務條款</h2>
                     </div>
                 </div>
                 <p class="h5">感謝您使用星歐光學股份有限公司（下稱星歐光學）的產品和服務。本服務是由星歐光學提供。只要您使用「服務」，即表示您同意成為星歐光學之會員並遵守本條款，故請詳閱本條款內容。</p>
-                <br/><br/>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">一、會員服務</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">一、會員服務</h2>
                     </div>
                 </div>
-                <p class="h5">您必須遵守星歐光學向您提供的所有政策。</p><br/>
-                <p class="h5">請勿濫用服務。舉例來說，您不應干擾星歐光學運作，亦不得試圖透過星歐光學所提供的介面和操作說明以外的方法存取服務。您僅可於法律（包括適用的出口及再出口管制法律和法規）允許範圍內使用會員服務。如果您未遵守星歐光學之條款或政策，或是發覺疑似違規行為，星歐光學可能會暫停或終止向您提供會員服務。</p><br/>
-                <p class="h5">會員服務並不會將任何智慧財產權授予您使用。除非相關內容的擁有者同意或法律允許，否則您一律不得使用會員服務中的內容。本條款並未授權您可使用會員服務中所採用的任何品牌標示或標誌。請勿移除、遮蓋或變造服務所顯示或隨附顯示的任何法律聲明。</p><br/>
+                <p class="h5">您必須遵守星歐光學向您提供的所有政策。</p>
+                <p class="h5">
+                    請勿濫用服務。舉例來說，您不應干擾星歐光學運作，亦不得試圖透過星歐光學所提供的介面和操作說明以外的方法存取服務。您僅可於法律（包括適用的出口及再出口管制法律和法規）允許範圍內使用會員服務。如果您未遵守星歐光學之條款或政策，或是發覺疑似違規行為，星歐光學可能會暫停或終止向您提供會員服務。
+                </p>
+                <p class="h5">
+                    會員服務並不會將任何智慧財產權授予您使用。除非相關內容的擁有者同意或法律允許，否則您一律不得使用會員服務中的內容。本條款並未授權您可使用會員服務中所採用的任何品牌標示或標誌。請勿移除、遮蓋或變造服務所顯示或隨附顯示的任何法律聲明。
+                </p>
                 <p class="h5">會員服務中顯示的部分內容為星歐光學所有，但會員服務中可能會包含其他非由星歐光學所提供之內容，這類內容應由其提供實體承擔全部責任。</p>
-                <br/><br/>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">二、雙方權益</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">二、雙方權益</h2>
                     </div>
                 </div>
-                <p class="h5">商品介紹頁面呈現之商品名稱、價格、內容、規格、型號、其他相關資訊，皆供參考。隱形眼鏡商品屬於未開放網路販售之醫療器材，星歐光學係提供平台為您與您所預定交易之銷商門市(下稱「指定門市」)接受商品之查詢與配送需求，屆時將由您與指定門市在實體店面內進行交易，請您務必當場確認交易內容及消費金額，並索取交易明細、發票或收據，以維護您的自身之權益。</p><br/>
-                <p class="h5">本網站係提供商品查詢與配送服務(下稱「商品配送服務」)，而非網路購物或消費者保護法所稱之通訊交易，實際發生之買賣行為係存在於您與指定門市之間。透過本網站使用商品配送服務者並可享有專屬優惠。（*專屬優惠依活動檔期不同，將另行於網站公告。）</p><br/>
-                <p class="h5">您亦可至星歐光學直營門市（敦南直營店：台北市大安區大安路77號）升級成為VIP會員，另享有配送到府及其他VIP優惠。</p><br/>
-                <p class="h5">使用商品配送服務時所填寫之度數，建議應經眼科醫療院所或驗光所驗配。商品配送服務須確保所填寫之度數正確，且建議定期至眼科醫療院所或驗光所追蹤更新其資訊，屆時如未更新而有使用疑慮者，星歐光學保留暫停提供服務之權利。</p>
-                <br/><br/>
+                <p class="h5">
+                    商品介紹頁面呈現之商品名稱、價格、內容、規格、型號、其他相關資訊，皆供參考。隱形眼鏡商品屬於未開放網路販售之醫療器材，星歐光學係提供平台為您與您所預定交易之銷商門市(下稱「指定門市」)接受商品之查詢與配送需求，屆時將由您與指定門市在實體店面內進行交易，請您務必當場確認交易內容及消費金額，並索取交易明細、發票或收據，以維護您的自身之權益。
+                </p>
+                <p class="h5">
+                    本網站係提供商品查詢與配送服務(下稱「商品配送服務」)，而非網路購物或消費者保護法所稱之通訊交易，實際發生之買賣行為係存在於您與指定門市之間。透過本網站使用商品配送服務者並可享有專屬優惠。（*專屬優惠依活動檔期不同，將另行於網站公告。）
+                </p>
+                <p class="h5">您亦可至星歐光學直營門市（敦南直營店：台北市大安區大安路77號）升級成為VIP會員，另享有配送到府及其他VIP優惠。</p>
+                <p class="h5">
+                    使用商品配送服務時所填寫之度數，建議應經眼科醫療院所或驗光所驗配。商品配送服務須確保所填寫之度數正確，且建議定期至眼科醫療院所或驗光所追蹤更新其資訊，屆時如未更新而有使用疑慮者，星歐光學保留暫停提供服務之權利。
+                </p>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">三、與第三人網站的連結</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">三、與第三人網站的連結</h2>
                     </div>
                 </div>
-                <p class="h5">官方網站或App中可能會提供連結至其他網站或網路資源的連結。您可能會因此連結至其他業者經營的網站，但不表示星歐光學與該等業者有任何關係。其他業者經營之網站均由各該業者自行負責，不屬星歐光學控制及負責範圍內。星歐光學對任何檢索結果或外部連結，不擔保其合適性、可依賴性、即時性、有效性、正確性及完整性。您並同意星歐光學無須為您連結至非屬星歐光學之網站所生之任何損害，負損害賠償之責任。</p>
-                <br/><br/>
+                <p class="h5">
+                    官方網站或App中可能會提供連結至其他網站或網路資源的連結。您可能會因此連結至其他業者經營的網站，但不表示星歐光學與該等業者有任何關係。其他業者經營之網站均由各該業者自行負責，不屬星歐光學控制及負責範圍內。星歐光學對任何檢索結果或外部連結，不擔保其合適性、可依賴性、即時性、有效性、正確性及完整性。您並同意星歐光學無須為您連結至非屬星歐光學之網站所生之任何損害，負損害賠償之責任。
+                </p>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">四、您的註冊義務</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">四、您的註冊義務</h2>
                     </div>
                 </div>
-                <p class="h5">為了能使用會員服務，您同意以下事項：</p><br/>
-                <p class="h5">1. 依會員服務註冊表之提示提供您本人正確、最新及完整的資料。</p><br/>
-                <p class="h5">2. 維持並更新您個人資料，確保其為正確、最新及完整。若您提供任何錯誤、不實或不完整的資料，將可能影響您身為會員之權益，星歐光學並有權暫停或終止您的帳號，並拒絕您使用會員服務之全部或一部分。</p>
-                <br/>
+                <p class="h5">為了能使用會員服務，您同意以下事項：</p>
+                <p class="h5">1. 依會員服務註冊表之提示提供您本人正確、最新及完整的資料。</p>
+                <p class="h5">2.
+                    維持並更新您個人資料，確保其為正確、最新及完整。若您提供任何錯誤、不實或不完整的資料，將可能影響您身為會員之權益，星歐光學並有權暫停或終止您的帳號，並拒絕您使用會員服務之全部或一部分。</p>
+                <br />
                 <div style="background-color: rgb(245, 245, 245);padding: 2rem;">
+                    <div class="row">
+                        <div class="col">
+                            <h2 style="border-left:8px solid #019bd9;padding-left:5px;">五、隱私權政策</h2>
+                        </div>
+                    </div>
+                    <p class="h5">
+                        星歐光學尊重並保護消費者的個人資料及隱私權，為了協助您清楚地瞭解星歐光學如何蒐集、處理、利用及保護您所提供的個人資料，請您詳細閱讀本隱私權保護政策，當您選擇訪問、瀏覽、使用或儲存本網站之資料或訊息時，即視為您已經瞭解並接受星歐光學之隱私權政策。
+                    </p>
+                    <br />
+                    <p class="h5 font-weight-bold">《適用範圍》</p>
+                    <p class="h5">本隱私權保護政策適用於您所填載之授權中，涉及個人資料蒐集、處理、利用與保護之相關作法。</p>
+                    <p class="h5">星歐光學會善用各種方式務求保護由瀏覽者提供的個人資料，例如避免任何未經授權的資料存取、使用以及公開。星歐光學妥善存放電子數據及數據庫，並依法管理一切的存取活動。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《蒐集的資料類型、蒐集目的及使用方式》</p>
+                    <p class="h5">
+                        當您使用星歐光學服務時，星歐光學會請您提供聯絡方式、電子信箱等相關必要資料。當您註冊成為星歐光學會員後，所輸入的資料以及相關意見，將提供星歐光學用於推廣活動設計、產品生產研發及相關服務參考使用。
+                    </p>
+                    <p class="h5">
+                        星歐光學將基於法定義務、雙方間契約或類似關係、產學合作、資料庫管理、廣告行為、消費者保護以及電子商務服務等等目的，就您有關個人身體描述、辨識或健康紀錄，以及您生活格調、活動及興趣等個人資料進行蒐集處理及利用。
+                    </p>
+                    <p class="h5">凡未經您主動註冊所產生的資料，例如使用者機器的 IP
+                        位址、使用時間、使用的瀏覽器、瀏覽及點選紀錄等資料，僅供內部做為流量和整體網路使用行為分析，主要運用於評估及提昇星歐光學之服務品質。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《個人資料分享政策》</p>
+                    <p class="h5">
+                        星歐光學有義務保護消費者隱私及個人資料，非經您本人同意不會自行更正、刪除、補充或提供(蒐集、處理、利用)任何（或部分）消費者個人資料及檔案。除非經過您書面同意或符合以下情況，星歐光學始得審慎為之。
+                    </p>
+                    <p class="h5">1.中華民國司法檢調單位透過合法程序進行調閱。</p>
+                    <p class="h5">2.違反法規且已造成脅迫性。</p>
+                    <p class="h5">3.保護其他消費者之合法使用權益。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《個人資料使用期間與地區》</p>
+                    <p class="h5">
+                        星歐光學僅在中華民國境內利用您的個人資料。您在星歐光學所填入的個人資料，將基於前述蒐集目的永久保存;星歐光學如基於生產、研發、推廣產品及服務等目的，須將您的資訊提供給合作第三方使用，將盡可能去個別化並妥善管理相關活動。
+                    </p>
+                    <p class="h5">會員若違反星歐光學相關使用規定，該會員帳號將暫停使用三個月;該會員帳號暫停使用累計達3次者，即終止該會員帳號之使用，且該電子郵件不得再申請註冊。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《個人資料權利行使方式》</p>
+                    <p class="h5">1. 當您在星歐光學中註冊成為會員後，您可以隨時利用您的帳號和密碼登入星歐光學「會員資料修改」功能，對您填寫的會員個人資料，進行查閱、製給複本、補充及更正。</p>
+                    <p class="h5">2.以下情形，星歐光學將以停止蒐集、處理或利用個人資料之方式代替刪除個人資料：</p>
+                    <p class="h5">• 有法令規定。</p>
+                    <p class="h5">• 有契約約定之保存期限。</p>
+                    <p class="h5">• 有理由說明刪除時將侵害當事人保護利益。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《星歐光學傳送訊息之方式》</p>
+                    <p class="h5">星歐光學將在您申請成為會員、參與星歐光學活動或其它已取得您同意的情況下，以推播通知之方式傳送星歐光學相關資料給您。您能隨時停止接收資料。</p>
+                    <p class="h5">提醒您，若您不同意星歐光學本隱私權政策之事宜或您所提供資訊並不真(準)確，我們可能無法建立您的會員記錄，亦無法提供即時之消費優惠的服務，敬請諒察。</p>
+                    <p class="h5">若您所提供之資料經本公司發現有不足以確認身分真實性，或冒用、盜用他人之個人資料、資料不實或不完整等情形，本公司有權暫時停止提供對您的服務，若有不便之處敬請見諒。</p>
+                    <br />
+                    <p class="h5 font-weight-bold">《自我保護措施》</p>
+                    <p class="h5">
+                        請妥善保管您的密碼或任何個人資料，不要將任何個人資料，尤其是密碼提供給任何人。在您登入系統完成各項作業後，務必記得登出帳號，若您是與他人共享可攜型行動裝置，切記要在使用後登出，以防止他人讀取您的個人資料、信件或進入所屬機關管理區。
+                    </p>
+                    <br />
+                    <p class="h5 font-weight-bold">《聯絡窗口》</p>
+                    <p class="h5">若您對星歐光學隱私權保護政策或個人資料行使權利有任何疑問，請與星歐光學窗口聯繫，聯絡方式如下:</p>
+                    <p class="h5">線上問題諮詢網址：<a href="http://www.larganmed.com.tw"
+                            target="_blank">http://www.larganmed.com.tw</a></p>
+                    <p class="h5">電話：04-3600-0205</p>
+                </div>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">五、隱私權政策</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">六、使用者的承諾</h2>
                     </div>
                 </div>
-                <p class="h5">星歐光學尊重並保護消費者的個人資料及隱私權，為了協助您清楚地瞭解星歐光學如何蒐集、處理、利用及保護您所提供的個人資料，請您詳細閱讀本隱私權保護政策，當您選擇訪問、瀏覽、使用或儲存本網站之資料或訊息時，即視為您已經瞭解並接受星歐光學之隱私權政策。</p><br/>
-                <p class="h5 font-weight-bold">《適用範圍》</p><br/>
-                <p class="h5">本隱私權保護政策適用於您所填載之授權中，涉及個人資料蒐集、處理、利用與保護之相關作法。</p><br/>
-                <p class="h5">星歐光學會善用各種方式務求保護由瀏覽者提供的個人資料，例如避免任何未經授權的資料存取、使用以及公開。星歐光學妥善存放電子數據及數據庫，並依法管理一切的存取活動。</p><br/>
-                <p class="h5 font-weight-bold">《蒐集的資料類型、蒐集目的及使用方式》</p><br/>
-                <p class="h5">當您使用星歐光學服務時，星歐光學會請您提供聯絡方式、電子信箱等相關必要資料。當您註冊成為星歐光學會員後，所輸入的資料以及相關意見，將提供星歐光學用於推廣活動設計、產品生產研發及相關服務參考使用。</p><br/>
-                <p class="h5">星歐光學將基於法定義務、雙方間契約或類似關係、產學合作、資料庫管理、廣告行為、消費者保護以及電子商務服務等等目的，就您有關個人身體描述、辨識或健康紀錄，以及您生活格調、活動及興趣等個人資料進行蒐集處理及利用。</p><br/>
-                <p class="h5">凡未經您主動註冊所產生的資料，例如使用者機器的 IP 位址、使用時間、使用的瀏覽器、瀏覽及點選紀錄等資料，僅供內部做為流量和整體網路使用行為分析，主要運用於評估及提昇星歐光學之服務品質。</p><br/>
-                <p class="h5 font-weight-bold">《個人資料分享政策》</p><br/>
-                <p class="h5">星歐光學有義務保護消費者隱私及個人資料，非經您本人同意不會自行更正、刪除、補充或提供(蒐集、處理、利用)任何（或部分）消費者個人資料及檔案。除非經過您書面同意或符合以下情況，星歐光學始得審慎為之。</p><br/>
-                <p class="h5">1.中華民國司法檢調單位透過合法程序進行調閱。</p><br/>
-                <p class="h5">2.違反法規且已造成脅迫性。</p><br/>
-                <p class="h5">3.保護其他消費者之合法使用權益。</p><br/>
-                <p class="h5 font-weight-bold">《個人資料使用期間與地區》</p><br/>
-                <p class="h5">星歐光學僅在中華民國境內利用您的個人資料。您在星歐光學所填入的個人資料，將基於前述蒐集目的永久保存;星歐光學如基於生產、研發、推廣產品及服務等目的，須將您的資訊提供給合作第三方使用，將盡可能去個別化並妥善管理相關活動。</p><br/>
-                <p class="h5">會員若違反星歐光學相關使用規定，該會員帳號將暫停使用三個月;該會員帳號暫停使用累計達3次者，即終止該會員帳號之使用，且該電子郵件不得再申請註冊。</p><br/>
-                <p class="h5 font-weight-bold">《個人資料權利行使方式》</p><br/>
-                <p class="h5">1. 當您在星歐光學中註冊成為會員後，您可以隨時利用您的帳號和密碼登入星歐光學「會員資料修改」功能，對您填寫的會員個人資料，進行查閱、製給複本、補充及更正。</p><br/>
-                <p class="h5">2.以下情形，星歐光學將以停止蒐集、處理或利用個人資料之方式代替刪除個人資料：</p><br/>
-                <p class="h5">• 有法令規定。</p><br/>
-                <p class="h5">• 有契約約定之保存期限。</p><br/>
-                <p class="h5">• 有理由說明刪除時將侵害當事人保護利益。</p><br/>
-                <p class="h5 font-weight-bold">《星歐光學傳送訊息之方式》</p><br/>
-                <p class="h5">星歐光學將在您申請成為會員、參與星歐光學活動或其它已取得您同意的情況下，以推播通知之方式傳送星歐光學相關資料給您。您能隨時停止接收資料。</p><br/>
-                <p class="h5">提醒您，若您不同意星歐光學本隱私權政策之事宜或您所提供資訊並不真(準)確，我們可能無法建立您的會員記錄，亦無法提供即時之消費優惠的服務，敬請諒察。</p><br/>
-                <p class="h5">若您所提供之資料經本公司發現有不足以確認身分真實性，或冒用、盜用他人之個人資料、資料不實或不完整等情形，本公司有權暫時停止提供對您的服務，若有不便之處敬請見諒。</p><br/>
-                <p class="h5 font-weight-bold">《自我保護措施》</p><br/>
-                <p class="h5">請妥善保管您的密碼或任何個人資料，不要將任何個人資料，尤其是密碼提供給任何人。在您登入系統完成各項作業後，務必記得登出帳號，若您是與他人共享可攜型行動裝置，切記要在使用後登出，以防止他人讀取您的個人資料、信件或進入所屬機關管理區。</p><br/>
-                <p class="h5 font-weight-bold">《聯絡窗口》</p><br/>
-                <p class="h5">若您對星歐光學隱私權保護政策或個人資料行使權利有任何疑問，請與星歐光學窗口聯繫，聯絡方式如下:</p><br/>
-                <p class="h5">線上問題諮詢網址：<a href="http://www.larganmed.com.tw" target="_blank">http://www.larganmed.com.tw</a></p><br/>
-                <p class="h5">電話：04-3600-0205</p>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">六、使用者的承諾</a>
-                    </div>
-                </div>
-                <p class="h5">您承諾絕不為任何非法目的或以任何非法方式使用官方網站或APP，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。您同意並保證不得利用官方網站或APP從事侵害他人權益或違法之行為，否則應自負相關法律責任。包括但不限於：</p><br/>
-                <p class="h5">1.上載、張貼、公布或傳送任何誹謗、侮辱、具威脅性、攻擊性、不雅、猥褻、不實、違反公共秩序或善良風俗或其他不法之文字、圖片或任何形式的檔案於官方網站或APP上；</p><br/>
-                <p class="h5">2.侵害他人名譽、隱私權、營業秘密、商標權、著作權、專利權、其他智慧財產權及其他權利；</p><br/>
-                <p class="h5">3.違反依法律或契約所應負之保密義務；</p><br/>
-                <p class="h5">4.冒用他人名義使用官方網站或APP；</p><br/>
-                <p class="h5">5.上載、張貼、傳輸或散佈任何含有電腦病毒或任何對電腦軟、硬體產生中斷、破壞或限制功能之程式碼之資料；</p><br/>
-                <p class="h5">6.以任何方法傷害未成年人；</p><br/>
-                <p class="h5">7.偽造訊息來源或以任何方式干擾傳輸來源之認定；</p><br/>
-                <p class="h5">8.干擾或中斷本服務或伺服器或連結官方網站或APP之網路，或不遵守連結至官方網站或APP之相關需求、程序、政策或規則等，包括但不限於：使用任何設備、軟體或刻意規避星歐光學之排除自動搜尋之標頭 (robot exclusion headers)；</p><br/>
-                <p class="h5">9.對於恐怖行動提供任何實質支持或資源；</p><br/>
-                <p class="h5">10.追蹤他人或其他干擾他人或為前述目前蒐集或儲存他人之個人資訊；</p><br/>
+                <p class="h5">
+                    您承諾絕不為任何非法目的或以任何非法方式使用官方網站或APP，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。您同意並保證不得利用官方網站或APP從事侵害他人權益或違法之行為，否則應自負相關法律責任。包括但不限於：
+                </p>
+                <p class="h5">1.上載、張貼、公布或傳送任何誹謗、侮辱、具威脅性、攻擊性、不雅、猥褻、不實、違反公共秩序或善良風俗或其他不法之文字、圖片或任何形式的檔案於官方網站或APP上。</p>
+                <p class="h5">2.侵害他人名譽、隱私權、營業秘密、商標權、著作權、專利權、其他智慧財產權及其他權利。</p>
+                <p class="h5">3.違反依法律或契約所應負之保密義務。</p>
+                <p class="h5">4.冒用他人名義使用官方網站或APP。</p>
+                <p class="h5">5.上載、張貼、傳輸或散佈任何含有電腦病毒或任何對電腦軟、硬體產生中斷、破壞或限制功能之程式碼之資料。</p>
+                <p class="h5">6.以任何方法傷害未成年人。</p>
+                <p class="h5">7.偽造訊息來源或以任何方式干擾傳輸來源之認定。</p>
+                <p class="h5">
+                    8.干擾或中斷本服務或伺服器或連結官方網站或APP之網路，或不遵守連結至官方網站或APP之相關需求、程序、政策或規則等，包括但不限於：使用任何設備、軟體或刻意規避星歐光學之排除自動搜尋之標頭
+                    (robot exclusion headers)。</p>
+                <p class="h5">9.對於恐怖行動提供任何實質支持或資源。</p>
+                <p class="h5">10.追蹤他人或其他干擾他人或為前述目前蒐集或儲存他人之個人資訊。</p>
                 <p class="h5">11.星歐光學有正當理由認為不適當之行為。</p>
-                <br/><br/>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">七、系統中斷或故障</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">七、系統中斷或故障</h2>
                     </div>
                 </div>
-                <p class="h5">官方網站或APP有時可能會出現中斷或故障等現象，或許將造成您使用上的不便、資料喪失、錯誤、遭人篡改或其他經濟上損失等情形。您於使用官方網站或APP時宜自行採取防護措施。星歐光學對於您因使用（或無法使用）官方網站或APP而造成的損害，除故意或重大過失外，不負任何賠償責任。</p>
-                <br/><br/>
+                <p class="h5">
+                    官方網站或APP有時可能會出現中斷或故障等現象，或許將造成您使用上的不便、資料喪失、錯誤、遭人篡改或其他經濟上損失等情形。您於使用官方網站或APP時宜自行採取防護措施。星歐光學對於您因使用（或無法使用）官方網站或APP而造成的損害，除故意或重大過失外，不負任何賠償責任。
+                </p>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">八、擔保與免責聲明</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">八、擔保與免責聲明</h2>
                     </div>
                 </div>
-                <p class="h5">星歐光學會以商業上合理的技術與注意程度提供官方網站或APP，希望您盡情使用。但關於服務，星歐光學不予保證，包括除本條款或額外條款中明示規定者外，星歐光學均不對服務做出任何特定保證。星歐光學不會就服務中的內容、特定功能及其可靠性、可用性和符合您的需求的能力，做出任何承諾。</p><br/>
+                <p class="h5">
+                    星歐光學會以商業上合理的技術與注意程度提供官方網站或APP，希望您盡情使用。但關於服務，星歐光學不予保證，包括除本條款或額外條款中明示規定者外，星歐光學均不對服務做出任何特定保證。星歐光學不會就服務中的內容、特定功能及其可靠性、可用性和符合您的需求的能力，做出任何承諾。
+                </p>
                 <p class="h5">星歐光學僅以現狀為您提供服務。</p>
-                <br/><br/>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">九、服務變更及終止</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">九、服務變更及終止</h2>
                     </div>
                 </div>
-                <p class="h5">星歐光學保留於任何時點，不經通知隨時修改或暫時或永久停止繼續提供會員服務（或其任一部分）的權利。若您不接受星歐光學所修改之會員服務條款，您可立即停用星歐光學所提供之任何服務。若您未表示反對而持續使用星歐光學之服務，代表您已接受星歐光學服務條款之變更。您同意星歐光學對於您或是任何第三方對於任何修改、暫停或停止繼續提供本服務不負任何責任。</p><br/>
-                <p class="h5">您同意星歐光學得依其判斷因任何理由，包含但不限於一定期間未使用、法院或政府機關命令、本服務無法繼續或服務內容實質變更、無法預期之技術或安全因素或問題、您所為詐欺或違法行為、未依約支付費用，或其他星歐光學認為您已經違反本服務條款的明文規定及精神，而終止或限制您使用帳號（或其任何部分）或本服務之使用，並將本服務內任何「會員內容」加以移除並刪除。您並同意星歐光學亦得依其自行之考量，於通知或未通知之情形下，隨時終止或限制您使用本服務或其任何部分。</p><br/>
-                <p class="h5">您承認並同意前開終止或限制，星歐光學得立即關閉、刪除或限制存取您的帳號及您帳號中全部或部分相關資料及檔案，及停止本服務全部或部分之使用。此外，您同意若本服務之使用被終止或限制時，星歐光學對您或任何第三人均不承擔責任。</p>
-                <br/><br/>
+                <p class="h5">
+                    星歐光學保留於任何時點，不經通知隨時修改或暫時或永久停止繼續提供會員服務（或其任一部分）的權利。若您不接受星歐光學所修改之會員服務條款，您可立即停用星歐光學所提供之任何服務。若您未表示反對而持續使用星歐光學之服務，代表您已接受星歐光學服務條款之變更。您同意星歐光學對於您或是任何第三方對於任何修改、暫停或停止繼續提供本服務不負任何責任。
+                </p>
+                <p class="h5">
+                    您同意星歐光學得依其判斷因任何理由，包含但不限於一定期間未使用、法院或政府機關命令、本服務無法繼續或服務內容實質變更、無法預期之技術或安全因素或問題、您所為詐欺或違法行為、未依約支付費用，或其他星歐光學認為您已經違反本服務條款的明文規定及精神，而終止或限制您使用帳號（或其任何部分）或本服務之使用，並將本服務內任何「會員內容」加以移除並刪除。您並同意星歐光學亦得依其自行之考量，於通知或未通知之情形下，隨時終止或限制您使用本服務或其任何部分。
+                </p>
+                <p class="h5">
+                    您承認並同意前開終止或限制，星歐光學得立即關閉、刪除或限制存取您的帳號及您帳號中全部或部分相關資料及檔案，及停止本服務全部或部分之使用。此外，您同意若本服務之使用被終止或限制時，星歐光學對您或任何第三人均不承擔責任。
+                </p>
+                <br />
                 <div class="row">
                     <div class="col">
-                        <img src="img/member/藍色槓槓.jpg" class="h1-front">
-                        <a class="h1 h1-font">十、其他</a>
+                        <h2 style="border-left:8px solid #019bd9;padding-left:5px;">十、其他</h2>
                     </div>
                 </div>
-                <p class="h5">星歐光學保留隨時修訂本服務條款之權利，並公告於網頁時即為生效。</p><br/>
+                <p class="h5">星歐光學保留隨時修訂本服務條款之權利，並公告於網頁時即為生效。</p>
                 <p class="h5">本網站是專為台灣所架設使用。因本聲明之解釋與適用與使用本網站所生之一切爭議應以中華民國法律為準據法。如有爭訟，雙方同意以台灣台中地方法院為第一審管轄法院。</p>
-                
             </div>
         </div>
-        </div>
+    </div>
 
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-            <div class="row footer">
-                <div class="col-md-3 footerDesktop">
-                    <h5 class="black">公司資訊</h5>
-                    <ul class="list-unstyled text-small">
-                        <li>星歐光學股份有限公司</li>
-                        <li>地址：台中市南屯區工業區23路14號2樓</li>
-                        <li>客服專線：0809-007-199</li>
-                        <li>傳真號碼：04-3600-6692</li>
-                        <li>服務時間：週一至週五 | AM 8:30~PM 5:00</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-4">
-                    <h5 class="black">關於我們</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="introduction.html">公司簡介</li>
-                        <li><a class="text-muted" href="new.html">最新消息</li>
-                        <li><a class="text-muted" href="store1.html">系列產品</li>
-                        <li><a class="text-muted" href="location.html">銷售據點</li>
-                        <li><a class="text-muted" href="privacy_info.html">法律聲明</li>
-                        <li><a class="text-muted" href="member_info.html">服務條款</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-4">
-                    <h5 class="black">網站服務</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal2">加入會員</a></li>
-                        <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal">會員登入</a></li>
-                        <li><a class="text-muted" href="member.html">會員專區</a></li>
-                        <li><a class="text-muted" href="order_info.html">配送說明</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-4">
-                    <h5 class="black">官方社群</h5>
-                    <div class="row flex-column">
-                        <div class="appIcon" style="margin:0px 15px">
-                            <a href="https://www.facebook.com/Larganmedical" target="_blank">
-                                <img src="img/首頁_頁腳ICON_FB.png" width="50" alt="logo">
-                            </a>
-                        </div>
-                        <div class="appIcon" style="margin:15px">
-                            <a href="https://www.instagram.com/largan.medical/?hl=zh-tw" target="_blank">
-                                <img src="img/首頁_頁腳ICON_IG.png" width="50" alt="logo">
-                            </a>
-                        </div>
+    <footer class="pt-4 mt-3 border-top">
+        <div class="row footer">
+            <div class="col-md-3 footerDesktop">
+                <h5 class="black">公司資訊</h5>
+                <ul class="list-unstyled text-small">
+                    <li>星歐光學股份有限公司</li>
+                    <li>地址：台中市南屯區工業區23路14號2樓</li>
+                    <li>客服專線：0809-007-199</li>
+                    <li>傳真號碼：04-3600-6692</li>
+                    <li>服務時間：週一至週五 | AM 8:30~PM 5:00</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-4">
+                <h5 class="black">關於我們</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="introduction.html">公司簡介</li>
+                    <li><a class="text-muted" href="new.html">最新消息</li>
+                    <li><a class="text-muted" href="store1.html">系列產品</li>
+                    <li><a class="text-muted" href="location.html">銷售據點</li>
+                    <li><a class="text-muted" href="privacy_info.html">法律聲明</li>
+                    <li><a class="text-muted" href="member_info.html">服務條款</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-4">
+                <h5 class="black">網站服務</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal2">加入會員</a></li>
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal">會員登入</a></li>
+                    <li><a class="text-muted" href="member.html">會員專區</a></li>
+                    <li><a class="text-muted" href="order_info.html">配送說明</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-4">
+                <h5 class="black">官方社群</h5>
+                <div class="row flex-column">
+                    <div class="appIcon" style="margin:0px 15px">
+                        <a href="https://www.facebook.com/Larganmedical" target="_blank">
+                            <img src="img/首頁_頁腳ICON_FB.png" width="50" alt="logo">
+                        </a>
+                    </div>
+                    <div class="appIcon" style="margin:15px">
+                        <a href="https://www.instagram.com/largan.medical/?hl=zh-tw" target="_blank">
+                            <img src="img/首頁_頁腳ICON_IG.png" width="50" alt="logo">
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-12" id="APPDOWNING">
-                    <h5 class="black">APP下載</h5>
-                    <div class="row">
-                        <div class="d-flex flex-wrap">
-                            <div style="padding:0px 15px;">
-                                <img src="img/首頁_頁腳ICON_APP.png" width="50" alt="logo">
-                            </div>
-                            <div style="padding-left: 15px;">
-                                <span>星歐光學-專業隱形眼鏡</span>
-                                <br>
-                                <span>Largan Contact lens</span>
-                            </div>
+            </div>
+            <div class="col-md-3 col-xs-12" id="APPDOWNING">
+                <h5 class="black">APP下載</h5>
+                <div class="row">
+                    <div class="d-flex flex-wrap">
+                        <div style="padding:0px 15px;">
+                            <img src="img/首頁_頁腳ICON_APP.png" width="50" alt="logo">
                         </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="appIcon" style="padding: 15px 15px 0px 15px;">
-                                <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical"
-                                    target="_blank">
-                                    <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
-                                </a>
-                            </div>
-                            <div class="appIcon" style="padding: 15px 0px 0px 15px;">
-                                <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950"
-                                    target="_blank">
-                                    <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
-                                </a>
-                            </div>
+                        <div style="padding-left: 15px;">
+                            <span>星歐光學-專業隱形眼鏡</span>
+                            <br>
+                            <span>Largan Contact lens</span>
                         </div>
                     </div>
-                    <br />
-                    <div class="row">
-                        <div class="d-flex flex-wrap">
-                            <div style="padding:0px 15px;">
-                                <img src="img/首頁_頁腳ICON_APP2.jpg" width="50" alt="logo">
-                            </div>
-                            <div style="padding-left: 15px;">
-                                <span>星歐x藥妝通路</span>
-                                <br>
-                                <span>星歐光學</span>
-                            </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="appIcon" style="padding: 15px 15px 0px 15px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.largan.larganmedical"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
+                            </a>
                         </div>
-                        <div class="d-flex flex-wrap">
-                            <div class="appIcon" style="padding: 15px 15px 0px 15px;">
-                                <a href="https://play.google.com/store/apps/details?id=com.largan.larganxwatsons"
-                                    target="_blank">
-                                    <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
-                                </a>
-                            </div>
-                            <div class="appIcon" style="padding: 15px 0px 0px 15px;">
-                                <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90x%E8%97%A5%E5%A6%9D%E9%80%9A%E8%B7%AF/id1367087901"
-                                    target="_blank">
-                                    <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
-                                </a>
-                            </div>
+                        <div class="appIcon" style="padding: 15px 0px 0px 15px;">
+                            <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90%E5%85%89%E5%AD%B8-largan-contact-lens%E5%B0%88%E6%A5%AD%E9%9A%B1%E5%BD%A2%E7%9C%BC%E9%8F%A1/id954843950"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <br />
-                <div class="col-12 footerMobile mt-4">
-                    <h5 class="black">公司資訊</h5>
-                    <ul class="list-unstyled text-small">
-                        <li>星歐光學股份有限公司</li>
-                        <li>地址：台中市南屯區工業區23路14號2樓</li>
-                        <li>客服專線：0809-007-199</li>
-                        <li>傳真號碼：04-3600-6692</li>
-                        <li>服務時間：週一至週五 | AM 8:30~PM 5:00</li>
-                    </ul>
+                <div class="row">
+                    <div class="d-flex flex-wrap">
+                        <div style="padding:0px 15px;">
+                            <img src="img/首頁_頁腳ICON_APP2.jpg" width="50" alt="logo">
+                        </div>
+                        <div style="padding-left: 15px;">
+                            <span>星歐x藥妝通路</span>
+                            <br>
+                            <span>星歐光學</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="appIcon" style="padding: 15px 15px 0px 15px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.largan.larganxwatsons"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_GOOGLE.png" width="120" alt="logo">
+                            </a>
+                        </div>
+                        <div class="appIcon" style="padding: 15px 0px 0px 15px;">
+                            <a href="https://apps.apple.com/tw/app/%E6%98%9F%E6%AD%90x%E8%97%A5%E5%A6%9D%E9%80%9A%E8%B7%AF/id1367087901"
+                                target="_blank">
+                                <img src="img/首頁_頁腳下載按鈕_IOS.png" width="120" alt="logo">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-    
             </div>
-            <hr style="border-top: 2px solid">
-            <div class="row footer">
-                <!-- <div class="col-1"></div> -->
-                <div class="col-md-5 col-xs-12">
-                    <ul class="list-unstyled text-small">
-                        <li>●衛部醫器製字第005309號、衛部醫器製字第005317號</li>
-                        <li>●衛部醫器製字第006096號、中市衛器廣字第10902020號</li>
-                        <li>●中市衛器廣字第10812295號、中市衛器廣字第10903031號</li>
-                        <li>●中市衛器廣字第10905040號</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <ul class="list-unstyled text-small">
-                        <li>●配戴一般隱形眼鏡須經眼科醫師驗光配鏡取得處方箋，或經驗光人員驗光配鏡取得配鏡單，並定期接受眼科醫師追蹤檢查。</li>
-                        <li>●本器材不得逾中文仿單建議之最長配戴時數、不得重覆配戴、於就寢前務必取下，以免感染或潰瘍。</li>
-                        <li>●如有不適，應立即就醫。</li>
-                        <li>●產品使用後，請投入垃圾桶，切勿丟棄於馬桶或水槽，以免致環境問題。</li>
-                    </ul>
-                </div>
-                <!-- <div class="col-1"></div> -->
+            <br />
+            <div class="col-12 footerMobile mt-4">
+                <h5 class="black">公司資訊</h5>
+                <ul class="list-unstyled text-small">
+                    <li>星歐光學股份有限公司</li>
+                    <li>地址：台中市南屯區工業區23路14號2樓</li>
+                    <li>客服專線：0809-007-199</li>
+                    <li>傳真號碼：04-3600-6692</li>
+                    <li>服務時間：週一至週五 | AM 8:30~PM 5:00</li>
+                </ul>
             </div>
-            <hr style="border-top: 2px solid">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col" style="text-align: center; background-color: lightgray">
-                    <a>Copyright © 2015 Largan Medical Co.,Ltd. All rights reserved</a>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <script src="js/classie.js"></script>
-        <script src="js/sider.js"></script>
-        <script src="js/login.js"></script>
-    </body>
+        </div>
+        <hr style="border-top: 2px solid">
+        <div class="row footer">
+            <!-- <div class="col-1"></div> -->
+            <div class="col-md-5 col-xs-12">
+                <ul class="list-unstyled text-small">
+                    <li>●衛部醫器製字第005309號、衛部醫器製字第005317號</li>
+                    <li>●衛部醫器製字第006096號、中市衛器廣字第10902020號</li>
+                    <li>●中市衛器廣字第10812295號、中市衛器廣字第10903031號</li>
+                    <li>●中市衛器廣字第10905040號</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <ul class="list-unstyled text-small">
+                    <li>●配戴一般隱形眼鏡須經眼科醫師驗光配鏡取得處方箋，或經驗光人員驗光配鏡取得配鏡單，並定期接受眼科醫師追蹤檢查。</li>
+                    <li>●本器材不得逾中文仿單建議之最長配戴時數、不得重覆配戴、於就寢前務必取下，以免感染或潰瘍。</li>
+                    <li>●如有不適，應立即就醫。</li>
+                    <li>●產品使用後，請投入垃圾桶，切勿丟棄於馬桶或水槽，以免致環境問題。</li>
+                </ul>
+            </div>
+            <!-- <div class="col-1"></div> -->
+        </div>
+        <hr style="border-top: 2px solid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col" style="text-align: center; background-color: lightgray">
+                <a>Copyright © 2015 Largan Medical Co.,Ltd. All rights reserved</a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sider.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
 </html>
