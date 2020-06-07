@@ -42,7 +42,7 @@ div.order {
 }
 
 #myTabContent form {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -53,12 +53,24 @@ div.order {
   background: #ebebeb;
   outline: none;
   transition: 0.4s;
-  width: 75%;
+  width: 100%;
 }
 
 #myTabContent form input:focus,
 #myTabContent form input:active {
   transform: scaleX(1.02);
+}
+
+#myTabContent form .login {
+  background: #80cdec;
+  color: #fff;
+  width: 35%;
+  margin: 0 auto;
+}
+
+#myTabContent form .login:hover,
+#myTabContent form .login:active {
+  background: #019bd9;
 }
 
 .panel-default > .panel-heading {
@@ -118,7 +130,11 @@ div.order {
   content: "\002b";
 }
 
-.likeDelete{
+.orderDetailedImg{
+  max-width: 150px;
+}
+
+.likeDelete {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -127,10 +143,10 @@ div.order {
   background: black;
   color: #fff;
   text-align: center;
-  line-height: 25px;
+  line-height: 27px;
   cursor: pointer;
 }
-.likeDelete:hover{
+.likeDelete:hover {
   opacity: 0.7;
 }
 
