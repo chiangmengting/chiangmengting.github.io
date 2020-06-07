@@ -174,13 +174,14 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-link.navbarLoginIcon{
+.nav-link.navbarLoginIcon {
   outline: none;
-  color:rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
 }
 
-.nav-link.navbarLoginIcon:hover,.nav-link.navbarLoginIcon:focus{
+.nav-link.navbarLoginIcon:hover,
+.nav-link.navbarLoginIcon:focus {
   color: black !important;
 }
 
@@ -272,6 +273,27 @@ a {
   background-color: #069cd9;
   color: #ffffff;
 }
+
+/* 法律聲明、服務條款、配送說明icon */
+.myIcon {
+  width: 150px;
+}
+.hideIn991px{
+  display: block;
+}
+
+/* PC各頁面表頭 */
+span.txt {
+  margin-left: 30px;
+}
+.hr-line {
+  border-top: 2px solid #d4d4d4;
+  width: 97vw;
+}
+.order {
+  margin-top: 20px;
+}
+
 
 /* 手機板主選單Navbar icon群 */
 @media screen and (max-width: 768px) {
@@ -395,6 +417,35 @@ a {
   .data-menu-toggle.active .bar:after {
     top: 0px;
     transform: rotate(-45deg);
+  }
+
+  /* 法律聲明、服務條款、配送說明icon */
+  .myIcon {
+    width: 100px;
+  }
+  .hideIn991px{
+    display: none;
+  }
+
+  /* phone各頁面表頭 */
+  .order {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  span.txt {
+    margin-left: 0px;
+  }
+  .order .line {
+    display: inline-block;
+    width: 20%;
+    border-top: 1px solid #ccc;
+  }
+  .order .txt {
+    vertical-align: -8px;
+    margin-left: 0px;
+  }
+  .hr-line {
+    display: none;
   }
 }
 
