@@ -8,12 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>重新設定帳戶密碼</title>
+    <title>重設帳戶密碼</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/layout.css">
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link rel="stylesheet" type="text/css" href="./css/component.css" />
-    <link rel="stylesheet" type="text/css" href="./css/member.css" />
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
     <link rel="stylesheet" type="text/css" href="./css/forget.css" />
 </head>
@@ -104,8 +103,7 @@
             <div class="d-flex">
                 <ul class="d-flex flex-row myIconNavbar">
                     <li class="dropdown">
-                        <a class="nav-link navbarLoginIcon" data-toggle="modal"
-                            data-target="#Login">
+                        <a class="nav-link navbarLoginIcon" data-toggle="modal" data-target="#Login">
                             <i class="fas fa-user"></i>
                         </a>
                     </li>
@@ -380,21 +378,23 @@
         </div>
     </div>
 
+    <!-- 表頭 -->
     <div class="order">
         <span class="line"></span>
-        <span class="h3 txt">重新設定帳戶密碼</span>
+        <span class="h3 txt">重設帳戶密碼</span>
         <span class="line"></span>
-        <hr class="member_hr-line">
+        <hr class="hr-line">
     </div>
 
+    <!-- 內文 -->
     <section class="container myForget">
         <div class="card">
             <div class="card-body">
                 <form class="d-flex flex-column justify-content-center">
                     <span class="text-center font-weight-bold title">請輸入您的電子郵件</span>
                     <span class="text-center font-weight-bold title">我們將會寄送「重新設定密碼」連結給您進行密碼設定</span>
-                    <label class="mt-3 font-weight-bold" for="email">註冊信箱</label>
-                    <input class="form-control mt-2" type="email" placeholder="請輸入您註冊的Email" id="email" required />
+                    <label class="mt-3 font-weight-bold " for="email">註冊信箱</label>
+                    <input class="form-control" type="email" placeholder="請輸入您註冊的Email" id="email" required />
                     <button type="submit" class="btn p-2" style="width: 30vw;margin: 30px auto;">確定送出</button>
                 </form>
             </div>
@@ -419,7 +419,7 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="introduction.html">公司簡介</li>
                     <li><a class="text-muted" href="new.html">最新消息</li>
-                    <li><a class="text-muted" href="store1.html">系列產品</li>
+                    <li><a class="text-muted" href="store5.html">系列產品</li>
                     <li><a class="text-muted" href="location.html">銷售據點</li>
                     <li><a class="text-muted" href="privacy_info.html">法律聲明</li>
                     <li><a class="text-muted" href="member_info.html">服務條款</li>
@@ -428,8 +428,10 @@
             <div class="col-md-2 col-4">
                 <h5 class="black">網站服務</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal2">加入會員</a></li>
-                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#detailModal">會員登入</a></li>
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login"
+                            onclick="toggleSignup()">加入會員</a></li>
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login"
+                            onclick="toggleLogin()">會員登入</a></li>
                     <li><a class="text-muted" href="member.html">會員專區</a></li>
                     <li><a class="text-muted" href="order_info.html">配送說明</a></li>
                 </ul>
@@ -520,7 +522,6 @@
         </div>
         <hr style="border-top: 2px solid">
         <div class="row footer">
-            <!-- <div class="col-1"></div> -->
             <div class="col-md-5 col-xs-12">
                 <ul class="list-unstyled text-small">
                     <li>●衛部醫器製字第005309號、衛部醫器製字第005317號</li>
@@ -537,7 +538,6 @@
                     <li>●產品使用後，請投入垃圾桶，切勿丟棄於馬桶或水槽，以免致環境問題。</li>
                 </ul>
             </div>
-            <!-- <div class="col-1"></div> -->
         </div>
         <hr style="border-top: 2px solid">
         <div class="row">
