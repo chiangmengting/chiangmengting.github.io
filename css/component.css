@@ -211,7 +211,8 @@
 }
 
 .appIcon{
-    color: black;
+	color: black;
+	transition: .5s;
 }
 
 .mt-3 a:hover{

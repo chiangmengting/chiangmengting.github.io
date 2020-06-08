@@ -294,6 +294,13 @@ span.txt {
   margin-top: 20px;
 }
 
+/* footer */
+.text-muted:hover,
+.text-muted:active{
+  color: #0794cc !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
 
 /* 手機板主選單Navbar icon群 */
 @media screen and (max-width: 768px) {
