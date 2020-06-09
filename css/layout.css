@@ -278,7 +278,7 @@ a {
 .myIcon {
   width: 150px;
 }
-.hideIn991px{
+.hideIn991px {
   display: block;
 }
 
@@ -296,7 +296,7 @@ span.txt {
 
 /* footer */
 .text-muted:hover,
-.text-muted:active{
+.text-muted:active {
   color: #0794cc !important;
   text-decoration: none !important;
   font-weight: 600;
@@ -430,7 +430,7 @@ span.txt {
   .myIcon {
     width: 100px;
   }
-  .hideIn991px{
+  .hideIn991px {
     display: none;
   }
 
@@ -477,42 +477,48 @@ span.txt {
     transition: 0.5s;
     opacity: 1;
     left: 0px;
-    height: 45%;
+    height: 100%;
+    background: #f7f7f7;
     overflow-x: hidden;
     overflow-y: scroll;
   }
-  .myPhoneMenu > .card {
+
+  .myPhoneMenuShow .sidebarInner {
+    padding-bottom: 40vh;
+  }
+
+  .myPhoneMenu .card {
     border: none;
     border-radius: 0px;
   }
-  .myPhoneMenu > .card > .card-header {
+  .myPhoneMenu .card .card-header {
     border: none;
     margin-top: 0px;
     padding: 1rem 1.25rem;
   }
-  .myPhoneMenu > .card > .card-header > .btn-link {
+  .myPhoneMenu .card .card-header .btn-link {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
     padding: 0px;
   }
-  .myPhoneMenu > .card > .card-header > .btn-link:hover {
+  .myPhoneMenu .card .card-header .btn-link:hover {
     color: #0794cc;
     font-weight: 600;
   }
-  .myPhoneMenu > .card > .card-header > .btn-link:focus {
+  .myPhoneMenu .card .card-header .btn-link:focus {
     color: #0794cc;
     font-weight: 600;
   }
 
-  .myPhoneMenu > .card > .card-header > .btn-link > a {
+  .myPhoneMenu .card .card-header .btn-link > a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
   }
-  .myPhoneMenu > .card > .card-header > .btn-link:hover a {
+  .myPhoneMenu .card .card-header .btn-link:hover a {
     color: #0794cc;
     font-weight: 600;
   }
-  .myPhoneMenu > .card > .card-header > .btn-link:focus a {
+  .myPhoneMenu .card .card-header .btn-link:focus a {
     color: #0794cc;
     font-weight: 600;
   }
