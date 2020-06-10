@@ -186,31 +186,8 @@ a {
 }
 
 /* PC板Navbar icon群 */
-/* Navbar member icon */
-.dropdown-menu-right {
-  width: 230px;
-  left: -200px;
-  box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-}
-.menufont2 a:first-child {
-  text-align: center;
-  margin: auto;
-  margin-top: 5px;
-  color: #fff;
-  width: 200px;
-  background-color: #71caea;
-}
-.menufont2 a:last-child {
-  text-align: center;
-  margin: auto;
-  margin-top: 10px;
-  color: #fff;
-  width: 200px;
-  background-color: #019bd9;
-}
-
 /* Navbar cart icon */
-.dropdown-menu-right2 {
+.navbarDropdownMenuLink_cart {
   width: 320px;
   left: -300px;
   height: 50vh;
@@ -218,14 +195,19 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.dropdown-menu-right2 a:last-child {
-  text-align: center;
-  margin: auto;
-  margin-top: 25px;
-  color: #fff;
-  width: 290px;
-  background-color: #019bd9;
+.navbarDropdownMenuLink_cart .item{
+  border-bottom: 1px solid #ddd;
 }
+.navbarDropdownMenuLink_cart div a{
+  background-color: #80cdec;
+  color: #fff;
+  width:80%;
+}
+.navbarDropdownMenuLink_cart div a:hover{
+  background-color: #019bd9;
+  color: #fff;
+}
+
 /* navbar購物車商品計數 */
 .countCart {
   width: 15px;
@@ -236,25 +218,6 @@ a {
   font-size: 1px;
   text-align: center;
 }
-.cartimg {
-  margin-left: 15px;
-  width: 70px;
-}
-.cart {
-  display: inline-block;
-  width: 140px;
-}
-
-.num {
-  color: #949494;
-  font-size: 12px;
-}
-.degree {
-  margin-left: 38%;
-  color: #949494;
-  font-size: 12px;
-}
-
 /* Navbar search icon */
 .dropdown-menu-right3 {
   width: 320px;
@@ -305,45 +268,11 @@ span.txt {
 /* 手機板主選單Navbar icon群 */
 @media screen and (max-width: 768px) {
   /* Navbar member icon */
-  .dropdown-menu-right {
-    width: 230px;
-    left: -150px;
-    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-  }
-  .menufont2 a:first-child {
-    text-align: center;
-    margin: auto;
-    margin-top: 5px;
-    color: #fff;
-    width: 200px;
-    background-color: #71caea;
-  }
-  .menufont2 a:last-child {
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    color: #fff;
-    width: 200px;
-    background-color: #019bd9;
-  }
-
   /* Navbar cart icon */
-  .dropdown-menu-right2 {
-    width: 280px;
-    height: 50vh;
-    left: -230px;
-    box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.3);
-    overflow-y: auto;
-    overflow-x: hidden;
+  .dropdown-menu.navbarDropdownMenuLink_cart {
+    width: 320px;
+    left: -250px;
   }
-  .dropdown-menu-right2 a:last-child {
-    text-align: center;
-    margin: auto;
-    margin-top: 25px;
-    color: #fff;
-    background-color: #019bd9;
-  }
-
   /* Navbar search icon */
   .dropdown-menu-right3 {
     width: 300px;
@@ -372,7 +301,6 @@ span.txt {
 @media screen and (max-width: 991px) {
   .hamburgerContainer {
     display: block;
-    margin-top: 6px;
     margin-right: 10px;
   }
 
