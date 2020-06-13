@@ -48,34 +48,6 @@ span.txt {
   font-weight: 600;
 }
 
-
-/* .sideBar .card .card-header{
-  margin-top:0px;
-  padding: 1rem
-} */
-
-/* .sideBar .card .card-header .btn{
-  padding: 0px;
-} */
-
-
-
-/* .sideBar .list-group-item {
-  background: rgba(233, 233, 233, 0.486);
-  border-radius: 0%;
-  border: none;
-}
-
-.sideBar .list-group-item:hover {
-  color: #0794cc;
-  font-weight: 600;
-}
-
-.sideBar .list-group-item:focus {
-  background-color: #0794cc;
-  color: #fff;
-} */
-
 select.form-control {
   text-align-last: center;
   border-radius: 10px;
@@ -161,7 +133,7 @@ input.form-control {
   max-width: 75%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .sideBar {
     display: none;
   }

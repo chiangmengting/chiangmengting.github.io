@@ -195,15 +195,15 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.navbarDropdownMenuLink_cart .item{
+.navbarDropdownMenuLink_cart .item {
   border-bottom: 1px solid #ddd;
 }
-.navbarDropdownMenuLink_cart div a{
+.navbarDropdownMenuLink_cart div a {
   background-color: #80cdec;
   color: #fff;
-  width:80%;
+  width: 80%;
 }
-.navbarDropdownMenuLink_cart div a:hover{
+.navbarDropdownMenuLink_cart div a:hover {
   background-color: #019bd9;
   color: #fff;
 }
@@ -458,14 +458,36 @@ span.txt {
     list-style: none;
     padding: 0.8rem 1.25rem;
   }
-  .styleListNone li > a {
+  .styleListNone li > .storeMain {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
   }
-  .styleListNone > li:hover a {
+  .styleListNone > li:hover .storeMain,
+  .styleListNone > li:active .storeMain {
     color: #0794cc;
   }
-  .styleListNone > li:active a {
-    color: #0794cc;
+
+  .styleListNone [data-toggle="collapse"]:after {
+    content: "-";
+    font-size: 1.2em;
+  }
+
+  .styleListNone [data-toggle="collapse"].collapsed:after {
+    content: "+";
+  }
+
+  .storeMain_sub {
+    flex: 1 1 auto;
+    padding: 1rem 1.25rem 0px 1.25rem;
+  }
+
+  .storeMain_sub a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .storeMain_sub a:hover,
+  .storeMain_sub a:active {
+    text-decoration: none;
+    color: black;
   }
 }
