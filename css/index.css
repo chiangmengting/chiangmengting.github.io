@@ -1,8 +1,7 @@
 /* Index Carousel */
-.myIndexCarousel{
+.myIndexCarousel {
   margin-bottom: 30px;
 }
-
 
 .myIndexCarousel .carousel-indicators li {
   background-color: #beddf0;
@@ -11,8 +10,16 @@
   border-radius: 50%;
 }
 
+.myIndexCarousel .carousel-inner .imgPC {
+  width: 100%;
+}
+
+.myIndexCarousel .carousel-inner .imgPhone {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .myIndexCarousel{
+  .myIndexCarousel {
     margin-bottom: 20px;
   }
   .myIndexCarousel .carousel-indicators li {
@@ -21,6 +28,24 @@
   }
   .carousel-indicators {
     bottom: -15px;
+  }
+}
+
+
+@media (max-width: 499px) {
+  .myIndexCarousel .carousel-inner .imgPC {
+    width: 100%;
+    display: none;
+  }
+  .myIndexCarousel .carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+
+  .myIndexCarousel .carousel-inner .imgPhone {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -70,5 +95,3 @@
   padding-right: 10rem;
   font-size: 1.5rem;
 }
-
-
