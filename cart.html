@@ -519,36 +519,33 @@
     </div>
 
     <!-- 表頭 -->
-    <div class="order">
+    <div class="col order">
         <span class="line"></span>
         <span class="h3 txt">配送清單</span>
         <span class="line"></span>
-        <hr class="cart_hr-line">
+        <hr class="hr-line">
     </div>
 
     <!-- 內文 -->
     <div class="container cartContainer">
         <div class="accordion-group">
             <div class="accordion-heading">
-                <div class="row accordion-toggle">
-                    <div class="col-12">
+                <div class="accordion-toggle">
+                    <div class="col-12 phoneText">
                         <span>配送清單─眼鏡行合作門市</span>
                     </div>
-                    <div class="col-12 col-md-9">
-                        <p>狀況：<span class="cartred">未達配送門檻，不可使用此服務。</span><a href="store5.html"><span
-                                    class="cartblue">繼續挑選>>></span></a></p>
-                        <p>金額：NT$440元</p>
-                        <p>預計配送日期：2020/04/10</p>
+                    <div class="d-flex flex-column mt-3 ml-2 mr-2 phoneText">
+                        <span class="mb-2">狀況：<span class="cartred">未達配送門檻，不可使用此服務。</span></span>
+                        <span class="mb-2">金額：NT$440元</span>
+                        <span>預計配送日期：2020/04/10</span>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="offer-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="toggle" href="#collapseCartOne">
-                                查看情況
-                            </a>
-                        </div>
+                    <div class="d-flex justify-content-end mb-2 mr-2">
+                        <a class="collapsed cartSeeMore" data-toggle="collapse" data-parent="toggle"
+                            href="#collapseCartOne">
+                            查看情況
+                        </a>
                     </div>
                 </div>
-
             </div>
 
             <div id="collapseCartOne" class="collapse in">
@@ -679,32 +676,31 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="cartbtnfail" onclick="javascript:location.href='store5.html'" style="outline: none;cursor: pointer;">繼續挑選</button>
+                <button class="cartbtnfail" onclick="javascript:location.href='store5.html'"
+                    style="outline: none;cursor: pointer;">繼續挑選</button>
             </div>
         </div>
 
         <div class="accordion-group">
             <div class="accordion-heading">
-                <div class="row accordion-toggle">
-                    <div class="col-12">
+                <div class="accordion-toggle">
+                    <div class="col-12 phoneText">
                         <span>配送清單─屈臣氏門市</span>
                     </div>
-                    <div class="col-12 col-md-9">
-                        <p>狀況：<span class="cartred">已達配送門檻，可使用此服務。</span><a href="store5.html"><span
-                                    class="cartblue">繼續挑選>>></span></a></p>
-                        <p>金額：NT$4660元</p>
-                        <p>預計配送日期：2020/04/10 (實際配送日期以簡訊通知為準)</p>
+                    <div class="d-flex flex-column mt-3 ml-2 mr-2 phoneText">
+                        <span class="mb-2">狀況：<span class="cartredSuccess">已達配送門檻，可使用此服務。</span></span>
+                        <span class="mb-2">金額：NT$4660元</span>
+                        <span>預計配送日期：2020/05/09 (實際配送日期以簡訊通知為準)</span>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="offer-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="toggle" href="#collapseCartTwo">
-                                查看情況
-                            </a>
-                        </div>
+                    <div class="d-flex justify-content-end mb-2 mr-2">
+                        <a class="collapsed cartSeeMore" data-toggle="collapse" data-parent="toggle"
+                            href="#collapseCartTwo">
+                            查看情況
+                        </a>
                     </div>
                 </div>
-
             </div>
+
 
             <div id="collapseCartTwo" class="collapse in">
                 <div class="accordion-inner ">
@@ -834,7 +830,9 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="cartbtnsucces"  style="outline: none;cursor: pointer;">確認送出</button>
+                <button class="cartbtnfail mr-2" onclick="javascript:location.href='store5.html'"
+                    style="outline: none;cursor: pointer;">繼續挑選</button>
+                <button class="cartbtnsucces" style="outline: none;cursor: pointer;">確認送出</button>
             </div>
         </div>
     </div>
@@ -865,8 +863,10 @@
             <div class="col-md-2 col-4">
                 <h5 class="black">網站服務</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login" onclick="toggleSignup()">加入會員</a></li>
-                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login" onclick="toggleLogin()">會員登入</a></li>
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login"
+                            onclick="toggleSignup()">加入會員</a></li>
+                    <li><a class="text-muted" href="#" data-toggle="modal" data-target="#Login"
+                            onclick="toggleLogin()">會員登入</a></li>
                     <li><a class="text-muted" href="member.html">會員專區</a></li>
                     <li><a class="text-muted" href="order_info.html">配送說明</a></li>
                 </ul>
