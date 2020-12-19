@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>noPageGame</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(noPageGame-images/BG3.png);
+        }
+
+        .title {
+            margin: 3vh auto;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        canvas {
+            background: url(noPageGame-images/底圖06.jpg);
+            display: block;
+            margin: 3vh auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="title">
+            <h1>你進到不存在的頁面啦!</h1>
+            <h1>休息一下玩個小遊戲吧^^</h1>
+        </div>
+        <canvas id="myCanvas" width="730" height="480"></canvas>
+    </div>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        // 球
+        var x = canvas.width / 2;
+        var y = canvas.height - 30;
+        var dx = 2;
+        var dy = -2;
+        var ballRadius = 10;
+        var color = "#65B4AC";
+
+        // 球拍
+        var paddleHeight = 10;
+        var paddleWidth = 75;
+        var paddleX = (canvas.width - paddleWidth) / 2;
+        var rightPressed = false;
+        var leftPressed = false;
+
+
+        // 磚塊
+        var brickRowCount = 6;
+        var brickColumnCount = 8;
+
+        var brickWidth = 75;
+        var brickHeight = 20;
+        var brickPadding = 10;
+
+        var brickOffsetTop = 40;
+        var brickOffsetLeft = 30;
+
+        var bricks = [];
+        for (var c = 0; c < brickColumnCount; c++) {
+            bricks[c] = [];
+            for (var r = 0; r < brickRowCount; r++) {
+                bricks[c][r] = { x: 0, y: 0, status: 1 };
+            }
+        }
+
+        // 分數
+        var score = 0;
+
+        // 玩家生命值
+        var lives = 3;
+
+        // 偵聽使用者操縱球拍(鍵盤)
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+        function keyDownHandler(e) {
+            if (e.key == "Right" || e.key == "ArrowRight") {
+                rightPressed = true;
+            }
+            else if (e.key == "Left" || e.key == "ArrowLeft") {
+                leftPressed = true;
+            }
+        }
+        function keyUpHandler(e) {
+            if (e.key == "Right" || e.key == "ArrowRight") {
+                rightPressed = false;
+            }
+            else if (e.key == "Left" || e.key == "ArrowLeft") {
+                leftPressed = false;
+            }
+        }
+
+        // 偵聽使用者操作球拍(滑鼠)
+        document.addEventListener("mousemove", mouseMoveHandler, false);
+        function mouseMoveHandler(e) {
+            var relativeX = e.clientX - canvas.offsetLeft;
+            if (relativeX > 0 && relativeX < canvas.width) {
+                paddleX = relativeX - paddleWidth / 2;
+            }
+        }
+
+        // 碰撞檢測
+        function collisionDetection() {
+            for (var c = 0; c < brickColumnCount; c++) {
+                for (var r = 0; r < brickRowCount; r++) {
+                    var b = bricks[c][r];
+                    if (b.status == 1) {
+                        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+                            dy = -dy;
+                            color = "#111111"
+                            b.status = 0;
+                            score++;
+                            // 分數全空判斷為獲勝,並停止遊戲
+                            if (score == brickRowCount * brickColumnCount) {
+                                alert("YOU WIN, CONGRATULATIONS!");
+                                document.location.reload();
+                                clearInterval(interval);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 計算分數
+        function drawScore() {
+            ctx.font = "16px Arial";
+            ctx.fillStyle = "#65B4AC";
+            ctx.fillText("分數: " + score, 8, 20);
+        }
+
+        // 計算生命值
+        function drawLives() {
+            ctx.font = "16px Arial";
+            ctx.fillStyle = "#65B4AC";
+            ctx.fillText("生命: " + lives, canvas.width - 65, 20);
+        }
+
+        // 繪製球
+        function drawBall() {
+            ctx.beginPath();
+            ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        // 繪製球拍
+        function drawPaddle() {
+            ctx.beginPath();
+            ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+            ctx.fillStyle = "#65B4AC";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        // 繪製磚塊
+        function drawBricks() {
+            for (var c = 0; c < brickColumnCount; c++) {
+                for (var r = 0; r < brickRowCount; r++) {
+                    if (bricks[c][r].status == 1) {
+                        var brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+                        var brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+                        bricks[c][r].x = brickX;
+                        bricks[c][r].y = brickY;
+                        ctx.beginPath();
+                        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                        ctx.fillStyle = "#65B4AC";
+                        ctx.fill();
+                        ctx.closePath();
+                    }
+                }
+            }
+        }
+
+
+        //十毫秒重新繪製 
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBricks();
+            drawBall();
+            drawPaddle();
+            drawScore();
+            drawLives();
+            collisionDetection();
+
+
+            // 球碰到左右框反彈
+            if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+                dx = -dx;
+            }
+            // 球碰到上方反彈+碰到下方球拍反彈以及沒碰到球拍扣生命,生命用完結束遊戲
+            if (y + dy < ballRadius) {
+                dy = -dy;
+            } else if (y + dy > canvas.height - ballRadius) {
+                if (x > paddleX && x < paddleX + paddleWidth) {
+                    color = "#65B4AC"
+                    dy = -dy;
+                }
+                else {
+                    lives--;
+                    if (!lives) {
+                        alert("GAME OVER");
+                        document.location.reload();
+                        clearInterval(interval);
+                    }
+                    else {
+                        x = canvas.width / 2;
+                        y = canvas.height - 30;
+                        dx = 2;
+                        dy = -2;
+                        paddleX = (canvas.width - paddleWidth) / 2;
+                    }
+                }
+            }
+
+            // 球拍不能超過邊框
+            if (rightPressed) {
+                paddleX += 7;
+                if (paddleX + paddleWidth > canvas.width) {
+                    paddleX = canvas.width - paddleWidth;
+                }
+            }
+            else if (leftPressed) {
+                paddleX -= 7;
+                if (paddleX < 0) {
+                    paddleX = 0;
+                }
+            }
+            x += dx;
+            y += dy;
+        }
+
+
+        var interval = setInterval(draw, 10);
+    </script>
+
+</body>
+
+</html>
