@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Index</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="fontawesome/css/all.css"> 
+
+  <!-- timeline style -->
+  <link rel="stylesheet" href="pbook-css/timeline-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  <!-- recomend CSS -->
+  <link rel="stylesheet" type="text/css" href="pbook-css/book.css" />
+
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .sub-title {
+      text-align: center;
+      padding: 1vw 0;
+    }
+
+    /* logo */
+    .logo {
+      top: 5vw;
+      right: 44vw;
+      min-width: 10%;
+      min-height: 6.5vw;
+      background: url(images/pbook_logo_black.png) center center no-repeat;
+      background-size: cover;
+    }
+
+
+    /* 上方書籤 */
+    .cartButton {
+      min-width: 6%;
+      min-height: 7vw;
+      background: #2d3a3a;
+      top: 0;
+      right: 19%;
+      border-radius: 0 0 100px 100px;
+      color: #ffffff;
+    }
+
+    .loginButton {
+      min-width: 6%;
+      min-height: 7vw;
+      background: #2d3a3a;
+      top: 0;
+      right: 11%;
+      border-radius: 0 0 100px 100px;
+      color: #ffffff;
+    }
+
+    .loginImg {
+      min-width: 60%;
+      min-height: 3.5vw;
+      margin: 5px 0 5px 0;
+      background: url(images/102806.jpg) center center no-repeat;
+      background-size: cover;
+      display: none;
+    }
+
+    .loginText {
+      display: none;
+      font-size: 0.8vw;
+      margin: 2px 0;
+    }
+
+    .loginImg,
+    .loginText:hover {
+      color: #ffc408;
+    }
+
+
+    @media (max-width: 999.98px) {
+      .cartButton {
+        display: none !important;
+      }
+
+      .loginButton {
+        display: none !important;
+      }
+    }
+
+    /* 主功能按鈕 */
+    .titleZh {
+      font-size: 1.2vw;
+    }
+
+    .titleEn {
+      font-size: 0.8vw;
+      color: #ffc408;
+    }
+
+    .titleButton {
+      position: absolute;
+      top: 16vw;
+      right: 32vw;
+    }
+
+    .titleButton>div:hover {
+      transform: translate3d(1px, 1px, 1px);
+      text-shadow: 0.1em 0.1em 0 rgb(173, 173, 173);
+    }
+
+    @media (max-width: 999.98px) {
+      .titleButton {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1300.98px) {
+      .titleButton {
+        top: 16vw;
+        right: 28vw;
+      }
+    }
+
+    /* 手機板的主功能按鈕 */
+    @media (min-width: 1000px) {
+      .phoneTitleHide {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 999.98px) {
+      .menu {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        padding: 0 0 0 2px;
+        background: #2d3a3a;
+        width: 48px;
+        height: 45px;
+        transition: .5s;
+        right: 15px;
+        top: 15px;
+        z-index: 10;
+      }
+
+      .menu.active {
+        background: #fff;
+      }
+
+      .menu ul {
+        position: absolute;
+        left: -72px;
+        top: 45px;
+        background: rgba(255, 255, 255, .8);
+        width: 120px;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .menu.active ul {
+        opacity: 1;
+        max-height: 400px;
+      }
+
+      .menu ul li a {
+        display: block;
+        padding: 10px 12px;
+      }
+
+      .menu ul li a:hover {
+        background: #ffc408;
+      }
+
+      ul,
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .bar {
+        width: 30px;
+        height: 4px;
+        background: #ffc408;
+        margin: 8px 7px;
+        border-radius: 2px;
+        transition: .5s;
+      }
+
+      .active .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+        transform: rotate(-45deg) translate(-9px, 7px);
+      }
+
+      .active .bar2 {
+        opacity: 0;
+      }
+
+      .active .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -8px);
+        transform: rotate(45deg) translate(-9px, -8px);
+      }
+    }
+
+    /* 輪播圖 */
+    .carousel {
+      background: #cde2d0;
+      position: relative;
+      height: 27.5vw;
+    }
+
+    .carousel-inner {
+      height: 80% !important;
+      width: 80% !important;
+      position: absolute !important;
+      left: 50% !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      border: 10px solid #ffffff !important;
+    }
+
+    .carousel-item {
+      height: 100%;
+      width: 100%;
+      background-size: cover !important;
+    }
+
+    .myCarouselButton {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .myCarouselButton.right {
+      margin-right: 10%;
+    }
+
+    .myCarouselButton.left {
+      margin-left: 10%;
+    }
+
+    .myCarouselButton>.fas {
+      color: #ffc408;
+      font-size: 35px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .fa-caret-left {
+      transform: translate(-70%, -50%);
+    }
+
+    .fa-caret-right {
+      transform: translate(-30%, -50%);
+    }
+
+
+    @media (max-width: 991.98px) {
+      .myCarouselButton {
+        width: 30px;
+        height: 30px;
+      }
+
+      .myCarouselButton.right {
+        margin-right: 35%;
+      }
+
+      .myCarouselButton.left {
+        margin-left: 35%;
+      }
+
+      .myCarouselButton>.fas {
+        font-size: 25px;
+      }
+    }
+
+    .carousel-indicators {
+      margin-bottom: 5px;
+    }
+
+    .carousel-indicators li {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgb(37, 37, 37);
+      margin: 0 8px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #ffc408;
+    }
+
+    @media (max-width: 767.98px) {
+      .carousel-indicators {
+        margin-bottom: -5px;
+      }
+
+      .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .carousel-indicators {
+        margin-bottom: -3px;
+      }
+
+      .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/header.jpg" class="img-fluid" alt="Responsive image" style="position: relative;width: 100vw;">
+
+    <div class="logo position-absolute pointer"></div>
+
+    <div class="mwt_border"></div>
+
+
+    <div class="cartButton position-absolute d-flex flex-column justify-content-center align-items-center pointer">
+      <span class="titleZh">購物車</span>
+      <span class="titleEn">CART</span>
+    </div>
+    <div class="loginButton position-absolute d-flex flex-column justify-content-center align-items-center pointer">
+      <span class="titleZh">登入</span>
+      <span class="titleEn">LOGIN</span>
+      <span class="loginImg"></span>
+      <span class="loginText">會員資料</span>
+      <span class="loginText">二手書配對</span>
+      <span class="loginText">登出</span>
+    </div>
+
+    <section class="d-flex justify-content-center titleButton">
+      <div class="text-center mx-4 pointer">
+        <span class="titleZh">書評家</span>
+        <br>
+        <span class="titleEn">REVIEWER</span>
+      </div>
+      <div class="text-center mx-4 pointer">
+        <span class="titleZh">書籍商城</span>
+        <br>
+        <span class="titleEn">BOOKS</span>
+      </div>
+      <div class="text-center mx-4 pointer">
+        <span class="titleZh">品書活動</span>
+        <br>
+        <span class="titleEn">ACTIVITIES</span>
+      </div>
+      <div class="text-center mx-4 pointer">
+        <span class="titleZh">品書書評</span>
+        <br>
+        <span class="titleEn">REVIEWS</span>
+      </div>
+      <div class="text-center mx-4 pointer">
+        <span class="titleZh">品書討論區</span>
+        <br>
+        <span class="titleEn">FORUM</span>
+      </div>
+    </section>
+
+    <section class="phoneTitleHide">
+      <div class="menu transition">
+        <div class="bar bar1 transition"></div>
+        <div class="bar bar2 transition"></div>
+        <div class="bar bar3 transition"></div>
+        <ul class="transition">
+          <li><a class="transition">登入/註冊</a></li>
+          <li><a class="transition">購物車</a></li>
+          <li><a class="transition">書評家</a></li>
+          <li><a class="transition">書籍商城</a></li>
+          <li><a class="transition">品書活動</a></li>
+          <li><a class="transition">品書書評</a></li>
+          <li><a class="transition">品書討論區</a></li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <!-- 輪播圖 -->
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background: url(images/resize_image.jpg) no-repeat center;"></div>
+        <div class="carousel-item" style="background: url(images/32656741533_4af1f69699_o.png) no-repeat center;">
+        </div>
+        <div class="carousel-item" style="background: url(images/getImage_01.jpg) no-repeat center;"></div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <div aria-hidden="true" class="myCarouselButton right">
+          <i class="fas fa-caret-left"></i>
+        </div>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <div aria-hidden="true" class="myCarouselButton left">
+          <i class="fas fa-caret-right"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 時間軸 -->
+  <section class="timeline-body position-relative">
+
+    <div class="bird position-absolute"></div>
+
+    <div class="sub-title">
+      <span class="titleZh">書評家x最新書評</span>
+      <br>
+      <span class="titleEn">NEWS</span>
+    </div>
+
+    <section class="cd-horizontal-timeline ">
+      <div class="timeline">
+        <div class="events-wrapper">
+          <div class="events">
+            <ol>
+              <li><a href="#0" data-date="16/01/2014" class="selected">01/16</a></li>
+              <li><a href="#0" data-date="28/02/2014">02/28</a></li>
+              <li><a href="#0" data-date="09/05/2014">05/09</a></li>
+              <!-- other dates here -->
+            </ol>
+
+            <span class="filling-line" aria-hidden="true"></span>
+          </div>
+          <!-- .events -->
+        </div>
+        <!-- .events-wrapper -->
+
+        <ul class="cd-timeline-navigation">
+          <li><a href="#0" class="prev inactive">Prev</a></li>
+          <li><a href="#0" class="next">Next</a></li>
+        </ul>
+        <!-- .cd-timeline-navigation -->
+      </div>
+      <!-- .timeline -->
+
+      <div class="events-content">
+        <ol>
+          <li class="selected" data-date="16/01/2014">
+            <h2>卡塔莉娜：關於生命療養院，以及人們如何被遺棄的故事</h2>
+            <em>書評家 : 卡塔莉娜</em>
+            <em>發表日期 : 2014年01月16日</em>
+            <div class="timeline-p-wrapper">
+              <p class="timeline-p">
+                「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落
+              </p>
+            </div>
+          </li>
+
+          <li data-date="28/02/2014">
+            <h2>卡塔莉娜：關於生命療養院，以及人們如何被遺棄的故事</h2>
+            <em>書評家 : 卡塔莉娜</em>
+            <em>發表日期 : 2014年01月16日</em>
+            <div class="timeline-p-wrapper">
+              <p class="timeline-p">
+                「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落
+              </p>
+            </div>
+          </li>
+
+          <li data-date="09/05/2014">
+            <h2>卡塔莉娜：關於生命療養院，以及人們如何被遺棄的故事</h2>
+            <em>書評家 : 卡塔莉娜</em>
+            <em>發表日期 : 2014年01月16日</em>
+            <div class="timeline-p-wrapper">
+              <p class="timeline-p">
+                「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落，可能都有一間像這樣的「生命療養院」。被丟進這裡的人無人聞問，
+                沒有人權，也沒有人需要為他們的處境負責。他們本人往往也不清楚、或記得，自己怎麼會來到這個地方。己怎麼會來到這個地方。「生命療養院」創立於1987年，一開始是一間收容毒癮跟酒癮患者的康復中心，然而沒過多久就擴大了守備範圍，有愈來愈多被家人斷絕關係的人──包括精神病患、
+                殘疾者、失業和無家者──被親戚、鄰居、醫院和警方直接「丟」到這裡。任何一個大城市的角落
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="timeline-more">
+        <div>
+          <span class="pointer" style="color:#ffc408">►</span>
+          <span class="pointer">Read All</span>
+        </div>
+      </div>
+
+    </section>
+
+
+
+  </section>
+
+  <!-- 閱讀話題 -->
+  <section class="recomend-body position-relative">
+    <div class="sub-title">
+      <span class="titleZh">閱讀話題</span>
+      <br>
+      <span class="titleEn">THEME</span>
+    </div>
+
+    <div class="container recomend-book" style="position: relative;z-index: 2;">
+
+      <div class="component">
+
+        <ul class="align">
+          <li>
+            <figure class='book'>
+
+              <!-- Front -->
+
+              <ul class='hardcover_front'>
+                <li>
+                  <div class="coverDesign grey">
+                    <span class="ribbon">NEW</span>
+                    <img src="images/getImage.jpg" alt="">
+                  </div>
+                </li>
+                <li></li>
+              </ul>
+
+              <!-- Pages -->
+
+              <ul class='page'>
+                <li></li>
+                <li>
+                  <a class="recomend-book-btn" href="#">閱讀此書</a>
+                  <img src="images/品書印章.png" alt="" class="position-absolute"
+                    style="height: 40px;width: 40px;bottom: 10px;right: 10px;">
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+              <!-- Back -->
+
+              <ul class='hardcover_back'>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class='book_spine'>
+                <li></li>
+                <li></li>
+              </ul>
+              <figcaption>
+                <h1>好關係是麻煩出來的</h1>
+                <span>作者：格子珊s</span>
+                <p class="recomend-p">
+                  許多人都害怕拜託別人幫忙，然而，怕麻煩別人其實是不願意承認自己需要對方，也活生生阻礙了別人對自己的需要。偶爾的示弱，會讓你更有力量。許多人都害怕拜託別人幫忙，然而，怕麻煩別人其實是不願意承認自己需要對方，也活生生阻礙了別人對自己的需要。偶爾的示弱，會讓你更有力量。
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class='book'>
+
+              <!-- Front -->
+
+              <ul class='hardcover_front'>
+                <li>
+                  <div class="coverDesign grey">
+                    <span class="ribbon">NEW</span>
+                    <img src="images/getImage.jpg" alt="">
+                  </div>
+                </li>
+                <li></li>
+              </ul>
+
+              <!-- Pages -->
+
+              <ul class='page'>
+                <li></li>
+                <li>
+                  <a class="recomend-book-btn" href="#">閱讀此書</a>
+                  <img src="images/品書印章.png" alt="" class="position-absolute"
+                    style="height: 40px;width: 40px;bottom: 10px;right: 10px;">
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+              <!-- Back -->
+
+              <ul class='hardcover_back'>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class='book_spine'>
+                <li></li>
+                <li></li>
+              </ul>
+              <figcaption>
+                <h1>好關係是麻煩出來的</h1>
+                <span>作者：格子珊s</span>
+                <p class="recomend-p">
+                  許多人都害怕拜託別人幫忙，然而，怕麻煩別人其實是不願意承認自己需要對方，也活生生阻礙了別人對自己的需要。偶爾的示弱，會讓你更有力量。許多人都害怕拜託別人幫忙，然而，怕麻煩別人其實是不願意承認自己需要對方，也活生生阻礙了別人對自己的需要。偶爾的示弱，會讓你更有力量。
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="right-corn position-absolute"></div>
+
+  </section>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- timeline jQuery -->
+  <script src="js/timeline-main.js"></script>
+
+
+  <script>
+    $(".menu").click(function () {
+      $(this).toggleClass('active');
+    });
+
+    $(window).resize(function () {
+      $(".loginButton").css("transition", "0s");
+    });
+
+    // 會員登入後才出現的
+    $(".loginButton").hover(function () {
+      $(".loginButton").css("transition", "0.5s");
+      $(".loginButton").css("height", "15vw");
+      $(".loginImg").toggle();
+      $(".loginText").toggle();
+    }, function () {
+      $(".loginButton").css("transition", "0.5s");
+      $(".loginButton").css("height", "7vw");
+      $(".loginText").toggle();
+      $(".loginImg").toggle();
+    })
+
+  </script>
+</body>
+
+</html>
