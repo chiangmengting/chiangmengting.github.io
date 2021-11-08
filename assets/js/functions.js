@@ -53,7 +53,28 @@ jQuery(document).ready(function($) {
 
 
 	/* Time Countdown 
-	-------------------------------------------------------------------*/
+  -------------------------------------------------------------------*/
+
+var date1=new Date();  //開始時間
+var date2=new Date("2021-12-29 02:00:00");    //結束時間
+var date3=date2.getTime()-date1.getTime()  //時間差的毫秒數
+
+
+//計算出相差天數
+var days=Math.floor(date3/(24*3600*1000))
+ 
+//計算出小時數
+
+var leave1=date3%(24*3600*1000)    //計算天數後剩餘的毫秒數
+var hours=Math.floor(leave1/(3600*1000))
+//計算相差分鐘數
+var leave2=leave1%(3600*1000)        //計算小時數後剩餘的毫秒數
+var minutes=Math.floor(leave2/(60*1000))
+//計算相差秒數
+var leave3=leave2%(60*1000)      //計算分鐘數後剩餘的毫秒數
+var seconds=Math.round(leave3/1000)
+
+
 	$('#time_countdown').countDown({
         
         // targetDate: {
@@ -67,12 +88,12 @@ jQuery(document).ready(function($) {
         // omitWeeks: true
 
          targetOffset: {
-            'day':      0,
+            'day':      days,
             'month':    0,
-            'year':     1,
-            'hour':     0,
-            'min':      0,
-            'sec':      3
+            'year':     0,
+            'hour':     hours,
+            'min':      minutes,
+            'sec':      seconds
 		},
 		omitWeeks: true
 
