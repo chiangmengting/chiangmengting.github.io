@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>English Resume</title>
     <style>
         .header {
             width: 100%;
@@ -26,11 +25,24 @@
             border-bottom: 1px solid #e8ecf0;
             padding: 11px;
         }
-        .workHistory {
+        .leftWrapper {
             width: 70%;
             padding: 0 12px 0 0;
         }
-        .workHistoryContent {
+        .heading {
+            border-bottom: 1px solid #d5d6d6;
+            font-weight: 700;
+            padding: 0 0 10px;
+            display: flex;
+        }
+        .icon {
+            padding-right: 10px;
+        }
+        .sectiontitle {
+            font-size: 20px;
+            color: #102a73;
+        }
+        .leftWrapperContent {
             padding: 12px 0px;
         }
         .card {
@@ -48,11 +60,6 @@
         .cardTitle {
             font-weight: 700;
         }
-        .contact {
-            width: 30%;
-            padding: 12px;
-            background-color: #f4f4f4;
-        }
         .skillWrapper {
             font-size: 14px;
             padding: 12px 12px 0 0;
@@ -63,34 +70,44 @@
             margin: 5px;
         }
         .boxBlue {
-            width: 18px;
+            width: 100px;
             height: 8px;
             background-color: #102a73;
             margin-right: 5px;
         }
         .boxGray {
-            width: 18px;
+            width: 100px;
             height: 8px;
             background-color: #D5D6D6;
             margin-right: 5px;
         }
-
-        .heading {
-            border-bottom: 1px solid #d5d6d6;
+        .rightWrapper {
+            width: 30%;
+            padding: 12px;
+            background-color: #f4f4f4;
+        }
+        .photoWrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        .contactWrapper {
+            padding-top: 12px;
+        }
+        .contactSubTitle{
             font-weight: 700;
-            padding: 0 0 3px;
         }
-        .sectiontitle {
-            font-size: 20px;
-            color: #102a73;
+        .contactContent {
+            font-size: 14px;
         }
+
 
         
     </style>
 </head>
 
 <body>
-    <div style="width: 80%;margin: auto;">
+    <div style="width: 60%;margin: auto;">
         <div class="header">
             <div class="name">
                 <span >MengTing</span>
@@ -99,13 +116,147 @@
             <div class="resumeTitle">Front-end Engineer</div>
         </div>
         <div class="content">
-            <div class="workHistory">
+            <div class="leftWrapper">
                 <p>Front-end Engineer with 5 years experience.</p>
                 <div>
                     <div class="heading">
+                        <img class="icon" src="./images/icon/skills.png" alt="skillsIcon" width="30" height="30">
+                        <div class="sectiontitle">Skills</div>
+                    </div>
+                    <div class="leftWrapperContent">
+                        <div class="card">
+                            <div class="cardTime"></div>
+                            <div class="cardContent">
+                                <div class="skillWrapper">
+                                    <div>
+                                        HTML5, CSS3, SCSS, SASS, AJAX, jQuery, Bootstrap
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        JavaScript, TypeScript
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Vue.js, React.js
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Angular.js
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Node.js Environment
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Package Manager : yarn, mpm, pnpm
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Amazon Web Services
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        Unit test : Jest, Vitest
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        UI development : Storybook
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                        <div class="boxBlue"></div>
+                                    </div> 
+                                </div>
+                                <div class="skillWrapper">
+                                    <div>
+                                        JAVA, PHP
+                                    </div>
+                                    <div class="boxWrapper">
+                                        <div class="boxBlue"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                        <div class="boxGray"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="heading">
+                        <img class="icon" src="./images/icon/workHistory.png" alt="workHistoryIcon" width="30" height="30">
                         <div class="sectiontitle">Work History</div>
                     </div>
-                    <div class="workHistoryContent">
+                    <div class="leftWrapperContent">
                         <div class="card">
                             <div class="cardTime">
                                 2022-09 - Current
@@ -163,134 +314,51 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="heading">
+                        <img class="icon" src="./images/icon/education.png" alt="educationIcon" width="30" height="30">
+                        <div class="sectiontitle">Education</div>
+                    </div>
+                    <div class="leftWrapperContent">
+                        <div class="card">
+                            <div class="cardTime">
+                                2014-06
+                            </div>
+                            <div class="cardContent">
+                                <div class="cardTitle">
+                                    Bachelor’s : Japanese Literature
+                                </div>
+                                <p>
+                                    <i>Soochow University - Taipei, Taiwan</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact">
+            
+            <div class="rightWrapper">
+                <div class="photoWrapper">
+                    <img class="photo" src="./images/ChiangMengTingPhoto.jpeg" alt="contactIcon" width="150">
+                </div>
                 <div class="heading">
-                    <div class="sectiontitle">Skills</div>
+                    <img class="icon" src="./images/icon/contact.png" alt="contactIcon" width="30" height="30">
+                    <div class="sectiontitle">Contact</div>
                 </div>
-                <div class="skillWrapper">
-                    <div>
-                        HTML5, CSS3, SCSS, SASS, AJAX, jQuery, Bootstrap
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
+                <div class="contactWrapper">
+                    <div class="contactSubTitle">Address</div>
+                    <div class="contactContent">Tokyo, JP 176-0012</div>
                 </div>
-                <div class="skillWrapper">
-                    <div>
-                        JavaScript, TypeScript
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
+                <div class="contactWrapper">
+                    <div class="contactSubTitle">Phone</div>
+                    <div class="contactContent">+81-70-3323-7740</div>
                 </div>
-                <div class="skillWrapper">
-                    <div>
-                        Vue.js, React.js
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        Angular.js
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        Node.js Environment
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        Package Manager : yarn, mpm, pnpm
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        Amazon Web Services
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        Unit test : Jest, Vitest
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        UI development : Storybook
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                        <div class="boxBlue"></div>
-                    </div> 
-                </div>
-                <div class="skillWrapper">
-                    <div>
-                        JAVA, PHP
-                    </div>
-                    <div class="boxWrapper">
-                        <div class="boxBlue"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                        <div class="boxGray"></div>
-                    </div> 
+                <div class="contactWrapper">
+                    <div class="contactSubTitle">Email</div>
+                    <div class="contactContent">nana81210210@gmail.com</div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
